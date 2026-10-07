@@ -1,0 +1,237 @@
+<!-- wp:group {"className":"avz-answer"} -->
+<div class="wp-block-group avz-answer"><!-- wp:paragraph {"className":"avz-eyebrow"} -->
+<p class="avz-eyebrow">The short answer</p>
+<!-- /wp:paragraph --><!-- wp:heading -->
+<h2 class="wp-block-heading">Should I allow AI crawlers on my website?</h2>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>If you want AI assistants to recommend and cite your business, allow their search and answer crawlers, such as OAI-SearchBot, Claude-SearchBot and PerplexityBot, in robots.txt. Training crawlers like GPTBot, ClaudeBot and CCBot are a separate choice: blocking them keeps your text out of future model training without removing you from search.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Every website now gets visits from crawlers that work for AI companies. Some collect text to train models. Some build search indexes that AI assistants use to answer questions. Some fetch a single page because a person asked an assistant to read it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Treating them all the same is a mistake. Block everything and you may vanish from AI answers. Allow everything without thinking and you may hand your content to uses you did not intend. This guide explains the main crawlers, how robots.txt controls them, and where llms.txt fits.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How robots.txt works, briefly</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>robots.txt is a plain text file at the root of your domain, for example <code>https://example.com/robots.txt</code>. It tells crawlers which parts of a site they may request. The format was standardised by the IETF as RFC 9309 in 2022.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Two things to keep in mind:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>It is a request, not a lock.</strong> Reputable crawlers follow it. It does not stop anyone determined to ignore it, so never rely on it to protect private data.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Rules are grouped by user agent.</strong> A group starts with one or more <code>User-agent:</code> lines followed by <code>Allow:</code> and <code>Disallow:</code> rules. A crawler follows the most specific group that names it.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>A minimal example that allows one crawler and blocks another looks like this:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"avz-table"} -->
+<figure class="wp-block-table avz-table"><table class="has-fixed-layout"><thead><tr><th>robots.txt lines</th><th>Meaning</th></tr></thead><tbody><tr><td><code>User-agent: OAI-SearchBot</code> then <code>Allow: /</code></td><td>ChatGPT's search crawler may read the whole site</td></tr><tr><td><code>User-agent: GPTBot</code> then <code>Disallow: /</code></td><td>OpenAI's training crawler may not read any page</td></tr><tr><td><code>User-agent: *</code> then <code>Disallow: /wp-admin/</code></td><td>All other crawlers stay out of the admin area</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The AI crawlers that matter</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Each company documents its crawlers, and the roles have become clearer over the last two years. The main ones fall into three groups.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Search and answer crawlers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>These build the indexes AI assistants use to find and cite pages. Blocking them makes it much harder to appear in that assistant's answers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>OAI-SearchBot</strong> (OpenAI): used to surface websites in ChatGPT's search features.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Claude-SearchBot</strong> (Anthropic): improves search results for Claude users.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>PerplexityBot</strong> (Perplexity): indexes pages to show and link in Perplexity's answers.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Googlebot and Bingbot</strong>: the classic search crawlers. Google's AI Overviews and AI Mode draw on Google's index, and Microsoft Copilot draws on Bing.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">User-triggered fetchers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>These visit a page because a person asked the assistant to look at it, for example by pasting a link.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>ChatGPT-User</strong> (OpenAI), <strong>Claude-User</strong> (Anthropic) and <strong>Perplexity-User</strong> (Perplexity).</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Training crawlers and tokens</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>These collect content that may be used to train future models.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>GPTBot</strong> (OpenAI) and <strong>ClaudeBot</strong> (Anthropic).</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>CCBot</strong> (Common Crawl), whose open dataset is widely used in AI research and training.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Google-Extended</strong>: not a separate crawler but a robots.txt token. Google's documentation describes it as controlling whether content is used for Gemini models. It does not affect inclusion or ranking in Google Search.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Applebot-Extended</strong>: a similar token for Apple's generative models. The main Applebot crawler powers features like Siri and Spotlight suggestions.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A sensible default for most businesses</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If your goal is to be found and recommended, the usual starting point is:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Allow</strong> all search and answer crawlers, including Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot and PerplexityBot.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Allow</strong> the user-triggered fetchers, so assistants can read your page when someone asks them to.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Decide deliberately</strong> about training crawlers and tokens. Allowing them may help models know your brand in the long run. Blocking them keeps your text out of future training. Neither choice removes you from search.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Keep private areas private</strong> with authentication, not robots.txt.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>This theme, for example, generates a robots.txt that explicitly welcomes the main search and AI crawlers, keeps the admin area out of bounds and points to the XML sitemap and the llms.txt file.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"avz-note"} -->
+<p class="avz-note">Check your CDN and firewall too. Services such as Cloudflare offer one-click bot blocking that can silently stop AI crawlers, even when robots.txt allows them. If you want to be cited, make sure the firewall rules match your robots.txt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What llms.txt is</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>llms.txt is a proposal published in September 2024 by Jeremy Howard of Answer.AI. The idea is a Markdown file at <code>/llms.txt</code> that gives language models a short, structured guide to a website: a title, a one-paragraph summary, and sections of links to the most useful pages, each with a short description. An optional <code>llms-full.txt</code> can carry fuller content.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>It is easy to produce and can be helpful for tools that read it, especially developer documentation sites, where it began.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What llms.txt is not</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>It is not a ranking factor, and it is not a standard that the large AI search systems have committed to. Google's John Mueller has compared it to the old keywords meta tag, a file where a site describes itself that search engines can verify by reading the site anyway. Google's May 2026 guide to generative AI in Search confirms that its crawler may find an llms.txt file but treats it like any other text file, with no special handling.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>So treat llms.txt as a cheap, tidy extra. It will not rescue a site with blocked crawlers, thin pages or confusing structure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"avz-table"} -->
+<figure class="wp-block-table avz-table"><table class="has-fixed-layout"><thead><tr><th>File</th><th>Purpose</th><th>Followed by</th></tr></thead><tbody><tr><td>robots.txt</td><td>Tells crawlers what they may request</td><td>Reputable search and AI crawlers</td></tr><tr><td>XML sitemap</td><td>Lists the URLs you want discovered</td><td>Google, Bing and others</td></tr><tr><td>llms.txt</td><td>Summarises the site for language models</td><td>Some tools; not used by Google Search</td></tr><tr><td>Structured data</td><td>Describes entities on each page</td><td>Google, Bing and other systems</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A quick audit you can run today</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Open <code>yourdomain.com/robots.txt</code> and check for blanket <code>Disallow: /</code> rules or groups that name AI crawlers you actually want.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Check your CDN or firewall bot settings for rules that block AI or "unverified" bots.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Confirm your XML sitemap is listed and loads without errors.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Search your server logs or analytics for visits from OAI-SearchBot, PerplexityBot and Claude-SearchBot.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Add an llms.txt if you want one, with accurate descriptions of your key pages.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Re-check after every redesign, migration or security change.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Frequently asked questions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"avz-faq"} -->
+<div class="wp-block-group avz-faq"><!-- wp:details -->
+<details class="wp-block-details"><summary>Does blocking GPTBot remove us from ChatGPT search?</summary><!-- wp:paragraph -->
+<p>OpenAI documents GPTBot as its training crawler and OAI-SearchBot as the crawler used for ChatGPT's search features. Blocking GPTBot alone should not stop OAI-SearchBot from indexing your pages, so check that you have not blocked both by accident.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Is robots.txt enough to protect confidential content?</summary><!-- wp:paragraph -->
+<p>No. It is a public file that asks crawlers to stay away. Anything confidential belongs behind a login.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Do AI crawlers respect crawl-delay?</summary><!-- wp:paragraph -->
+<p>Some do. Anthropic, for example, says it supports the non-standard Crawl-delay directive. Google does not. If crawlers strain your server, rate limiting at the server or CDN is more reliable.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>How often should robots.txt be reviewed?</summary><!-- wp:paragraph -->
+<p>Whenever you change platforms, security settings or content strategy, and at least twice a year, because AI companies add and rename crawlers.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Our <a href="{{link:service:technical-seo}}">Technical SEO</a> service includes a full crawler access audit, and our <a href="{{link:service:generative-engine-optimization}}">GEO service</a> builds on it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sources</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"avz-sources"} -->
+<ol class="wp-block-list avz-sources"><!-- wp:list-item -->
+<li><a href="https://www.rfc-editor.org/rfc/rfc9309.html">RFC 9309: Robots Exclusion Protocol</a>. IETF, September 2022.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.openai.com/api/docs/bots">Overview of OpenAI crawlers</a>. OpenAI.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://support.claude.com/en/articles/8896518">Does Anthropic crawl data from the web, and how can site owners block the crawler?</a>. Anthropic.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://docs.perplexity.ai/docs/resources/perplexity-crawlers">Perplexity crawlers</a>. Perplexity.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers">Google's common crawlers, including Google-Extended</a>. Google Search Central.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://support.apple.com/en-us/119829">About Applebot</a>. Apple.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://llmstxt.org/">The llms.txt proposal</a>. Jeremy Howard, Answer.AI.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing">A new resource for optimizing for generative AI in Google Search</a>. Google Search Central Blog, May 2026.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://www.searchenginejournal.com/google-says-llms-txt-comparable-to-keywords-meta-tag/544804/">Google says llms.txt is comparable to the keywords meta tag</a>. Search Engine Journal.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->

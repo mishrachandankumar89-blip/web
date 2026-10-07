@@ -1,0 +1,612 @@
+{
+ "version": "1.4.0",
+ "site": {
+  "title": "AVENZA",
+  "tagline": "Be the answer, not just a result."
+ },
+ "front_page": "home",
+ "posts_page": "insights",
+ "images": [
+  {
+   "key": "plate-01",
+   "file": "art/plate-01-geo.webp",
+   "alt": "Engraved emerald plate numbered 01 with a spark symbol in a guilloche medallion, for Generative Engine Optimization",
+   "title": "N° 01 Generative Engine Optimization"
+  },
+  {
+   "key": "plate-02",
+   "file": "art/plate-02-aeo.webp",
+   "alt": "Engraved emerald plate numbered 02 with a speech bubble and check mark, for Answer Engine Optimization",
+   "title": "N° 02 Answer Engine Optimization"
+  },
+  {
+   "key": "plate-03",
+   "file": "art/plate-03-seo.webp",
+   "alt": "Engraved emerald plate numbered 03 with a magnifying glass and rising line, for Search Engine Optimization",
+   "title": "N° 03 Search Engine Optimization"
+  },
+  {
+   "key": "plate-04",
+   "file": "art/plate-04-technical-seo.webp",
+   "alt": "Engraved emerald plate numbered 04 with a gear and code brackets, for Technical SEO",
+   "title": "N° 04 Technical SEO"
+  },
+  {
+   "key": "plate-05",
+   "file": "art/plate-05-local-seo.webp",
+   "alt": "Engraved emerald plate numbered 05 with a map pin, for Local SEO",
+   "title": "N° 05 Local SEO"
+  },
+  {
+   "key": "plate-06",
+   "file": "art/plate-06-ecommerce-seo.webp",
+   "alt": "Engraved emerald plate numbered 06 with a shopping bag, for E-commerce SEO",
+   "title": "N° 06 E-commerce SEO"
+  },
+  {
+   "key": "plate-07",
+   "file": "art/plate-07-content.webp",
+   "alt": "Engraved emerald plate numbered 07 with a quill pen, for Content Marketing",
+   "title": "N° 07 Content Marketing"
+  },
+  {
+   "key": "plate-08",
+   "file": "art/plate-08-digital-pr.webp",
+   "alt": "Engraved emerald plate numbered 08 with two linked chain loops, for Link Building and Digital PR",
+   "title": "N° 08 Link Building and Digital PR"
+  },
+  {
+   "key": "plate-09",
+   "file": "art/plate-09-google-ads.webp",
+   "alt": "Engraved emerald plate numbered 09 with a target and arrow, for Google Ads management",
+   "title": "N° 09 Google Ads Management"
+  },
+  {
+   "key": "plate-10",
+   "file": "art/plate-10-social.webp",
+   "alt": "Engraved emerald plate numbered 10 with three connected share nodes, for Social Media Marketing",
+   "title": "N° 10 Social Media Marketing"
+  },
+  {
+   "key": "plate-11",
+   "file": "art/plate-11-web-design.webp",
+   "alt": "Engraved emerald plate numbered 11 with a browser window layout, for Website Design and Development",
+   "title": "N° 11 Website Design and Development"
+  },
+  {
+   "key": "plate-12",
+   "file": "art/plate-12-cro.webp",
+   "alt": "Engraved emerald plate numbered 12 with a funnel, for Conversion Rate Optimization",
+   "title": "N° 12 Conversion Rate Optimization"
+  },
+  {
+   "key": "hero-home",
+   "file": "art/hero-home.webp",
+   "alt": "Emerald engraved plate with fine white guilloche rings around the AVENZA A monogram",
+   "title": "AVENZA engraved monogram plate"
+  },
+  {
+   "key": "hero-about",
+   "file": "art/hero-about.webp",
+   "alt": "Emerald engraved plate with a compass rose at the centre of a guilloche rosette",
+   "title": "About AVENZA plate"
+  },
+  {
+   "key": "hero-approach",
+   "file": "art/hero-approach.webp",
+   "alt": "Emerald engraved plate with rising steps and an arrow inside a guilloche medallion",
+   "title": "AVENZA approach plate"
+  },
+  {
+   "key": "hero-services",
+   "file": "art/hero-services.webp",
+   "alt": "Emerald engraved plate with a grid of nine diamonds representing the service range",
+   "title": "AVENZA services plate"
+  },
+  {
+   "key": "hero-contact",
+   "file": "art/hero-contact.webp",
+   "alt": "Emerald engraved plate with an envelope symbol inside a guilloche medallion",
+   "title": "Contact AVENZA plate"
+  },
+  {
+   "key": "hero-faq",
+   "file": "art/hero-faq.webp",
+   "alt": "Emerald engraved plate with a question mark inside a guilloche medallion",
+   "title": "AVENZA FAQ plate"
+  },
+  {
+   "key": "cover-geo",
+   "file": "art/cover-what-is-generative-engine-optimization.webp",
+   "alt": "White and green engraved cover with a spark symbol in an emerald medallion, for the guide to Generative Engine Optimization",
+   "title": "What is Generative Engine Optimization"
+  },
+  {
+   "key": "cover-seo-aeo-geo",
+   "file": "art/cover-seo-vs-aeo-vs-geo.webp",
+   "alt": "White and green engraved cover with three overlapping circles, comparing SEO, AEO and GEO",
+   "title": "SEO vs AEO vs GEO"
+  },
+  {
+   "key": "cover-ai-overviews",
+   "file": "art/cover-how-google-ai-overviews-choose-sources.webp",
+   "alt": "White and green engraved cover with a magnifying glass holding a spark, for the article on AI Overviews sources",
+   "title": "How Google AI Overviews choose sources"
+  },
+  {
+   "key": "cover-ai-crawlers",
+   "file": "art/cover-llms-txt-robots-txt-ai-crawlers.webp",
+   "alt": "White and green engraved cover with a document showing code lines, for the guide to llms.txt and AI crawlers",
+   "title": "llms.txt, robots.txt and AI crawlers"
+  },
+  {
+   "key": "cover-local-seo",
+   "file": "art/cover-local-seo-for-indian-businesses.webp",
+   "alt": "White and green engraved cover with a map pin, for the local SEO guide for Indian businesses",
+   "title": "Local SEO for Indian businesses"
+  },
+  {
+   "key": "cover-cwv",
+   "file": "art/cover-core-web-vitals-explained.webp",
+   "alt": "White and green engraved cover with a speed gauge, for the Core Web Vitals guide",
+   "title": "Core Web Vitals explained"
+  },
+  {
+   "key": "diagram-stack",
+   "file": "art/diagram-visibility-stack.webp",
+   "alt": "Diagram of five stacked layers: technical foundation, content and entities, authority and mentions, answer formatting, and AI visibility at the top",
+   "title": "The AVENZA visibility stack"
+  },
+  {
+   "key": "diagram-flow",
+   "file": "art/diagram-question-to-citation.webp",
+   "alt": "Diagram of five steps an AI assistant follows: question, retrieval, selection, synthesis and citation",
+   "title": "From question to citation"
+  }
+ ],
+ "services": [
+  {
+   "slug": "generative-engine-optimization",
+   "title": "Generative Engine Optimization (GEO)",
+   "excerpt": "Get your brand named and cited when people ask ChatGPT, Gemini, Perplexity, Copilot or Google AI Overviews for advice in your category.",
+   "meta_title": "Generative Engine Optimization (GEO) Services | AVENZA",
+   "meta_description": "GEO services that help your brand get cited in ChatGPT, Gemini, Perplexity and Google AI Overviews. Research-led, measured monthly, no shortcuts.",
+   "image": "plate-01",
+   "menu_order": 1,
+   "content_file": "services/generative-engine-optimization.html",
+   "number": "01"
+  },
+  {
+   "slug": "answer-engine-optimization",
+   "title": "Answer Engine Optimization (AEO)",
+   "excerpt": "Structure your pages so Google, voice assistants and AI tools can lift a clear answer from them, and credit you for it.",
+   "meta_title": "Answer Engine Optimization (AEO) Services | AVENZA",
+   "meta_description": "AEO services that win featured snippets, People Also Ask boxes, voice answers and AI Overview links with clear, structured, quotable answers.",
+   "image": "plate-02",
+   "menu_order": 2,
+   "content_file": "services/answer-engine-optimization.html",
+   "number": "02"
+  },
+  {
+   "slug": "seo-services",
+   "title": "SEO Services",
+   "excerpt": "Search engine optimization built on research, technical health and pages people want to read, so you rank for the searches that bring revenue.",
+   "meta_title": "SEO Services That Grow Qualified Leads | AVENZA",
+   "meta_description": "Research-led SEO services in India and worldwide: keyword and intent mapping, technical fixes, content and authority building, reported in plain language.",
+   "image": "plate-03",
+   "menu_order": 3,
+   "content_file": "services/seo-services.html",
+   "number": "03"
+  },
+  {
+   "slug": "technical-seo",
+   "title": "Technical SEO",
+   "excerpt": "Crawling, indexing, Core Web Vitals, structured data and site architecture, fixed so search engines and AI crawlers can read every page that matters.",
+   "meta_title": "Technical SEO Audit and Fixes | AVENZA",
+   "meta_description": "Technical SEO audits and fixes for crawling, indexing, Core Web Vitals, structured data, JavaScript and site architecture, with clear developer tickets.",
+   "image": "plate-04",
+   "menu_order": 4,
+   "content_file": "services/technical-seo.html",
+   "number": "04"
+  },
+  {
+   "slug": "local-seo",
+   "title": "Local SEO",
+   "excerpt": "Show up in Google Maps, the local pack, near-me searches and AI answers for your city, with a Google Business Profile that earns calls.",
+   "meta_title": "Local SEO and Google Business Profile Services | AVENZA",
+   "meta_description": "Local SEO for Indian businesses: Google Business Profile, Maps rankings, reviews, citations and location pages that turn near-me searches into calls.",
+   "image": "plate-05",
+   "menu_order": 5,
+   "content_file": "services/local-seo.html",
+   "number": "05"
+  },
+  {
+   "slug": "ecommerce-seo",
+   "title": "E-commerce SEO",
+   "excerpt": "SEO for online stores: category and product pages that rank, clean crawl control for large catalogues, product structured data and Merchant Center.",
+   "meta_title": "E-commerce SEO for Shopify and WooCommerce | AVENZA",
+   "meta_description": "E-commerce SEO that ranks category and product pages, controls crawl on big catalogues, adds product markup and connects Merchant Center listings.",
+   "image": "plate-06",
+   "menu_order": 6,
+   "content_file": "services/ecommerce-seo.html",
+   "number": "06"
+  },
+  {
+   "slug": "content-marketing",
+   "title": "Content Marketing",
+   "excerpt": "Research-led articles, guides and service pages written with your experts, built to rank, get cited by AI assistants and move readers toward an enquiry.",
+   "meta_title": "Content Marketing and SEO Content Writing | AVENZA",
+   "meta_description": "Content marketing that ranks and gets cited: expert interviews, original data, answer-first structure and editorial standards that people and AI trust.",
+   "image": "plate-07",
+   "menu_order": 7,
+   "content_file": "services/content-marketing.html",
+   "number": "07"
+  },
+  {
+   "slug": "link-building-digital-pr",
+   "title": "Link Building and Digital PR",
+   "excerpt": "Earn links and brand mentions from real publications and trusted industry sites, the signals that lift rankings and convince AI assistants you are credible.",
+   "meta_title": "Link Building and Digital PR Services | AVENZA",
+   "meta_description": "Ethical link building and digital PR: data stories, expert commentary and outreach that earn links and mentions on trusted sites. No paid link schemes.",
+   "image": "plate-08",
+   "menu_order": 8,
+   "content_file": "services/link-building-digital-pr.html",
+   "number": "08"
+  },
+  {
+   "slug": "google-ads-management",
+   "title": "Google Ads Management",
+   "excerpt": "Search, Performance Max, Shopping and YouTube campaigns run against real leads and revenue, with clean conversion tracking and no wasted spend on the wrong searches.",
+   "meta_title": "Google Ads Management and PPC Services | AVENZA",
+   "meta_description": "Google Ads management for Search, Performance Max, Shopping and YouTube, built on accurate conversion tracking and tuned for cost per lead and revenue.",
+   "image": "plate-09",
+   "menu_order": 9,
+   "content_file": "services/google-ads-management.html",
+   "number": "09"
+  },
+  {
+   "slug": "social-media-marketing",
+   "title": "Social Media Marketing",
+   "excerpt": "Organic content and paid campaigns on Instagram, Facebook, LinkedIn and YouTube, planned around your buyers and measured by leads, not likes.",
+   "meta_title": "Social Media Marketing and Meta Ads | AVENZA",
+   "meta_description": "Social media marketing for Instagram, Facebook, LinkedIn and YouTube: content plans, short video, Meta and LinkedIn ads, tracked to real leads.",
+   "image": "plate-10",
+   "menu_order": 10,
+   "content_file": "services/social-media-marketing.html",
+   "number": "10"
+  },
+  {
+   "slug": "website-design-development",
+   "title": "Website Design and Development",
+   "excerpt": "Fast, accessible WordPress and custom websites designed to win trust, built clean for search and AI crawlers, and easy for your team to edit.",
+   "meta_title": "Website Design and Development for Growth | AVENZA",
+   "meta_description": "Website design and development that loads fast, passes Core Web Vitals, meets WCAG accessibility and is built for SEO and AI search from the first line.",
+   "image": "plate-11",
+   "menu_order": 11,
+   "content_file": "services/website-design-development.html",
+   "number": "11"
+  },
+  {
+   "slug": "conversion-rate-optimization",
+   "title": "Conversion Rate Optimization",
+   "excerpt": "Turn more of your existing visitors into leads and sales through research, analytics, clearer pages, faster forms and careful A/B testing.",
+   "meta_title": "Conversion Rate Optimization (CRO) Services | AVENZA",
+   "meta_description": "CRO services that find why visitors leave and fix it: analytics, session recordings, user research, landing page rewrites, checkout fixes and A/B testing.",
+   "image": "plate-12",
+   "menu_order": 12,
+   "content_file": "services/conversion-rate-optimization.html",
+   "number": "12"
+  }
+ ],
+ "pages": [
+  {
+   "slug": "about",
+   "title": "About",
+   "excerpt": "AVENZA is a digital marketing agency built for the age of AI answers, combining search, content, authority, paid media and websites into one visibility strategy.",
+   "meta_title": "About AVENZA | Digital Marketing for the AI Search Era",
+   "meta_description": "Who AVENZA is, what we believe and how we work: a research-led digital marketing agency helping brands get found and cited in Google and AI answers.",
+   "image": "hero-about",
+   "menu_order": 0,
+   "content_file": "pages/about.html"
+  },
+  {
+   "slug": "approach",
+   "title": "Our Approach",
+   "excerpt": "The AVENZA Method: how we map buyer questions, measure visibility in search and AI answers, fix foundations, build citable content and report honestly.",
+   "meta_title": "Our Approach: The AVENZA Method for Visibility | AVENZA",
+   "meta_description": "How AVENZA works: question mapping, AI and search visibility baselines, technical foundations, citable content, earned authority and monthly reporting.",
+   "image": "hero-approach",
+   "menu_order": 0,
+   "content_file": "pages/approach.html"
+  },
+  {
+   "slug": "contact",
+   "title": "Contact",
+   "excerpt": "Book a strategy call with AVENZA, send an enquiry, or message us on WhatsApp at +91 96809 51099.",
+   "meta_title": "Contact AVENZA | Book a Strategy Call",
+   "meta_description": "Contact AVENZA to book a strategy call about GEO, SEO, ads or your website. Call or WhatsApp +91 96809 51099, or send an enquiry through the form.",
+   "image": "hero-contact",
+   "menu_order": 0,
+   "content_file": "pages/contact.html"
+  },
+  {
+   "slug": "faq",
+   "title": "FAQ",
+   "excerpt": "Straight answers about GEO, AEO, SEO, AI search, paid media, websites and working with AVENZA.",
+   "meta_title": "FAQ: GEO, AEO, SEO and Working With AVENZA",
+   "meta_description": "Answers to common questions about Generative Engine Optimization, AI search, SEO timelines, Google Ads, websites, pricing and working with AVENZA.",
+   "image": "hero-faq",
+   "menu_order": 0,
+   "content_file": "pages/faq.html"
+  },
+  {
+   "slug": "home",
+   "title": "Home",
+   "excerpt": "AVENZA helps businesses get found, trusted and chosen in Google search and in AI answers from ChatGPT, Gemini, Perplexity and Copilot.",
+   "meta_title": "AVENZA | GEO, AEO and SEO Agency for AI Search",
+   "meta_description": "AVENZA helps businesses get found and cited in Google and AI answers through GEO, AEO, SEO, content, digital PR, ads and conversion-focused websites.",
+   "image": "hero-home",
+   "menu_order": 0,
+   "content_file": "pages/home.html"
+  },
+  {
+   "slug": "insights",
+   "title": "Insights",
+   "excerpt": "Practical, sourced guides on Generative Engine Optimization, AI search, SEO, local visibility and website performance, written for business owners and marketers.",
+   "meta_title": "Insights: GEO, AI Search and SEO Guides | AVENZA",
+   "meta_description": "Practical, sourced guides on Generative Engine Optimization, AI Overviews, SEO, local search, llms.txt and Core Web Vitals from the AVENZA team.",
+   "image": "",
+   "menu_order": 0,
+   "content_file": "pages/insights.html"
+  },
+  {
+   "slug": "privacy-policy",
+   "title": "Privacy Policy",
+   "excerpt": "How AVENZA collects, uses, stores and protects personal data shared through this website, and the rights you have over it.",
+   "meta_title": "Privacy Policy | AVENZA",
+   "meta_description": "How AVENZA collects, uses and protects personal data from this website, in line with India's Digital Personal Data Protection Act, 2023, and your rights.",
+   "image": "",
+   "menu_order": 0,
+   "content_file": "pages/privacy-policy.html"
+  },
+  {
+   "slug": "services",
+   "title": "Services",
+   "excerpt": "Twelve services across AI visibility, search, content, authority, paid media, social, websites and conversion, planned as one strategy.",
+   "meta_title": "Digital Marketing Services: GEO, AEO, SEO, Ads | AVENZA",
+   "meta_description": "All AVENZA services: GEO, AEO, SEO, technical and local SEO, e-commerce SEO, content, digital PR, Google Ads, social media, web design and CRO.",
+   "image": "hero-services",
+   "menu_order": 0,
+   "content_file": "pages/services.html"
+  },
+  {
+   "slug": "terms",
+   "title": "Terms of Service",
+   "excerpt": "The terms that apply when you use the AVENZA website and its content.",
+   "meta_title": "Terms of Service | AVENZA",
+   "meta_description": "The terms that apply when you use the AVENZA website, including use of content, limits of liability, third-party links and how to contact us.",
+   "image": "",
+   "menu_order": 0,
+   "content_file": "pages/terms.html"
+  }
+ ],
+ "posts": [
+  {
+   "slug": "core-web-vitals-explained",
+   "title": "Core Web Vitals Explained for Business Owners: LCP, INP and CLS",
+   "excerpt": "What Core Web Vitals measure, the thresholds Google uses, why speed affects revenue as well as rankings, and the fixes that make the biggest difference.",
+   "meta_title": "Core Web Vitals Explained: LCP, INP and CLS Made Simple",
+   "meta_description": "Core Web Vitals for business owners: what LCP, INP and CLS measure, Google's good thresholds, how to check your site, and the fixes that matter most.",
+   "image": "cover-cwv",
+   "menu_order": 0,
+   "content_file": "posts/core-web-vitals-explained.html",
+   "category": "Technical SEO",
+   "date": "2026-10-05"
+  },
+  {
+   "slug": "how-google-ai-overviews-choose-sources",
+   "title": "How Google AI Overviews and AI Mode Choose Their Sources",
+   "excerpt": "What Google has actually said about how AI Overviews and AI Mode pick the pages they link to, what controls you have, how to measure it, and what to do about it.",
+   "meta_title": "How Google AI Overviews and AI Mode Choose Sources",
+   "meta_description": "What Google says about how AI Overviews and AI Mode pick sources: eligibility, query fan-out, snippet controls, Search Console reports and practical steps.",
+   "image": "cover-ai-overviews",
+   "menu_order": 0,
+   "content_file": "posts/how-google-ai-overviews-choose-sources.html",
+   "category": "AI Search",
+   "date": "2026-09-08"
+  },
+  {
+   "slug": "llms-txt-robots-txt-ai-crawlers",
+   "title": "llms.txt, robots.txt and AI Crawlers: A Plain-English Setup Guide",
+   "excerpt": "Which AI crawlers visit your site, what each one is for, how to allow or block them in robots.txt, and what llms.txt can and cannot do for you.",
+   "meta_title": "llms.txt, robots.txt and AI Crawlers: Setup Guide",
+   "meta_description": "A plain-English guide to AI crawlers like GPTBot, OAI-SearchBot, ClaudeBot and PerplexityBot, robots.txt rules, and what llms.txt really does.",
+   "image": "cover-ai-crawlers",
+   "menu_order": 0,
+   "content_file": "posts/llms-txt-robots-txt-ai-crawlers.html",
+   "category": "Technical SEO",
+   "date": "2026-09-17"
+  },
+  {
+   "slug": "local-seo-for-indian-businesses",
+   "title": "Local SEO for Indian Businesses: Maps, Reviews and AI Answers",
+   "excerpt": "How Google ranks local businesses, how to set up a Google Business Profile properly, how to earn reviews within the rules, and how local search now feeds AI answers in India.",
+   "meta_title": "Local SEO for Indian Businesses: A Practical 2026 Guide",
+   "meta_description": "A practical local SEO guide for Indian businesses: Google Business Profile, reviews, Justdial and other directories, location pages and AI answers.",
+   "image": "cover-local-seo",
+   "menu_order": 0,
+   "content_file": "posts/local-seo-for-indian-businesses.html",
+   "category": "Local SEO",
+   "date": "2026-09-26"
+  },
+  {
+   "slug": "seo-vs-aeo-vs-geo",
+   "title": "SEO vs AEO vs GEO: What Each One Does and Which You Need",
+   "excerpt": "A plain comparison of SEO, Answer Engine Optimization and Generative Engine Optimization, how they overlap, how to measure each, and how to decide where to invest first.",
+   "meta_title": "SEO vs AEO vs GEO: Differences and Which You Need",
+   "meta_description": "SEO, AEO and GEO compared side by side: goals, tactics, metrics and timelines, plus a simple way to decide which one your business should invest in first.",
+   "image": "cover-seo-aeo-geo",
+   "menu_order": 0,
+   "content_file": "posts/seo-vs-aeo-vs-geo.html",
+   "category": "Strategy",
+   "date": "2026-08-27"
+  },
+  {
+   "slug": "what-is-generative-engine-optimization",
+   "title": "What Is Generative Engine Optimization (GEO)? A Practical Guide for 2026",
+   "excerpt": "What GEO means, where the term came from, what the research says works, and a step-by-step plan to get your brand cited in ChatGPT, Gemini, Perplexity and AI Overviews.",
+   "meta_title": "What Is Generative Engine Optimization (GEO)? 2026 Guide",
+   "meta_description": "A practical guide to Generative Engine Optimization: what GEO is, what the KDD 2024 research found, how AI picks sources, and a step-by-step plan.",
+   "image": "cover-geo",
+   "menu_order": 0,
+   "content_file": "posts/what-is-generative-engine-optimization.html",
+   "category": "AI Search",
+   "date": "2026-08-18"
+  }
+ ],
+ "menus": {
+  "primary": [
+   {
+    "type": "page",
+    "slug": "home",
+    "title": "Home"
+   },
+   {
+    "type": "page",
+    "slug": "about",
+    "title": "About"
+   },
+   {
+    "type": "page",
+    "slug": "services",
+    "title": "Services",
+    "children": [
+     {
+      "type": "service",
+      "slug": "generative-engine-optimization",
+      "title": "Generative Engine Optimization"
+     },
+     {
+      "type": "service",
+      "slug": "answer-engine-optimization",
+      "title": "Answer Engine Optimization"
+     },
+     {
+      "type": "service",
+      "slug": "seo-services",
+      "title": "SEO Services"
+     },
+     {
+      "type": "service",
+      "slug": "technical-seo",
+      "title": "Technical SEO"
+     },
+     {
+      "type": "service",
+      "slug": "local-seo",
+      "title": "Local SEO"
+     },
+     {
+      "type": "service",
+      "slug": "ecommerce-seo",
+      "title": "E-commerce SEO"
+     },
+     {
+      "type": "service",
+      "slug": "content-marketing",
+      "title": "Content Marketing"
+     },
+     {
+      "type": "service",
+      "slug": "link-building-digital-pr",
+      "title": "Link Building and Digital PR"
+     },
+     {
+      "type": "service",
+      "slug": "google-ads-management",
+      "title": "Google Ads Management"
+     },
+     {
+      "type": "service",
+      "slug": "social-media-marketing",
+      "title": "Social Media Marketing"
+     },
+     {
+      "type": "service",
+      "slug": "website-design-development",
+      "title": "Website Design and Development"
+     },
+     {
+      "type": "service",
+      "slug": "conversion-rate-optimization",
+      "title": "Conversion Rate Optimization"
+     }
+    ]
+   },
+   {
+    "type": "page",
+    "slug": "approach",
+    "title": "Approach"
+   },
+   {
+    "type": "page",
+    "slug": "insights",
+    "title": "Insights"
+   },
+   {
+    "type": "page",
+    "slug": "faq",
+    "title": "FAQ"
+   },
+   {
+    "type": "page",
+    "slug": "contact",
+    "title": "Contact"
+   }
+  ],
+  "footer": [
+   {
+    "type": "page",
+    "slug": "about",
+    "title": "About AVENZA"
+   },
+   {
+    "type": "page",
+    "slug": "approach",
+    "title": "Our Approach"
+   },
+   {
+    "type": "page",
+    "slug": "services",
+    "title": "All Services"
+   },
+   {
+    "type": "page",
+    "slug": "insights",
+    "title": "Insights"
+   },
+   {
+    "type": "page",
+    "slug": "faq",
+    "title": "FAQ"
+   },
+   {
+    "type": "page",
+    "slug": "contact",
+    "title": "Contact"
+   }
+  ],
+  "legal": [
+   {
+    "type": "page",
+    "slug": "privacy-policy",
+    "title": "Privacy Policy"
+   },
+   {
+    "type": "page",
+    "slug": "terms",
+    "title": "Terms of Service"
+   }
+  ]
+ }
+}

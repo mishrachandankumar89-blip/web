@@ -1,0 +1,139 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": false,
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"custom": true,
+			"palette": [
+				{ "slug": "emerald", "name": "Emerald", "color": "#0A3A26" },
+				{ "slug": "emerald-deep", "name": "Emerald deep", "color": "#062A1B" },
+				{ "slug": "green", "name": "Green", "color": "#0F5C3B" },
+				{ "slug": "leaf", "name": "Leaf", "color": "#167A4E" },
+				{ "slug": "mint", "name": "Mint", "color": "#8FE3B5" },
+				{ "slug": "mint-wash", "name": "Mint wash", "color": "#EEF7F1" },
+				{ "slug": "ink", "name": "Ink", "color": "#0B2A1C" },
+				{ "slug": "body", "name": "Body text", "color": "#33463C" },
+				{ "slug": "white", "name": "White", "color": "#FFFFFF" }
+			]
+		},
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1240px"
+		},
+		"spacing": {
+			"blockGap": true,
+			"units": [ "px", "em", "rem", "%", "vw" ]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"name": "Cormorant Garamond",
+					"slug": "serif",
+					"fontFamily": "\"Cormorant Garamond\", Garamond, \"Times New Roman\", serif",
+					"fontFace": [
+						{
+							"fontFamily": "Cormorant Garamond",
+							"fontStyle": "normal",
+							"fontWeight": "500 700",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/cormorant-garamond-normal-latin.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Cormorant Garamond",
+							"fontStyle": "normal",
+							"fontWeight": "500 700",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/cormorant-garamond-normal-latin-ext.woff2" ],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Cormorant Garamond",
+							"fontStyle": "italic",
+							"fontWeight": "500 700",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/cormorant-garamond-italic-latin.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Cormorant Garamond",
+							"fontStyle": "italic",
+							"fontWeight": "500 700",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/cormorant-garamond-italic-latin-ext.woff2" ],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						}
+					]
+				},
+				{
+					"name": "Manrope",
+					"slug": "sans",
+					"fontFamily": "Manrope, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Manrope",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/manrope-normal-latin.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Manrope",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/manrope-normal-latin-ext.woff2" ],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "small", "name": "Small", "size": "0.9375rem" },
+				{ "slug": "medium", "name": "Medium", "size": "1.0625rem" },
+				{ "slug": "large", "name": "Large", "size": "1.25rem" },
+				{ "slug": "x-large", "name": "Extra large", "size": "clamp(1.6rem, 1.3rem + 1.2vw, 2.3rem)" },
+				{ "slug": "huge", "name": "Huge", "size": "clamp(2rem, 1.45rem + 2.2vw, 3.25rem)" }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#FFFFFF",
+			"text": "#33463C"
+		},
+		"spacing": {
+			"blockGap": "1.15em"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--sans)",
+			"fontSize": "1.0625rem",
+			"lineHeight": "1.7"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--serif)",
+					"fontWeight": "600",
+					"lineHeight": "1.1"
+				},
+				"color": {
+					"text": "#0B2A1C"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "#11724A"
+				}
+			}
+		}
+	}
+}

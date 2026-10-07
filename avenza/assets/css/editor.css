@@ -1,0 +1,142 @@
+/*
+ * Editor styles: enough of the front-end look that the block editor shows
+ * the emerald bands, headings and lists the way visitors see them.
+ */
+
+body {
+	color: #33463C;
+	font-family: Manrope, system-ui, sans-serif;
+	font-size: 17px;
+	line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+	color: #0B2A1C;
+	font-family: "Cormorant Garamond", Garamond, serif;
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+h1 em, h2 em, h3 em {
+	color: #167A4E;
+	font-weight: 500;
+}
+
+.avz-hero,
+.avz-section--dark,
+.avz-cta-band {
+	padding: 56px 32px;
+	background: #0A3A26;
+	color: #DCEBE2;
+}
+
+.avz-hero h1,
+.avz-hero h2,
+.avz-section--dark h2,
+.avz-section--dark h3,
+.avz-cta-band h2 {
+	color: #FFFFFF;
+}
+
+.avz-hero h1 em,
+.avz-cta-band h2 em,
+.avz-hero .avz-eyebrow,
+.avz-section--dark .avz-eyebrow,
+.avz-section--dark .avz-num,
+.avz-cta-band .avz-eyebrow {
+	color: #8FE3B5;
+}
+
+.avz-section {
+	padding: 56px 32px;
+}
+
+.avz-section--alt {
+	background: #EEF7F1;
+}
+
+.avz-answer {
+	padding: 28px 32px;
+	border: 1px solid #D5E6DB;
+	border-top: 3px solid #167A4E;
+	background: #FFFFFF;
+}
+
+.avz-eyebrow {
+	color: #167A4E;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.avz-num {
+	color: #167A4E;
+	font-family: "Cormorant Garamond", Garamond, serif;
+	font-size: 22px;
+	font-style: italic;
+}
+
+.avz-cta {
+	padding: 40px 24px;
+	border: 1px solid rgba(168, 235, 197, 0.55);
+	text-align: center;
+}
+
+.wp-block-button__link {
+	border-radius: 0;
+	background: #0F5C3B;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.avz-hero .wp-block-button__link,
+.avz-cta-band .wp-block-button__link,
+.avz-section--dark .wp-block-button__link {
+	background: #FFFFFF;
+	color: #0A3A26;
+}
+
+.is-style-outline > .wp-block-button__link {
+	background: transparent;
+	border: 1px solid currentColor;
+}
+
+ol.avz-steps {
+	list-style: upper-roman;
+}
+
+ol.avz-steps li::marker {
+	color: #167A4E;
+	font-family: "Cormorant Garamond", Garamond, serif;
+	font-style: italic;
+}
+
+ul.avz-grid-list li {
+	margin-bottom: 12px;
+	padding: 14px 18px;
+	border: 1px solid #D5E6DB;
+	list-style: none;
+}
+
+.wp-block-table th {
+	background: #0A3A26;
+	color: #FFFFFF;
+}
+
+.avz-faq summary {
+	color: #0B2A1C;
+	font-family: "Cormorant Garamond", Garamond, serif;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.avz-hero .is-style-outline > .wp-block-button__link,
+.avz-cta-band .is-style-outline > .wp-block-button__link,
+.avz-section--dark .is-style-outline > .wp-block-button__link {
+	border-color: rgba(255, 255, 255, 0.6);
+	color: #FFFFFF;
+}

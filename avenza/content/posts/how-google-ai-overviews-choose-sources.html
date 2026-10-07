@@ -1,0 +1,237 @@
+<!-- wp:group {"className":"avz-answer"} -->
+<div class="wp-block-group avz-answer"><!-- wp:paragraph {"className":"avz-eyebrow"} -->
+<p class="avz-eyebrow">The short answer</p>
+<!-- /wp:paragraph --><!-- wp:heading -->
+<h2 class="wp-block-heading">How does Google choose sources for AI Overviews?</h2>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>Google says AI Overviews and AI Mode link to pages that are indexed and eligible to show a snippet in Search, chosen by its core ranking systems. They may run several related searches, a technique Google calls query fan-out, then link to pages that support the answer. There are no extra technical requirements beyond normal SEO.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>AI Overviews now sit at the top of many Google results pages, and AI Mode offers a full conversational search experience. For businesses, the question is practical: why does Google link to some pages in these answers and not others?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>There is a lot of speculation about this. This article sticks to what Google has published, what independent research has measured, and what follows from both.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A short history, with India in focus</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Google launched AI Overviews in the United States in May 2024. In August 2024 it expanded them to India and five other countries, offering them in English and Hindi with a toggle between the two. By late 2024 they were available in more than 100 countries.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>AI Mode followed in 2025. Google launched it in India through Search Labs on 24 June 2025, in English, then opened it to all users. Hindi support arrived later in 2025, and in October 2025 Google expanded AI Mode to more Indian languages and brought Search Live, which lets people talk to Search using their camera and voice, to India.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The scale is now enormous. At Google I/O in May 2026, Google said AI Overviews reach more than 2.5 billion monthly users and AI Mode has passed one billion.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What Google says about eligibility</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Google's documentation page "AI features and your website" is the primary source here, and its message is consistent:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>To be shown as a supporting link in AI Overviews or AI Mode, a page must be <strong>indexed and eligible to be shown in Google Search with a snippet</strong>.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>There are <strong>no additional technical requirements</strong> and no special optimizations needed.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>The usual <strong>SEO best practices</strong> apply: technical requirements, Search policies and helpful, reliable, people-first content.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>In other words, Google is not running a separate selection process with secret rules. AI features draw from the same index and lean on the same ranking systems as regular results.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Google repeated this in May 2026, when it published a dedicated guide to optimizing for its generative AI features. The guide says SEO best practices stay relevant because these features are rooted in Google's core ranking and quality systems, and that they use techniques such as retrieval-augmented generation and query fan-out to highlight content from the Search index. It puts the emphasis on valuable, unique, non-commodity content, and it busts a few popular myths: you do not need to rewrite pages specially for AI, you do not need to cut content into small chunks, and an llms.txt file gets no special treatment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Query fan-out: why you can appear for questions you do not rank for</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>One detail in Google's documentation changes how you should think about visibility. Google says AI Overviews and AI Mode may use a <strong>query fan-out</strong> technique: issuing multiple related searches across subtopics and data sources to develop a response.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A question like "best way to reduce rent costs for a small office in Bengaluru" might trigger separate searches about co-working pricing, lease negotiation, tax rules and neighbourhood comparisons. The answer is assembled from the best results for each.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This has two consequences:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Depth on subtopics matters.</strong> A page that clearly answers one narrow sub-question can be linked even if it would never rank for the full original query.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Clarity beats fragmentation.</strong> Google says its systems can find the relevant passage in a longer, multi-topic page, so there is no need to split articles into tiny pieces. Clear headings and direct answers still help readers, and they make the right passage easy to find.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:image {"id":{{img_id:diagram-flow}},"sizeSlug":"large","linkDestination":"none","className":"avz-figure"} -->
+<figure class="wp-block-image size-large avz-figure"><img src="{{img_src:diagram-flow}}" alt="Diagram of five steps from question to citation" class="wp-image-{{img_id:diagram-flow}}"/><figcaption class="wp-element-caption">A simplified model of how AI search builds an answer from many searches.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The controls you have</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Because AI features use the same index, the same controls apply. Google documents these:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"avz-table"} -->
+<figure class="wp-block-table avz-table"><table class="has-fixed-layout"><thead><tr><th>Control</th><th>What it does</th><th>Use it when</th></tr></thead><tbody><tr><td><code>noindex</code></td><td>Removes a page from Search, including AI features</td><td>The page should not appear anywhere in Search</td></tr><tr><td><code>nosnippet</code></td><td>Stops text snippets, which also stops use in AI features</td><td>You want a listing without any extracted text</td></tr><tr><td><code>data-nosnippet</code></td><td>Excludes a specific part of a page from snippets</td><td>Hide one section, such as pricing behind a login</td></tr><tr><td><code>max-snippet</code></td><td>Limits how much text can be used as a snippet</td><td>You want shorter extracts</td></tr><tr><td>Google-Extended</td><td>A robots.txt token for Gemini model use</td><td>Controls Gemini training and grounding, not Search ranking</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>A common mistake is to add <code>nosnippet</code> or a very low <code>max-snippet</code> value to "protect" content, then wonder why the site never appears in AI answers. Another is assuming that blocking Google-Extended removes a site from AI Overviews; Google's documentation describes Google-Extended as a control for Gemini models, while Search features are governed by Googlebot and the snippet controls above.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What tends to get linked</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Google does not publish a ranking formula for AI features, but its guidance and the broader research point the same way. Pages that get linked tend to:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Answer a specific question clearly</strong>, near the top of a section, in plain language.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Add something original</strong>: data, first-hand experience, examples or expert judgement.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Show who is behind them</strong>: a real business, named authors or reviewers, and contact details.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Cite their own sources</strong>, so the claims can be checked.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Load fast and render cleanly</strong>, with content in HTML rather than hidden behind scripts.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The research paper that coined the term Generative Engine Optimization, presented at KDD 2024, found that adding statistics, quotations and citations made content noticeably more visible in AI-generated answers, while keyword stuffing did not help. That lines up with Google's long-standing advice on helpful content.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to measure your visibility in AI features</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Measurement has improved a lot. In June 2026 Google introduced <strong>Search generative AI performance reports</strong> in Search Console, and made them available worldwide at the end of August 2026. They show how often links to your site were shown in AI Overviews and AI Mode, with breakdowns by page, country, device and date. The report counts impressions, not clicks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Combine that with:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Google Analytics 4</strong> for visits and enquiries landing on the pages that appear in AI features.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Manual or tool-based checks</strong> of your priority questions, recording which pages Google links to and which competitors appear.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Search Console's standard performance report</strong>, which still shows clicks and queries for the same pages.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What about clicks?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>AI answers change click behaviour. Pew Research Center analysed the real browsing activity of 900 US adults in 2025 and found that users who saw an AI summary clicked a traditional result on 8 percent of visits, compared with 15 percent without one, and clicked a link inside the summary on just 1 percent.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That does not make AI features worthless for businesses. It changes what winning looks like. Being linked in the overview puts your brand in front of the searcher at the moment they form a view, and the visits that do come through are often further along in their decision. The strategy is to be present in the answer and to make the pages people land on convert well.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A practical checklist</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Confirm your key pages are indexed in Search Console and have no <code>nosnippet</code> or restrictive <code>max-snippet</code> rules.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Check your robots.txt, CDN and firewall rules do not block Googlebot or render resources.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Rewrite priority pages so each section opens with a direct answer to one question.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Add evidence: data, examples, expert quotes and links to primary sources.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Cover the subtopics your buyers ask about, so you can match fan-out searches.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Keep business details, authorship and contact information clear and consistent.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Track the generative AI performance report monthly alongside conversions.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Frequently asked questions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"avz-faq"} -->
+<div class="wp-block-group avz-faq"><!-- wp:details -->
+<details class="wp-block-details"><summary>Can I pay to appear in AI Overviews?</summary><!-- wp:paragraph -->
+<p>Organic links in AI Overviews cannot be bought. Google does show ads in and around AI Overviews in some markets, but those are labelled ads managed through Google Ads, separate from the organic sources.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Does structured data help me get into AI Overviews?</summary><!-- wp:paragraph -->
+<p>Google does not list structured data as a requirement. It helps Google understand your pages, so it supports eligibility indirectly, but visible, helpful content is what earns the link.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Will blocking Google-Extended remove my site from AI Overviews?</summary><!-- wp:paragraph -->
+<p>Google describes Google-Extended as a control for its Gemini models, separate from Search. Appearance in AI Overviews and AI Mode is governed by normal Search indexing and snippet controls.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Why does Google link to a page that does not rank on page one?</summary><!-- wp:paragraph -->
+<p>Because of query fan-out. Google may run related searches for subtopics of your question and link to the best page for each, even if that page does not rank for the original query.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Our <a href="{{link:service:answer-engine-optimization}}">Answer Engine Optimization</a> and <a href="{{link:service:generative-engine-optimization}}">Generative Engine Optimization</a> services apply this checklist to your most valuable pages.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sources</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"avz-sources"} -->
+<ol class="wp-block-list avz-sources"><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/docs/appearance/ai-features">AI features and your website</a>. Google Search Central.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing">A new resource for optimizing for generative AI in Google Search</a>. Google Search Central Blog, May 2026.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports">Introducing Search generative AI performance reports in Search Console</a>. Google Search Central Blog, June 2026.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://blog.google/intl/en-in/products/google-search-introducing-ai-mode-in-india/">Google Search: Introducing AI Mode in India</a>. Google India Blog, 2025.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://blog.google/intl/en-in/products/explore-communicate/expanding-the-helpfulness-of-ai-overviews/">Expanding the helpfulness of AI Overviews</a>. Google India Blog, August 2024.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers">Google's common crawlers, including Google-Extended</a>. Google Search Central.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag">Robots meta tag, data-nosnippet and X-Robots-Tag specifications</a>. Google Search Central.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Google users are less likely to click on links when an AI summary appears in the results</a>. Pew Research Center.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->

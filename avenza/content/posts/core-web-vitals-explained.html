@@ -1,0 +1,201 @@
+<!-- wp:group {"className":"avz-answer"} -->
+<div class="wp-block-group avz-answer"><!-- wp:paragraph {"className":"avz-eyebrow"} -->
+<p class="avz-eyebrow">The short answer</p>
+<!-- /wp:paragraph --><!-- wp:heading -->
+<h2 class="wp-block-heading">What are Core Web Vitals?</h2>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>Core Web Vitals are three Google metrics that measure real visitors' experience of a page. Largest Contentful Paint measures loading and is good at 2.5 seconds or less. Interaction to Next Paint measures responsiveness and is good at 200 milliseconds or less. Cumulative Layout Shift measures visual stability and is good at 0.1 or less.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Most business owners have been told their website is "slow" at some point, usually with a red score from a speed test and no explanation of what it means. Core Web Vitals turn that vague complaint into three clear measurements, each tied to something a visitor actually feels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This guide explains each one, how Google uses them, how to check your own site, and which fixes matter most.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why speed is a business issue first</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Search rankings are only part of the story. A study commissioned by Google and carried out by Deloitte Digital, called "Milliseconds Make Millions", analysed 30 million mobile sessions across retail, travel, luxury and lead generation brands. It found that improving mobile site speed by just 0.1 seconds raised conversion rates by 8.4 percent for retail sites and 10.1 percent for travel sites.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In India, where most browsing happens on mobile phones and network quality varies widely between cities and towns, a heavy page loses visitors before they see your offer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The three Core Web Vitals</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Google assesses each metric at the 75th percentile of real page loads, split by mobile and desktop. That means three out of four visits need to meet the "good" threshold for a page to pass.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"className":"avz-table"} -->
+<figure class="wp-block-table avz-table"><table class="has-fixed-layout"><thead><tr><th>Metric</th><th>What it measures</th><th>Good</th><th>Needs improvement</th><th>Poor</th></tr></thead><tbody><tr><td>Largest Contentful Paint (LCP)</td><td>How quickly the main content appears</td><td>2.5 s or less</td><td>2.5 to 4 s</td><td>Over 4 s</td></tr><tr><td>Interaction to Next Paint (INP)</td><td>How quickly the page responds to taps and clicks</td><td>200 ms or less</td><td>200 to 500 ms</td><td>Over 500 ms</td></tr><tr><td>Cumulative Layout Shift (CLS)</td><td>How much the layout jumps while loading</td><td>0.1 or less</td><td>0.1 to 0.25</td><td>Over 0.25</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Largest Contentful Paint: does it load?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>LCP marks the moment the largest visible element, usually a hero image or a large heading, finishes rendering. Slow LCP is usually caused by a slow server, a heavy hero image, render-blocking CSS and JavaScript, or web fonts that hold back text.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Interaction to Next Paint: does it respond?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>INP replaced First Input Delay as a Core Web Vital in March 2024. It looks at the delay between a visitor's interactions, such as tapping a menu or a button, and the next visual update, across the whole visit. Poor INP is almost always caused by too much JavaScript running on the main thread: heavy themes, page builders, chat widgets, trackers and third-party scripts.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Cumulative Layout Shift: does it stay still?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>CLS adds up unexpected movements of content while the page loads. You have felt it when you go to tap a link and the page jumps, so you tap an advert instead. Causes include images without set dimensions, ads and embeds without reserved space, late-loading fonts and banners inserted above content.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How much do Core Web Vitals affect rankings?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Core Web Vitals are part of Google's page experience signals. Google has been clear that relevance and helpful content matter more: a fast page with thin content will not outrank a slower page that answers the question better. Think of good Core Web Vitals as removing a handicap rather than winning the race on their own. The commercial benefit, more visitors staying and converting, is usually the bigger prize.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to check your site</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>PageSpeed Insights</strong> (pagespeed.web.dev) shows field data from real Chrome users, when Google has enough of it, plus a lab test with specific suggestions.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Search Console's Core Web Vitals report</strong> groups your URLs into good, needs improvement and poor, for mobile and desktop.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>The Chrome UX Report</strong> offers deeper historical field data for developers.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Real user monitoring</strong> in your own analytics can show performance for specific pages and audiences.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Always prioritise field data, which reflects your real visitors, over a single lab score.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The fixes that matter most</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">For LCP</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Serve images in modern formats such as WebP or AVIF, sized for the screen.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Do not lazy-load the hero image; mark it as high priority instead.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Use fast hosting and page caching, with a CDN for visitors across regions.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Self-host or preload critical fonts and use <code>font-display: swap</code>.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Remove render-blocking CSS and scripts that are not needed above the fold.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">For INP</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Remove plugins, widgets and trackers you do not truly need.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Defer non-essential JavaScript and load third-party scripts after interaction where possible.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Avoid heavy page builders on key templates; native blocks are far lighter.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Break up long tasks so the browser can respond between them.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">For CLS</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Set width and height on every image and video.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Reserve space for ads, embeds and cookie banners.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Load fonts in a way that does not reflow text dramatically.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Never insert banners or notices above content after the page has started rendering.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A quick win list for WordPress sites</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table {"className":"avz-table"} -->
+<figure class="wp-block-table avz-table"><table class="has-fixed-layout"><thead><tr><th>Problem</th><th>Fix</th></tr></thead><tbody><tr><td>Ten or more plugins loading scripts on every page</td><td>Remove unused plugins; load the rest only where needed</td></tr><tr><td>Page builder on every page</td><td>Rebuild key templates with native blocks</td></tr><tr><td>Large JPEG hero images</td><td>Convert to WebP and size correctly</td></tr><tr><td>Google Fonts loaded from an external server</td><td>Self-host the two or three weights you use</td></tr><tr><td>No page caching</td><td>Enable server or plugin caching</td></tr><tr><td>Chat widget loading on every page instantly</td><td>Load it after the first interaction or a short delay</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Frequently asked questions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"avz-faq"} -->
+<div class="wp-block-group avz-faq"><!-- wp:details -->
+<details class="wp-block-details"><summary>Why is my lab score bad when field data passes?</summary><!-- wp:paragraph -->
+<p>Lab tests simulate a mid-range phone on a slow network, which is deliberately harsh. Field data reflects your real visitors. If field data passes, you are in good shape, though the lab report can still point to useful improvements.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Does Core Web Vitals data exist for every site?</summary><!-- wp:paragraph -->
+<p>No. Field data appears only when enough Chrome users visit a page or site. Smaller sites may see data only at the site level, or only lab results.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Will a faster site automatically rank higher?</summary><!-- wp:paragraph -->
+<p>Not automatically. Speed removes a disadvantage, but relevance, content quality and authority decide most rankings. The bigger benefit of speed is usually better conversion.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --><!-- wp:details -->
+<details class="wp-block-details"><summary>Is INP important for simple brochure websites?</summary><!-- wp:paragraph -->
+<p>Yes, because menus, forms and accordions all depend on it. Simple sites often pass easily, unless a heavy theme or third-party scripts slow every interaction.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>If your site is struggling with any of these, our <a href="{{link:service:technical-seo}}">Technical SEO</a> and <a href="{{link:service:website-design-development}}">Website Design and Development</a> services can help.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sources</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"avz-sources"} -->
+<ol class="wp-block-list avz-sources"><!-- wp:list-item -->
+<li><a href="https://web.dev/articles/vitals">Web Vitals</a>. web.dev, Google.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://web.dev/blog/inp-cwv-launch">Interaction to Next Paint becomes a Core Web Vital</a>. web.dev, March 2024.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://web.dev/case-studies/milliseconds-make-millions">Milliseconds make millions</a>. Deloitte Digital for Google.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://developers.google.com/search/docs/appearance/core-web-vitals">Understanding Core Web Vitals and Google search results</a>. Google Search Central.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="https://support.google.com/webmasters/answer/9205520">Core Web Vitals report</a>. Search Console Help.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->

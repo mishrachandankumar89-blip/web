@@ -1,0 +1,80 @@
+{
+ "version": "1.4.0",
+ "site": {
+  "title": "AVENZA",
+  "tagline": "Be the answer, not just a result."
+ },
+ "front_page": "home",
+ "posts_page": "insights",
+ "cta": {
+  "heading": "Ready to become the *answer*?",
+  "text": "Tell us where you want to be found. We will show you where you stand today in Google and in AI answers, and what it will take to move.",
+  "primary": "Book a Strategy Call",
+  "secondary": "Call +91 96809 51099",
+  "secondary_url": "tel:+919680951099"
+ },
+ "images": [
+  { "key": "plate-01", "file": "art/plate-01-geo.webp", "title": "N° 01 Generative Engine Optimization", "alt": "Engraved emerald plate numbered 01 with a spark symbol in a guilloche medallion, for Generative Engine Optimization" },
+  { "key": "plate-02", "file": "art/plate-02-aeo.webp", "title": "N° 02 Answer Engine Optimization", "alt": "Engraved emerald plate numbered 02 with a speech bubble and check mark, for Answer Engine Optimization" },
+  { "key": "plate-03", "file": "art/plate-03-seo.webp", "title": "N° 03 Search Engine Optimization", "alt": "Engraved emerald plate numbered 03 with a magnifying glass and rising line, for Search Engine Optimization" },
+  { "key": "plate-04", "file": "art/plate-04-technical-seo.webp", "title": "N° 04 Technical SEO", "alt": "Engraved emerald plate numbered 04 with a gear and code brackets, for Technical SEO" },
+  { "key": "plate-05", "file": "art/plate-05-local-seo.webp", "title": "N° 05 Local SEO", "alt": "Engraved emerald plate numbered 05 with a map pin, for Local SEO" },
+  { "key": "plate-06", "file": "art/plate-06-ecommerce-seo.webp", "title": "N° 06 E-commerce SEO", "alt": "Engraved emerald plate numbered 06 with a shopping bag, for E-commerce SEO" },
+  { "key": "plate-07", "file": "art/plate-07-content.webp", "title": "N° 07 Content Marketing", "alt": "Engraved emerald plate numbered 07 with a quill pen, for Content Marketing" },
+  { "key": "plate-08", "file": "art/plate-08-digital-pr.webp", "title": "N° 08 Link Building and Digital PR", "alt": "Engraved emerald plate numbered 08 with two linked chain loops, for Link Building and Digital PR" },
+  { "key": "plate-09", "file": "art/plate-09-google-ads.webp", "title": "N° 09 Google Ads Management", "alt": "Engraved emerald plate numbered 09 with a target and arrow, for Google Ads management" },
+  { "key": "plate-10", "file": "art/plate-10-social.webp", "title": "N° 10 Social Media Marketing", "alt": "Engraved emerald plate numbered 10 with three connected share nodes, for Social Media Marketing" },
+  { "key": "plate-11", "file": "art/plate-11-web-design.webp", "title": "N° 11 Website Design and Development", "alt": "Engraved emerald plate numbered 11 with a browser window layout, for Website Design and Development" },
+  { "key": "plate-12", "file": "art/plate-12-cro.webp", "title": "N° 12 Conversion Rate Optimization", "alt": "Engraved emerald plate numbered 12 with a funnel, for Conversion Rate Optimization" },
+  { "key": "hero-home", "file": "art/hero-home.webp", "title": "AVENZA engraved monogram plate", "alt": "Emerald engraved plate with fine white guilloche rings around the AVENZA A monogram" },
+  { "key": "hero-about", "file": "art/hero-about.webp", "title": "About AVENZA plate", "alt": "Emerald engraved plate with a compass rose at the centre of a guilloche rosette" },
+  { "key": "hero-approach", "file": "art/hero-approach.webp", "title": "AVENZA approach plate", "alt": "Emerald engraved plate with rising steps and an arrow inside a guilloche medallion" },
+  { "key": "hero-services", "file": "art/hero-services.webp", "title": "AVENZA services plate", "alt": "Emerald engraved plate with a grid of nine diamonds representing the service range" },
+  { "key": "hero-contact", "file": "art/hero-contact.webp", "title": "Contact AVENZA plate", "alt": "Emerald engraved plate with an envelope symbol inside a guilloche medallion" },
+  { "key": "hero-faq", "file": "art/hero-faq.webp", "title": "AVENZA FAQ plate", "alt": "Emerald engraved plate with a question mark inside a guilloche medallion" },
+  { "key": "cover-geo", "file": "art/cover-what-is-generative-engine-optimization.webp", "title": "What is Generative Engine Optimization", "alt": "White and green engraved cover with a spark symbol in an emerald medallion, for the guide to Generative Engine Optimization" },
+  { "key": "cover-seo-aeo-geo", "file": "art/cover-seo-vs-aeo-vs-geo.webp", "title": "SEO vs AEO vs GEO", "alt": "White and green engraved cover with three overlapping circles, comparing SEO, AEO and GEO" },
+  { "key": "cover-ai-overviews", "file": "art/cover-how-google-ai-overviews-choose-sources.webp", "title": "How Google AI Overviews choose sources", "alt": "White and green engraved cover with a magnifying glass holding a spark, for the article on AI Overviews sources" },
+  { "key": "cover-ai-crawlers", "file": "art/cover-llms-txt-robots-txt-ai-crawlers.webp", "title": "llms.txt, robots.txt and AI crawlers", "alt": "White and green engraved cover with a document showing code lines, for the guide to llms.txt and AI crawlers" },
+  { "key": "cover-local-seo", "file": "art/cover-local-seo-for-indian-businesses.webp", "title": "Local SEO for Indian businesses", "alt": "White and green engraved cover with a map pin, for the local SEO guide for Indian businesses" },
+  { "key": "cover-cwv", "file": "art/cover-core-web-vitals-explained.webp", "title": "Core Web Vitals explained", "alt": "White and green engraved cover with a speed gauge, for the Core Web Vitals guide" },
+  { "key": "diagram-stack", "file": "art/diagram-visibility-stack.webp", "title": "The AVENZA visibility stack", "alt": "Diagram of five stacked layers: technical foundation, content and entities, authority and mentions, answer formatting, and AI visibility at the top" },
+  { "key": "diagram-flow", "file": "art/diagram-question-to-citation.webp", "title": "From question to citation", "alt": "Diagram of five steps an AI assistant follows: question, retrieval, selection, synthesis and citation" }
+ ],
+ "menus": {
+  "primary": [
+   { "type": "page", "slug": "home", "title": "Home" },
+   { "type": "page", "slug": "about", "title": "About" },
+   { "type": "page", "slug": "services", "title": "Services", "children": [
+    { "type": "service", "slug": "generative-engine-optimization", "title": "Generative Engine Optimization" },
+    { "type": "service", "slug": "answer-engine-optimization", "title": "Answer Engine Optimization" },
+    { "type": "service", "slug": "seo-services", "title": "SEO Services" },
+    { "type": "service", "slug": "technical-seo", "title": "Technical SEO" },
+    { "type": "service", "slug": "local-seo", "title": "Local SEO" },
+    { "type": "service", "slug": "ecommerce-seo", "title": "E-commerce SEO" },
+    { "type": "service", "slug": "content-marketing", "title": "Content Marketing" },
+    { "type": "service", "slug": "link-building-digital-pr", "title": "Link Building and Digital PR" },
+    { "type": "service", "slug": "google-ads-management", "title": "Google Ads Management" },
+    { "type": "service", "slug": "social-media-marketing", "title": "Social Media Marketing" },
+    { "type": "service", "slug": "website-design-development", "title": "Website Design and Development" },
+    { "type": "service", "slug": "conversion-rate-optimization", "title": "Conversion Rate Optimization" }
+   ] },
+   { "type": "page", "slug": "approach", "title": "Approach" },
+   { "type": "page", "slug": "insights", "title": "Insights" },
+   { "type": "page", "slug": "faq", "title": "FAQ" },
+   { "type": "page", "slug": "contact", "title": "Contact" }
+  ],
+  "footer": [
+   { "type": "page", "slug": "about", "title": "About AVENZA" },
+   { "type": "page", "slug": "approach", "title": "Our Approach" },
+   { "type": "page", "slug": "services", "title": "All Services" },
+   { "type": "page", "slug": "insights", "title": "Insights" },
+   { "type": "page", "slug": "faq", "title": "FAQ" },
+   { "type": "page", "slug": "contact", "title": "Contact" }
+  ],
+  "legal": [
+   { "type": "page", "slug": "privacy-policy", "title": "Privacy Policy" },
+   { "type": "page", "slug": "terms", "title": "Terms of Service" }
+  ]
+ }
+}
