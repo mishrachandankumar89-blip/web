@@ -3,6 +3,7 @@ title: Answer Engine Optimization (AEO)
 slug: answer-engine-optimization
 number: 02
 menu_order: 2
+category: ai-search
 image: plate-02
 excerpt: Structure your pages so Google, voice assistants and AI tools can lift a clear answer from them, and credit you for it.
 meta_title: Answer Engine Optimization (AEO) Services | AVENZA

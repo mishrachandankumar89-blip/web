@@ -31,6 +31,10 @@ function avenza_meta_title() {
 	if ( is_home() && get_option( 'page_for_posts' ) ) {
 		return (string) get_post_meta( (int) get_option( 'page_for_posts' ), '_avenza_meta_title', true );
 	}
+	if ( is_tax( 'avenza_service_cat' ) ) {
+		/* translators: %s: discipline name */
+		return sprintf( __( '%s Services | AVENZA', 'avenza' ), single_term_title( '', false ) );
+	}
 	return '';
 }
 
@@ -49,7 +53,7 @@ function avenza_meta_description() {
 		}
 	} elseif ( is_home() && get_option( 'page_for_posts' ) ) {
 		$desc = get_post_meta( (int) get_option( 'page_for_posts' ), '_avenza_meta_desc', true );
-	} elseif ( is_category() || is_tag() ) {
+	} elseif ( is_category() || is_tag() || is_tax( 'avenza_service_cat' ) ) {
 		$desc = term_description();
 	}
 	if ( ! $desc && is_front_page() ) {

@@ -1,5 +1,77 @@
 {
- "version": "1.4.0",
+ "version": "1.5.0",
+ "service_categories": [
+  {
+   "slug": "ai-search",
+   "name": "AI Search and GEO",
+   "short": "Get your brand found, trusted and cited in ChatGPT, Gemini, Perplexity, Copilot and Google AI Overviews.",
+   "description": "AVENZA's AI search services make your business easy for AI assistants to find, trust and quote. We combine technical access for AI crawlers, consistent facts about your brand, answer-first pages backed by evidence, and mentions on trusted sites, then measure how often assistants cite you against competitors.",
+   "image": "cat-ai-search"
+  },
+  {
+   "slug": "seo",
+   "name": "SEO",
+   "short": "Rank for the searches that bring revenue, with technical, content, local and platform-specific SEO.",
+   "description": "AVENZA's SEO services help your pages rank for the searches that lead to enquiries and sales. The work covers research into what buyers search for, technical fixes so pages can be crawled and indexed, content that answers each search fully, internal links and authority, all reported against leads rather than traffic alone.",
+   "image": "cat-seo"
+  },
+  {
+   "slug": "content",
+   "name": "Content Marketing",
+   "short": "Research-led writing built with your experts, so people trust it, search engines rank it and AI tools quote it.",
+   "description": "AVENZA's content services plan, write and refresh the pages, articles and assets your buyers read before they decide. Every piece starts from a real question, draws on interviews with your specialists, cites its sources and is structured so readers, search engines and AI assistants can use it easily.",
+   "image": "cat-content"
+  },
+  {
+   "slug": "digital-pr",
+   "name": "Digital PR and Reputation",
+   "short": "Earn the links, mentions and reviews that prove your expertise to buyers, search engines and AI assistants.",
+   "description": "AVENZA's digital PR and reputation services build the outside proof that search engines and AI assistants rely on. We earn coverage and links through data stories and expert commentary, fix listings and citations, and help you collect and answer reviews, always within the rules of Google and each platform.",
+   "image": "cat-digital-pr"
+  },
+  {
+   "slug": "paid-media",
+   "name": "Paid Media and PPC",
+   "short": "Search, Shopping, video and marketplace ads run against tracked leads and revenue, not clicks.",
+   "description": "AVENZA's paid media services plan, build and manage advertising on Google, Microsoft, YouTube, Amazon and programmatic networks. Every account starts with accurate conversion tracking, then campaigns are structured by intent, written to match each search and tuned every week against cost per lead or return on ad spend.",
+   "image": "cat-paid-media"
+  },
+  {
+   "slug": "social",
+   "name": "Social Media Marketing",
+   "short": "Organic content, short video, creators and paid social on the platforms your buyers actually use.",
+   "description": "AVENZA's social media services build demand where buyers first discover brands. We plan content around your audience, produce short video and posts with your team, manage communities and run paid campaigns on Meta, LinkedIn, YouTube and Pinterest, with tracking that ties results to enquiries and sales.",
+   "image": "cat-social"
+  },
+  {
+   "slug": "web",
+   "name": "Websites and Development",
+   "short": "Fast, accessible websites and stores, built clean for search and AI crawlers and easy for your team to edit.",
+   "description": "AVENZA's website services design, build, speed up and look after websites and online stores on WordPress, WooCommerce, Shopify and modern frameworks. Every build is mobile-first, accessible to WCAG 2.2, technically clean for search and AI crawlers, and handed over with training so your team can edit it.",
+   "image": "cat-web"
+  },
+  {
+   "slug": "cro-analytics",
+   "name": "CRO and Analytics",
+   "short": "Measure what matters, find where visitors leave, and turn more of them into leads and customers.",
+   "description": "AVENZA's conversion and analytics services make sure every enquiry and sale is measured correctly, then find and fix what stops visitors from acting. The work covers GA4 and tag setup, dashboards, call and conversion tracking, attribution, user research, landing page and checkout improvements, and honest A/B testing.",
+   "image": "cat-cro-analytics"
+  },
+  {
+   "slug": "email-automation",
+   "name": "Email and Automation",
+   "short": "Email, SMS and CRM automation that nurtures leads and brings customers back, sent with consent.",
+   "description": "AVENZA's email and automation services set up and run the messages that turn enquiries into customers and customers into repeat buyers. We plan journeys, write and design emails, connect your CRM and forms, handle deliverability and consent, and report on revenue and pipeline rather than open rates alone.",
+   "image": "cat-email-automation"
+  },
+  {
+   "slug": "ecommerce-growth",
+   "name": "E-commerce and Marketplaces",
+   "short": "Grow sales on your own store and on Amazon and Flipkart, with clean feeds, strong listings and sharp offers.",
+   "description": "AVENZA's e-commerce growth services help brands sell more on their own store and on marketplaces such as Amazon and Flipkart. We manage listings, product feeds, store setup, pricing visibility and customer journeys, and connect marketplace data with your own analytics so you can see what truly drives profit.",
+   "image": "cat-ecommerce-growth"
+  }
+ ],
  "site": {
   "title": "AVENZA",
   "tagline": "Be the answer, not just a result."
@@ -162,6 +234,642 @@
    "file": "art/diagram-question-to-citation.webp",
    "alt": "Diagram of five steps an AI assistant follows: question, retrieval, selection, synthesis and citation",
    "title": "From question to citation"
+  },
+  {
+   "key": "plate-013",
+   "file": "art/svc/plate-013.webp",
+   "alt": "Engraved emerald plate numbered 13 with a spark, for Google AI Overviews Optimization",
+   "title": "N° 13 Google AI Overviews Optimization"
+  },
+  {
+   "key": "plate-014",
+   "file": "art/svc/plate-014.webp",
+   "alt": "Engraved emerald plate numbered 14 with a spark, for ChatGPT SEO",
+   "title": "N° 14 ChatGPT SEO"
+  },
+  {
+   "key": "plate-015",
+   "file": "art/svc/plate-015.webp",
+   "alt": "Engraved emerald plate numbered 15 with a spark, for Perplexity SEO",
+   "title": "N° 15 Perplexity SEO"
+  },
+  {
+   "key": "plate-016",
+   "file": "art/svc/plate-016.webp",
+   "alt": "Engraved emerald plate numbered 16 with a spark, for Gemini and AI Mode Optimization",
+   "title": "N° 16 Gemini and AI Mode Optimization"
+  },
+  {
+   "key": "plate-017",
+   "file": "art/svc/plate-017.webp",
+   "alt": "Engraved emerald plate numbered 17 with a spark, for Microsoft Copilot and Bing AI Optimization",
+   "title": "N° 17 Microsoft Copilot and Bing AI Optimization"
+  },
+  {
+   "key": "plate-018",
+   "file": "art/svc/plate-018.webp",
+   "alt": "Engraved emerald plate numbered 18 with a spark, for AI Visibility Audit",
+   "title": "N° 18 AI Visibility Audit"
+  },
+  {
+   "key": "plate-019",
+   "file": "art/svc/plate-019.webp",
+   "alt": "Engraved emerald plate numbered 19 with a spark, for AI Brand Monitoring",
+   "title": "N° 19 AI Brand Monitoring"
+  },
+  {
+   "key": "plate-020",
+   "file": "art/svc/plate-020.webp",
+   "alt": "Engraved emerald plate numbered 20 with a spark, for Entity SEO and Knowledge Graph",
+   "title": "N° 20 Entity SEO and Knowledge Graph"
+  },
+  {
+   "key": "plate-021",
+   "file": "art/svc/plate-021.webp",
+   "alt": "Engraved emerald plate numbered 21 with a spark, for AI Crawler and llms.txt Setup",
+   "title": "N° 21 AI Crawler and llms.txt Setup"
+  },
+  {
+   "key": "plate-022",
+   "file": "art/svc/plate-022.webp",
+   "alt": "Engraved emerald plate numbered 22 with a magnifying glass, for Enterprise SEO",
+   "title": "N° 22 Enterprise SEO"
+  },
+  {
+   "key": "plate-023",
+   "file": "art/svc/plate-023.webp",
+   "alt": "Engraved emerald plate numbered 23 with a magnifying glass, for SEO Audit",
+   "title": "N° 23 SEO Audit"
+  },
+  {
+   "key": "plate-024",
+   "file": "art/svc/plate-024.webp",
+   "alt": "Engraved emerald plate numbered 24 with a magnifying glass, for Keyword Research",
+   "title": "N° 24 Keyword Research"
+  },
+  {
+   "key": "plate-025",
+   "file": "art/svc/plate-025.webp",
+   "alt": "Engraved emerald plate numbered 25 with a magnifying glass, for On-Page SEO",
+   "title": "N° 25 On-Page SEO"
+  },
+  {
+   "key": "plate-026",
+   "file": "art/svc/plate-026.webp",
+   "alt": "Engraved emerald plate numbered 26 with a magnifying glass, for Multilingual and International SEO",
+   "title": "N° 26 Multilingual and International SEO"
+  },
+  {
+   "key": "plate-027",
+   "file": "art/svc/plate-027.webp",
+   "alt": "Engraved emerald plate numbered 27 with a magnifying glass, for Mobile SEO",
+   "title": "N° 27 Mobile SEO"
+  },
+  {
+   "key": "plate-028",
+   "file": "art/svc/plate-028.webp",
+   "alt": "Engraved emerald plate numbered 28 with a magnifying glass, for Voice Search Optimization",
+   "title": "N° 28 Voice Search Optimization"
+  },
+  {
+   "key": "plate-029",
+   "file": "art/svc/plate-029.webp",
+   "alt": "Engraved emerald plate numbered 29 with a magnifying glass, for Shopify SEO",
+   "title": "N° 29 Shopify SEO"
+  },
+  {
+   "key": "plate-030",
+   "file": "art/svc/plate-030.webp",
+   "alt": "Engraved emerald plate numbered 30 with a magnifying glass, for WordPress SEO",
+   "title": "N° 30 WordPress SEO"
+  },
+  {
+   "key": "plate-031",
+   "file": "art/svc/plate-031.webp",
+   "alt": "Engraved emerald plate numbered 31 with a magnifying glass, for B2B SEO",
+   "title": "N° 31 B2B SEO"
+  },
+  {
+   "key": "plate-032",
+   "file": "art/svc/plate-032.webp",
+   "alt": "Engraved emerald plate numbered 32 with a magnifying glass, for SaaS SEO",
+   "title": "N° 32 SaaS SEO"
+  },
+  {
+   "key": "plate-033",
+   "file": "art/svc/plate-033.webp",
+   "alt": "Engraved emerald plate numbered 33 with a magnifying glass, for YouTube SEO",
+   "title": "N° 33 YouTube SEO"
+  },
+  {
+   "key": "plate-034",
+   "file": "art/svc/plate-034.webp",
+   "alt": "Engraved emerald plate numbered 34 with a magnifying glass, for Amazon SEO",
+   "title": "N° 34 Amazon SEO"
+  },
+  {
+   "key": "plate-035",
+   "file": "art/svc/plate-035.webp",
+   "alt": "Engraved emerald plate numbered 35 with a magnifying glass, for Image SEO",
+   "title": "N° 35 Image SEO"
+  },
+  {
+   "key": "plate-036",
+   "file": "art/svc/plate-036.webp",
+   "alt": "Engraved emerald plate numbered 36 with a magnifying glass, for Website Migration SEO",
+   "title": "N° 36 Website Migration SEO"
+  },
+  {
+   "key": "plate-037",
+   "file": "art/svc/plate-037.webp",
+   "alt": "Engraved emerald plate numbered 37 with a magnifying glass, for Google Penalty Recovery",
+   "title": "N° 37 Google Penalty Recovery"
+  },
+  {
+   "key": "plate-038",
+   "file": "art/svc/plate-038.webp",
+   "alt": "Engraved emerald plate numbered 38 with a magnifying glass, for Schema Markup Services",
+   "title": "N° 38 Schema Markup Services"
+  },
+  {
+   "key": "plate-039",
+   "file": "art/svc/plate-039.webp",
+   "alt": "Engraved emerald plate numbered 39 with a magnifying glass, for Core Web Vitals Optimization",
+   "title": "N° 39 Core Web Vitals Optimization"
+  },
+  {
+   "key": "plate-040",
+   "file": "art/svc/plate-040.webp",
+   "alt": "Engraved emerald plate numbered 40 with a magnifying glass, for Google Business Profile Management",
+   "title": "N° 40 Google Business Profile Management"
+  },
+  {
+   "key": "plate-041",
+   "file": "art/svc/plate-041.webp",
+   "alt": "Engraved emerald plate numbered 41 with a magnifying glass, for Multi-Location SEO",
+   "title": "N° 41 Multi-Location SEO"
+  },
+  {
+   "key": "plate-042",
+   "file": "art/svc/plate-042.webp",
+   "alt": "Engraved emerald plate numbered 42 with a quill pen, for SEO Copywriting",
+   "title": "N° 42 SEO Copywriting"
+  },
+  {
+   "key": "plate-043",
+   "file": "art/svc/plate-043.webp",
+   "alt": "Engraved emerald plate numbered 43 with a quill pen, for Blog Writing",
+   "title": "N° 43 Blog Writing"
+  },
+  {
+   "key": "plate-044",
+   "file": "art/svc/plate-044.webp",
+   "alt": "Engraved emerald plate numbered 44 with a quill pen, for Website Copywriting",
+   "title": "N° 44 Website Copywriting"
+  },
+  {
+   "key": "plate-045",
+   "file": "art/svc/plate-045.webp",
+   "alt": "Engraved emerald plate numbered 45 with a quill pen, for Thought Leadership Content",
+   "title": "N° 45 Thought Leadership Content"
+  },
+  {
+   "key": "plate-046",
+   "file": "art/svc/plate-046.webp",
+   "alt": "Engraved emerald plate numbered 46 with a quill pen, for Content Strategy",
+   "title": "N° 46 Content Strategy"
+  },
+  {
+   "key": "plate-047",
+   "file": "art/svc/plate-047.webp",
+   "alt": "Engraved emerald plate numbered 47 with a quill pen, for Case Study Writing",
+   "title": "N° 47 Case Study Writing"
+  },
+  {
+   "key": "plate-048",
+   "file": "art/svc/plate-048.webp",
+   "alt": "Engraved emerald plate numbered 48 with a quill pen, for Whitepaper and Ebook Writing",
+   "title": "N° 48 Whitepaper and Ebook Writing"
+  },
+  {
+   "key": "plate-049",
+   "file": "art/svc/plate-049.webp",
+   "alt": "Engraved emerald plate numbered 49 with a quill pen, for Content Refresh and Optimization",
+   "title": "N° 49 Content Refresh and Optimization"
+  },
+  {
+   "key": "plate-050",
+   "file": "art/svc/plate-050.webp",
+   "alt": "Engraved emerald plate numbered 50 with a quill pen, for Infographic and Visual Content",
+   "title": "N° 50 Infographic and Visual Content"
+  },
+  {
+   "key": "plate-051",
+   "file": "art/svc/plate-051.webp",
+   "alt": "Engraved emerald plate numbered 51 with linked chain loops, for Data-Led PR and Original Research",
+   "title": "N° 51 Data-Led PR and Original Research"
+  },
+  {
+   "key": "plate-052",
+   "file": "art/svc/plate-052.webp",
+   "alt": "Engraved emerald plate numbered 52 with linked chain loops, for Editorial Outreach and Guest Articles",
+   "title": "N° 52 Editorial Outreach and Guest Articles"
+  },
+  {
+   "key": "plate-053",
+   "file": "art/svc/plate-053.webp",
+   "alt": "Engraved emerald plate numbered 53 with linked chain loops, for Unlinked Mention Recovery",
+   "title": "N° 53 Unlinked Mention Recovery"
+  },
+  {
+   "key": "plate-054",
+   "file": "art/svc/plate-054.webp",
+   "alt": "Engraved emerald plate numbered 54 with linked chain loops, for Local Citation Building",
+   "title": "N° 54 Local Citation Building"
+  },
+  {
+   "key": "plate-055",
+   "file": "art/svc/plate-055.webp",
+   "alt": "Engraved emerald plate numbered 55 with linked chain loops, for Online Reputation Management",
+   "title": "N° 55 Online Reputation Management"
+  },
+  {
+   "key": "plate-056",
+   "file": "art/svc/plate-056.webp",
+   "alt": "Engraved emerald plate numbered 56 with linked chain loops, for Review Management",
+   "title": "N° 56 Review Management"
+  },
+  {
+   "key": "plate-057",
+   "file": "art/svc/plate-057.webp",
+   "alt": "Engraved emerald plate numbered 57 with a target and arrow, for Microsoft Ads Management",
+   "title": "N° 57 Microsoft Ads Management"
+  },
+  {
+   "key": "plate-058",
+   "file": "art/svc/plate-058.webp",
+   "alt": "Engraved emerald plate numbered 58 with a target and arrow, for Performance Max Management",
+   "title": "N° 58 Performance Max Management"
+  },
+  {
+   "key": "plate-059",
+   "file": "art/svc/plate-059.webp",
+   "alt": "Engraved emerald plate numbered 59 with a target and arrow, for Google Shopping Ads",
+   "title": "N° 59 Google Shopping Ads"
+  },
+  {
+   "key": "plate-060",
+   "file": "art/svc/plate-060.webp",
+   "alt": "Engraved emerald plate numbered 60 with a target and arrow, for YouTube Advertising",
+   "title": "N° 60 YouTube Advertising"
+  },
+  {
+   "key": "plate-061",
+   "file": "art/svc/plate-061.webp",
+   "alt": "Engraved emerald plate numbered 61 with a target and arrow, for Display and Remarketing Ads",
+   "title": "N° 61 Display and Remarketing Ads"
+  },
+  {
+   "key": "plate-062",
+   "file": "art/svc/plate-062.webp",
+   "alt": "Engraved emerald plate numbered 62 with a target and arrow, for Local Services Ads",
+   "title": "N° 62 Local Services Ads"
+  },
+  {
+   "key": "plate-063",
+   "file": "art/svc/plate-063.webp",
+   "alt": "Engraved emerald plate numbered 63 with a target and arrow, for Amazon Ads Management",
+   "title": "N° 63 Amazon Ads Management"
+  },
+  {
+   "key": "plate-064",
+   "file": "art/svc/plate-064.webp",
+   "alt": "Engraved emerald plate numbered 64 with a target and arrow, for Programmatic Advertising",
+   "title": "N° 64 Programmatic Advertising"
+  },
+  {
+   "key": "plate-065",
+   "file": "art/svc/plate-065.webp",
+   "alt": "Engraved emerald plate numbered 65 with a target and arrow, for PPC Audit",
+   "title": "N° 65 PPC Audit"
+  },
+  {
+   "key": "plate-066",
+   "file": "art/svc/plate-066.webp",
+   "alt": "Engraved emerald plate numbered 66 with a target and arrow, for App Install Campaigns",
+   "title": "N° 66 App Install Campaigns"
+  },
+  {
+   "key": "plate-067",
+   "file": "art/svc/plate-067.webp",
+   "alt": "Engraved emerald plate numbered 67 with connected share nodes, for Facebook and Instagram Ads",
+   "title": "N° 67 Facebook and Instagram Ads"
+  },
+  {
+   "key": "plate-068",
+   "file": "art/svc/plate-068.webp",
+   "alt": "Engraved emerald plate numbered 68 with connected share nodes, for Instagram Marketing",
+   "title": "N° 68 Instagram Marketing"
+  },
+  {
+   "key": "plate-069",
+   "file": "art/svc/plate-069.webp",
+   "alt": "Engraved emerald plate numbered 69 with connected share nodes, for LinkedIn Ads",
+   "title": "N° 69 LinkedIn Ads"
+  },
+  {
+   "key": "plate-070",
+   "file": "art/svc/plate-070.webp",
+   "alt": "Engraved emerald plate numbered 70 with connected share nodes, for LinkedIn B2B Marketing",
+   "title": "N° 70 LinkedIn B2B Marketing"
+  },
+  {
+   "key": "plate-071",
+   "file": "art/svc/plate-071.webp",
+   "alt": "Engraved emerald plate numbered 71 with connected share nodes, for YouTube Channel Management",
+   "title": "N° 71 YouTube Channel Management"
+  },
+  {
+   "key": "plate-072",
+   "file": "art/svc/plate-072.webp",
+   "alt": "Engraved emerald plate numbered 72 with connected share nodes, for Influencer Marketing",
+   "title": "N° 72 Influencer Marketing"
+  },
+  {
+   "key": "plate-073",
+   "file": "art/svc/plate-073.webp",
+   "alt": "Engraved emerald plate numbered 73 with connected share nodes, for Social Media Management",
+   "title": "N° 73 Social Media Management"
+  },
+  {
+   "key": "plate-074",
+   "file": "art/svc/plate-074.webp",
+   "alt": "Engraved emerald plate numbered 74 with connected share nodes, for Short-Form Video Production",
+   "title": "N° 74 Short-Form Video Production"
+  },
+  {
+   "key": "plate-075",
+   "file": "art/svc/plate-075.webp",
+   "alt": "Engraved emerald plate numbered 75 with connected share nodes, for WhatsApp Marketing",
+   "title": "N° 75 WhatsApp Marketing"
+  },
+  {
+   "key": "plate-076",
+   "file": "art/svc/plate-076.webp",
+   "alt": "Engraved emerald plate numbered 76 with connected share nodes, for Pinterest Marketing",
+   "title": "N° 76 Pinterest Marketing"
+  },
+  {
+   "key": "plate-077",
+   "file": "art/svc/plate-077.webp",
+   "alt": "Engraved emerald plate numbered 77 with a browser window, for WordPress Development",
+   "title": "N° 77 WordPress Development"
+  },
+  {
+   "key": "plate-078",
+   "file": "art/svc/plate-078.webp",
+   "alt": "Engraved emerald plate numbered 78 with a browser window, for Shopify Development",
+   "title": "N° 78 Shopify Development"
+  },
+  {
+   "key": "plate-079",
+   "file": "art/svc/plate-079.webp",
+   "alt": "Engraved emerald plate numbered 79 with a browser window, for WooCommerce Development",
+   "title": "N° 79 WooCommerce Development"
+  },
+  {
+   "key": "plate-080",
+   "file": "art/svc/plate-080.webp",
+   "alt": "Engraved emerald plate numbered 80 with a browser window, for Landing Page Design",
+   "title": "N° 80 Landing Page Design"
+  },
+  {
+   "key": "plate-081",
+   "file": "art/svc/plate-081.webp",
+   "alt": "Engraved emerald plate numbered 81 with a browser window, for UI and UX Design",
+   "title": "N° 81 UI and UX Design"
+  },
+  {
+   "key": "plate-082",
+   "file": "art/svc/plate-082.webp",
+   "alt": "Engraved emerald plate numbered 82 with a browser window, for Website Redesign",
+   "title": "N° 82 Website Redesign"
+  },
+  {
+   "key": "plate-083",
+   "file": "art/svc/plate-083.webp",
+   "alt": "Engraved emerald plate numbered 83 with a browser window, for Website Maintenance and Care",
+   "title": "N° 83 Website Maintenance and Care"
+  },
+  {
+   "key": "plate-084",
+   "file": "art/svc/plate-084.webp",
+   "alt": "Engraved emerald plate numbered 84 with a browser window, for Website Speed Optimization",
+   "title": "N° 84 Website Speed Optimization"
+  },
+  {
+   "key": "plate-085",
+   "file": "art/svc/plate-085.webp",
+   "alt": "Engraved emerald plate numbered 85 with a browser window, for Web Accessibility Services",
+   "title": "N° 85 Web Accessibility Services"
+  },
+  {
+   "key": "plate-086",
+   "file": "art/svc/plate-086.webp",
+   "alt": "Engraved emerald plate numbered 86 with a browser window, for Headless and Next.js Development",
+   "title": "N° 86 Headless and Next.js Development"
+  },
+  {
+   "key": "plate-087",
+   "file": "art/svc/plate-087.webp",
+   "alt": "Engraved emerald plate numbered 87 with a browser window, for Website Security and Hosting",
+   "title": "N° 87 Website Security and Hosting"
+  },
+  {
+   "key": "plate-088",
+   "file": "art/svc/plate-088.webp",
+   "alt": "Engraved emerald plate numbered 88 with a funnel, for A/B Testing",
+   "title": "N° 88 A/B Testing"
+  },
+  {
+   "key": "plate-089",
+   "file": "art/svc/plate-089.webp",
+   "alt": "Engraved emerald plate numbered 89 with a funnel, for UX Research and Heatmaps",
+   "title": "N° 89 UX Research and Heatmaps"
+  },
+  {
+   "key": "plate-090",
+   "file": "art/svc/plate-090.webp",
+   "alt": "Engraved emerald plate numbered 90 with a funnel, for Google Analytics 4 Setup and Audit",
+   "title": "N° 90 Google Analytics 4 Setup and Audit"
+  },
+  {
+   "key": "plate-091",
+   "file": "art/svc/plate-091.webp",
+   "alt": "Engraved emerald plate numbered 91 with a funnel, for Google Tag Manager Setup",
+   "title": "N° 91 Google Tag Manager Setup"
+  },
+  {
+   "key": "plate-092",
+   "file": "art/svc/plate-092.webp",
+   "alt": "Engraved emerald plate numbered 92 with a funnel, for Looker Studio Dashboards",
+   "title": "N° 92 Looker Studio Dashboards"
+  },
+  {
+   "key": "plate-093",
+   "file": "art/svc/plate-093.webp",
+   "alt": "Engraved emerald plate numbered 93 with a funnel, for Conversion Tracking",
+   "title": "N° 93 Conversion Tracking"
+  },
+  {
+   "key": "plate-094",
+   "file": "art/svc/plate-094.webp",
+   "alt": "Engraved emerald plate numbered 94 with a funnel, for Call Tracking",
+   "title": "N° 94 Call Tracking"
+  },
+  {
+   "key": "plate-095",
+   "file": "art/svc/plate-095.webp",
+   "alt": "Engraved emerald plate numbered 95 with a funnel, for Marketing Attribution",
+   "title": "N° 95 Marketing Attribution"
+  },
+  {
+   "key": "plate-096",
+   "file": "art/svc/plate-096.webp",
+   "alt": "Engraved emerald plate numbered 96 with a funnel, for Checkout Optimization",
+   "title": "N° 96 Checkout Optimization"
+  },
+  {
+   "key": "plate-097",
+   "file": "art/svc/plate-097.webp",
+   "alt": "Engraved emerald plate numbered 97 with an envelope, for Email Marketing",
+   "title": "N° 97 Email Marketing"
+  },
+  {
+   "key": "plate-098",
+   "file": "art/svc/plate-098.webp",
+   "alt": "Engraved emerald plate numbered 98 with an envelope, for Marketing Automation",
+   "title": "N° 98 Marketing Automation"
+  },
+  {
+   "key": "plate-099",
+   "file": "art/svc/plate-099.webp",
+   "alt": "Engraved emerald plate numbered 99 with an envelope, for HubSpot Services",
+   "title": "N° 99 HubSpot Services"
+  },
+  {
+   "key": "plate-100",
+   "file": "art/svc/plate-100.webp",
+   "alt": "Engraved emerald plate numbered 100 with an envelope, for Lead Nurturing",
+   "title": "N° 100 Lead Nurturing"
+  },
+  {
+   "key": "plate-101",
+   "file": "art/svc/plate-101.webp",
+   "alt": "Engraved emerald plate numbered 101 with an envelope, for SMS Marketing",
+   "title": "N° 101 SMS Marketing"
+  },
+  {
+   "key": "plate-102",
+   "file": "art/svc/plate-102.webp",
+   "alt": "Engraved emerald plate numbered 102 with an envelope, for CRM Integration",
+   "title": "N° 102 CRM Integration"
+  },
+  {
+   "key": "plate-103",
+   "file": "art/svc/plate-103.webp",
+   "alt": "Engraved emerald plate numbered 103 with an envelope, for Newsletter Management",
+   "title": "N° 103 Newsletter Management"
+  },
+  {
+   "key": "plate-104",
+   "file": "art/svc/plate-104.webp",
+   "alt": "Engraved emerald plate numbered 104 with a shopping bag, for Amazon Store Management",
+   "title": "N° 104 Amazon Store Management"
+  },
+  {
+   "key": "plate-105",
+   "file": "art/svc/plate-105.webp",
+   "alt": "Engraved emerald plate numbered 105 with a shopping bag, for Flipkart Marketplace Management",
+   "title": "N° 105 Flipkart Marketplace Management"
+  },
+  {
+   "key": "plate-106",
+   "file": "art/svc/plate-106.webp",
+   "alt": "Engraved emerald plate numbered 106 with a shopping bag, for Marketplace Listing Optimization",
+   "title": "N° 106 Marketplace Listing Optimization"
+  },
+  {
+   "key": "plate-107",
+   "file": "art/svc/plate-107.webp",
+   "alt": "Engraved emerald plate numbered 107 with a shopping bag, for Product Feed Management",
+   "title": "N° 107 Product Feed Management"
+  },
+  {
+   "key": "plate-108",
+   "file": "art/svc/plate-108.webp",
+   "alt": "Engraved emerald plate numbered 108 with a shopping bag, for D2C Growth Marketing",
+   "title": "N° 108 D2C Growth Marketing"
+  },
+  {
+   "key": "cat-ai-search",
+   "file": "art/cat-ai-search.webp",
+   "alt": "Engraved emerald plate with a spark for the AI Search and GEO services",
+   "title": "AI Search and GEO plate"
+  },
+  {
+   "key": "cat-seo",
+   "file": "art/cat-seo.webp",
+   "alt": "Engraved emerald plate with a magnifying glass for the SEO services",
+   "title": "SEO plate"
+  },
+  {
+   "key": "cat-content",
+   "file": "art/cat-content.webp",
+   "alt": "Engraved emerald plate with a quill pen for the Content Marketing services",
+   "title": "Content Marketing plate"
+  },
+  {
+   "key": "cat-digital-pr",
+   "file": "art/cat-digital-pr.webp",
+   "alt": "Engraved emerald plate with linked chain loops for the Digital PR and Reputation services",
+   "title": "Digital PR and Reputation plate"
+  },
+  {
+   "key": "cat-paid-media",
+   "file": "art/cat-paid-media.webp",
+   "alt": "Engraved emerald plate with a target and arrow for the Paid Media and PPC services",
+   "title": "Paid Media and PPC plate"
+  },
+  {
+   "key": "cat-social",
+   "file": "art/cat-social.webp",
+   "alt": "Engraved emerald plate with connected share nodes for the Social Media Marketing services",
+   "title": "Social Media Marketing plate"
+  },
+  {
+   "key": "cat-web",
+   "file": "art/cat-web.webp",
+   "alt": "Engraved emerald plate with a browser window for the Websites and Development services",
+   "title": "Websites and Development plate"
+  },
+  {
+   "key": "cat-cro-analytics",
+   "file": "art/cat-cro-analytics.webp",
+   "alt": "Engraved emerald plate with a funnel for the CRO and Analytics services",
+   "title": "CRO and Analytics plate"
+  },
+  {
+   "key": "cat-email-automation",
+   "file": "art/cat-email-automation.webp",
+   "alt": "Engraved emerald plate with an envelope for the Email and Automation services",
+   "title": "Email and Automation plate"
+  },
+  {
+   "key": "cat-ecommerce-growth",
+   "file": "art/cat-ecommerce-growth.webp",
+   "alt": "Engraved emerald plate with a shopping bag for the E-commerce and Marketplaces services",
+   "title": "E-commerce and Marketplaces plate"
   }
  ],
  "services": [
@@ -174,7 +882,92 @@
    "image": "plate-01",
    "menu_order": 1,
    "content_file": "services/generative-engine-optimization.html",
-   "number": "01"
+   "number": "01",
+   "category": "ai-search"
+  },
+  {
+   "slug": "ai-overviews-optimization",
+   "title": "Google AI Overviews Optimization",
+   "excerpt": "Get your pages linked inside Google AI Overviews: eligibility checks, answer-first rewrites, subtopic coverage and Search Console AI reporting.",
+   "meta_title": "Google AI Overviews Optimization Services | AVENZA",
+   "meta_description": "Get your pages linked inside Google AI Overviews: eligibility checks, answer-first rewrites, subtopic coverage and Search Console AI reporting.",
+   "image": "plate-013",
+   "menu_order": 13,
+   "content_file": "services/ai-overviews-optimization.html",
+   "number": "13",
+   "category": "ai-search"
+  },
+  {
+   "slug": "chatgpt-seo",
+   "title": "ChatGPT SEO",
+   "excerpt": "ChatGPT SEO that helps your brand appear in ChatGPT search answers: crawler access, citable pages, brand facts and monthly citation tracking.",
+   "meta_title": "ChatGPT SEO Services | AVENZA",
+   "meta_description": "ChatGPT SEO that helps your brand appear in ChatGPT search answers: crawler access, citable pages, brand facts and monthly citation tracking.",
+   "image": "plate-014",
+   "menu_order": 14,
+   "content_file": "services/chatgpt-seo.html",
+   "number": "14",
+   "category": "ai-search"
+  },
+  {
+   "slug": "perplexity-seo",
+   "title": "Perplexity SEO",
+   "excerpt": "Perplexity SEO that earns citations in Perplexity answers: PerplexityBot access, source-worthy pages, freshness and citation tracking.",
+   "meta_title": "Perplexity SEO Services | AVENZA",
+   "meta_description": "Perplexity SEO that earns citations in Perplexity answers: PerplexityBot access, source-worthy pages, freshness and citation tracking.",
+   "image": "plate-015",
+   "menu_order": 15,
+   "content_file": "services/perplexity-seo.html",
+   "number": "15",
+   "category": "ai-search"
+  },
+  {
+   "slug": "gemini-ai-mode-optimization",
+   "title": "Gemini and AI Mode Optimization",
+   "excerpt": "Optimization for Google AI Mode and the Gemini app: indexing, subtopic depth, local and product data, and brand consistency Google can trust.",
+   "meta_title": "Gemini and AI Mode Optimization Services | AVENZA",
+   "meta_description": "Optimization for Google AI Mode and the Gemini app: indexing, subtopic depth, local and product data, and brand consistency Google can trust.",
+   "image": "plate-016",
+   "menu_order": 16,
+   "content_file": "services/gemini-ai-mode-optimization.html",
+   "number": "16",
+   "category": "ai-search"
+  },
+  {
+   "slug": "copilot-bing-ai-optimization",
+   "title": "Microsoft Copilot and Bing AI Optimization",
+   "excerpt": "Microsoft Copilot and Bing optimization: Bing Webmaster Tools, IndexNow, Bing Places and citable pages for business buyers on Microsoft.",
+   "meta_title": "Microsoft Copilot and Bing AI Optimization Services | AVENZA",
+   "meta_description": "Microsoft Copilot and Bing optimization: Bing Webmaster Tools, IndexNow, Bing Places and citable pages for business buyers on Microsoft.",
+   "image": "plate-017",
+   "menu_order": 17,
+   "content_file": "services/copilot-bing-ai-optimization.html",
+   "number": "17",
+   "category": "ai-search"
+  },
+  {
+   "slug": "ai-visibility-audit",
+   "title": "AI Visibility Audit",
+   "excerpt": "An AI visibility audit across ChatGPT, Gemini, Perplexity, Copilot and AI Overviews: citations, competitors, errors and a prioritised fix list.",
+   "meta_title": "AI Visibility Audit | AVENZA",
+   "meta_description": "An AI visibility audit across ChatGPT, Gemini, Perplexity, Copilot and AI Overviews: citations, competitors, errors and a prioritised fix list.",
+   "image": "plate-018",
+   "menu_order": 18,
+   "content_file": "services/ai-visibility-audit.html",
+   "number": "18",
+   "category": "ai-search"
+  },
+  {
+   "slug": "ai-brand-monitoring",
+   "title": "AI Brand Monitoring",
+   "excerpt": "AI brand monitoring: monthly tracking of how ChatGPT, Gemini, Perplexity and Copilot describe your brand, with alerts on errors and lost citations.",
+   "meta_title": "AI Brand Monitoring Services | AVENZA",
+   "meta_description": "AI brand monitoring: monthly tracking of how ChatGPT, Gemini, Perplexity and Copilot describe your brand, with alerts on errors and lost citations.",
+   "image": "plate-019",
+   "menu_order": 19,
+   "content_file": "services/ai-brand-monitoring.html",
+   "number": "19",
+   "category": "ai-search"
   },
   {
    "slug": "answer-engine-optimization",
@@ -185,7 +978,128 @@
    "image": "plate-02",
    "menu_order": 2,
    "content_file": "services/answer-engine-optimization.html",
-   "number": "02"
+   "number": "02",
+   "category": "ai-search"
+  },
+  {
+   "slug": "entity-seo",
+   "title": "Entity SEO and Knowledge Graph",
+   "excerpt": "Entity SEO that defines your brand for search engines and AI: Organization schema, sameAs profiles, consistent facts and knowledge panel signals.",
+   "meta_title": "Entity SEO and Knowledge Graph Services | AVENZA",
+   "meta_description": "Entity SEO that defines your brand for search engines and AI: Organization schema, sameAs profiles, consistent facts and knowledge panel signals.",
+   "image": "plate-020",
+   "menu_order": 20,
+   "content_file": "services/entity-seo.html",
+   "number": "20",
+   "category": "ai-search"
+  },
+  {
+   "slug": "ai-crawler-setup",
+   "title": "AI Crawler and llms.txt Setup",
+   "excerpt": "AI crawler setup: robots.txt rules for GPTBot, OAI-SearchBot, ClaudeBot and PerplexityBot, CDN and firewall checks, and an accurate llms.txt.",
+   "meta_title": "AI Crawler and llms.txt Setup | AVENZA",
+   "meta_description": "AI crawler setup: robots.txt rules for GPTBot, OAI-SearchBot, ClaudeBot and PerplexityBot, CDN and firewall checks, and an accurate llms.txt.",
+   "image": "plate-021",
+   "menu_order": 21,
+   "content_file": "services/ai-crawler-setup.html",
+   "number": "21",
+   "category": "ai-search"
+  },
+  {
+   "slug": "enterprise-seo",
+   "title": "Enterprise SEO",
+   "excerpt": "Enterprise SEO for large websites: crawl and index management, templates, governance, release checks and reporting for multiple teams.",
+   "meta_title": "Enterprise SEO Services | AVENZA",
+   "meta_description": "Enterprise SEO for large websites: crawl and index management, templates, governance, release checks and reporting for multiple teams.",
+   "image": "plate-022",
+   "menu_order": 22,
+   "content_file": "services/enterprise-seo.html",
+   "number": "22",
+   "category": "seo"
+  },
+  {
+   "slug": "seo-audit",
+   "title": "SEO Audit",
+   "excerpt": "A full SEO audit covering technical health, content, authority and competitors, delivered with a prioritised 90-day action plan.",
+   "meta_title": "SEO Audit | AVENZA",
+   "meta_description": "A full SEO audit covering technical health, content, authority and competitors, delivered with a prioritised 90-day action plan.",
+   "image": "plate-023",
+   "menu_order": 23,
+   "content_file": "services/seo-audit.html",
+   "number": "23",
+   "category": "seo"
+  },
+  {
+   "slug": "keyword-research",
+   "title": "Keyword Research",
+   "excerpt": "Keyword research that maps buyer searches to pages by intent and value, with question research for AEO and AI search, not just volume lists.",
+   "meta_title": "Keyword Research | AVENZA",
+   "meta_description": "Keyword research that maps buyer searches to pages by intent and value, with question research for AEO and AI search, not just volume lists.",
+   "image": "plate-024",
+   "menu_order": 24,
+   "content_file": "services/keyword-research.html",
+   "number": "24",
+   "category": "seo"
+  },
+  {
+   "slug": "on-page-seo",
+   "title": "On-Page SEO",
+   "excerpt": "On-page SEO for priority pages: titles, meta descriptions, headings, answer blocks, internal links, images and structured data, done by hand.",
+   "meta_title": "On-Page SEO Services | AVENZA",
+   "meta_description": "On-page SEO for priority pages: titles, meta descriptions, headings, answer blocks, internal links, images and structured data, done by hand.",
+   "image": "plate-025",
+   "menu_order": 25,
+   "content_file": "services/on-page-seo.html",
+   "number": "25",
+   "category": "seo"
+  },
+  {
+   "slug": "international-seo",
+   "title": "Multilingual and International SEO",
+   "excerpt": "International and multilingual SEO: hreflang, country and language targeting, URL structure, localised keyword research and Hindi or regional content.",
+   "meta_title": "Multilingual and International SEO Services | AVENZA",
+   "meta_description": "International and multilingual SEO: hreflang, country and language targeting, URL structure, localised keyword research and Hindi or regional content.",
+   "image": "plate-026",
+   "menu_order": 26,
+   "content_file": "services/international-seo.html",
+   "number": "26",
+   "category": "seo"
+  },
+  {
+   "slug": "mobile-seo",
+   "title": "Mobile SEO",
+   "excerpt": "Mobile SEO: mobile-first indexing checks, responsive layout, tap targets, speed on mobile networks and content parity between mobile and desktop.",
+   "meta_title": "Mobile SEO Services | AVENZA",
+   "meta_description": "Mobile SEO: mobile-first indexing checks, responsive layout, tap targets, speed on mobile networks and content parity between mobile and desktop.",
+   "image": "plate-027",
+   "menu_order": 27,
+   "content_file": "services/mobile-seo.html",
+   "number": "27",
+   "category": "seo"
+  },
+  {
+   "slug": "voice-search-optimization",
+   "title": "Voice Search Optimization",
+   "excerpt": "Voice search optimization: conversational question research, concise spoken-style answers, local data and Hindi or regional voice queries.",
+   "meta_title": "Voice Search Optimization Services | AVENZA",
+   "meta_description": "Voice search optimization: conversational question research, concise spoken-style answers, local data and Hindi or regional voice queries.",
+   "image": "plate-028",
+   "menu_order": 28,
+   "content_file": "services/voice-search-optimization.html",
+   "number": "28",
+   "category": "seo"
+  },
+  {
+   "slug": "shopify-seo",
+   "title": "Shopify SEO",
+   "excerpt": "Shopify SEO: duplicate collection URLs, theme speed, app bloat, product and collection content, structured data and Merchant Center.",
+   "meta_title": "Shopify SEO Services | AVENZA",
+   "meta_description": "Shopify SEO: duplicate collection URLs, theme speed, app bloat, product and collection content, structured data and Merchant Center.",
+   "image": "plate-029",
+   "menu_order": 29,
+   "content_file": "services/shopify-seo.html",
+   "number": "29",
+   "category": "seo"
   },
   {
    "slug": "seo-services",
@@ -196,7 +1110,128 @@
    "image": "plate-03",
    "menu_order": 3,
    "content_file": "services/seo-services.html",
-   "number": "03"
+   "number": "03",
+   "category": "seo"
+  },
+  {
+   "slug": "wordpress-seo",
+   "title": "WordPress SEO",
+   "excerpt": "WordPress SEO: plugin setup, archive and tag clean-up, theme speed, structured data, block editor content and safe updates.",
+   "meta_title": "WordPress SEO Services | AVENZA",
+   "meta_description": "WordPress SEO: plugin setup, archive and tag clean-up, theme speed, structured data, block editor content and safe updates.",
+   "image": "plate-030",
+   "menu_order": 30,
+   "content_file": "services/wordpress-seo.html",
+   "number": "30",
+   "category": "seo"
+  },
+  {
+   "slug": "b2b-seo",
+   "title": "B2B SEO",
+   "excerpt": "B2B SEO for long sales cycles: buying-committee keyword research, solution and comparison pages, thought leadership and pipeline-based reporting.",
+   "meta_title": "B2B SEO Services | AVENZA",
+   "meta_description": "B2B SEO for long sales cycles: buying-committee keyword research, solution and comparison pages, thought leadership and pipeline-based reporting.",
+   "image": "plate-031",
+   "menu_order": 31,
+   "content_file": "services/b2b-seo.html",
+   "number": "31",
+   "category": "seo"
+  },
+  {
+   "slug": "saas-seo",
+   "title": "SaaS SEO",
+   "excerpt": "SaaS SEO: feature and use-case pages, integration and alternative pages, product-led content and sign-up tracking for software companies.",
+   "meta_title": "SaaS SEO Services | AVENZA",
+   "meta_description": "SaaS SEO: feature and use-case pages, integration and alternative pages, product-led content and sign-up tracking for software companies.",
+   "image": "plate-032",
+   "menu_order": 32,
+   "content_file": "services/saas-seo.html",
+   "number": "32",
+   "category": "seo"
+  },
+  {
+   "slug": "youtube-seo",
+   "title": "YouTube SEO",
+   "excerpt": "YouTube SEO: topic research, titles, descriptions, chapters, thumbnails, captions and playlists that help videos rank on YouTube and Google.",
+   "meta_title": "YouTube SEO Services | AVENZA",
+   "meta_description": "YouTube SEO: topic research, titles, descriptions, chapters, thumbnails, captions and playlists that help videos rank on YouTube and Google.",
+   "image": "plate-033",
+   "menu_order": 33,
+   "content_file": "services/youtube-seo.html",
+   "number": "33",
+   "category": "seo"
+  },
+  {
+   "slug": "amazon-seo",
+   "title": "Amazon SEO",
+   "excerpt": "Amazon SEO for sellers in India and abroad: keyword research, titles, bullets, backend terms, images, A+ content and review strategy.",
+   "meta_title": "Amazon SEO Services | AVENZA",
+   "meta_description": "Amazon SEO for sellers in India and abroad: keyword research, titles, bullets, backend terms, images, A+ content and review strategy.",
+   "image": "plate-034",
+   "menu_order": 34,
+   "content_file": "services/amazon-seo.html",
+   "number": "34",
+   "category": "seo"
+  },
+  {
+   "slug": "image-seo",
+   "title": "Image SEO",
+   "excerpt": "Image SEO: descriptive file names and alt text, modern formats, sizing, image sitemaps, structured data and visibility in Google Images and Lens.",
+   "meta_title": "Image SEO Services | AVENZA",
+   "meta_description": "Image SEO: descriptive file names and alt text, modern formats, sizing, image sitemaps, structured data and visibility in Google Images and Lens.",
+   "image": "plate-035",
+   "menu_order": 35,
+   "content_file": "services/image-seo.html",
+   "number": "35",
+   "category": "seo"
+  },
+  {
+   "slug": "website-migration-seo",
+   "title": "Website Migration SEO",
+   "excerpt": "Website migration SEO: URL mapping, redirect testing, content parity, staging checks, launch monitoring and recovery plans for redesigns and moves.",
+   "meta_title": "Website Migration SEO Services | AVENZA",
+   "meta_description": "Website migration SEO: URL mapping, redirect testing, content parity, staging checks, launch monitoring and recovery plans for redesigns and moves.",
+   "image": "plate-036",
+   "menu_order": 36,
+   "content_file": "services/website-migration-seo.html",
+   "number": "36",
+   "category": "seo"
+  },
+  {
+   "slug": "google-penalty-recovery",
+   "title": "Google Penalty Recovery",
+   "excerpt": "Google penalty and traffic drop recovery: manual action review, core update analysis, spam policy fixes, link clean-up and reconsideration requests.",
+   "meta_title": "Google Penalty Recovery | AVENZA",
+   "meta_description": "Google penalty and traffic drop recovery: manual action review, core update analysis, spam policy fixes, link clean-up and reconsideration requests.",
+   "image": "plate-037",
+   "menu_order": 37,
+   "content_file": "services/google-penalty-recovery.html",
+   "number": "37",
+   "category": "seo"
+  },
+  {
+   "slug": "schema-markup-services",
+   "title": "Schema Markup Services",
+   "excerpt": "Schema markup services: Organization, LocalBusiness, Service, Product, Article, FAQ and Breadcrumb structured data, validated and maintained.",
+   "meta_title": "Schema Markup Services | AVENZA",
+   "meta_description": "Schema markup services: Organization, LocalBusiness, Service, Product, Article, FAQ and Breadcrumb structured data, validated and maintained.",
+   "image": "plate-038",
+   "menu_order": 38,
+   "content_file": "services/schema-markup-services.html",
+   "number": "38",
+   "category": "seo"
+  },
+  {
+   "slug": "core-web-vitals-optimization",
+   "title": "Core Web Vitals Optimization",
+   "excerpt": "Core Web Vitals optimization: LCP, INP and CLS fixes based on real-user data, image and script work, theme and plugin clean-up, and monitoring.",
+   "meta_title": "Core Web Vitals Optimization Services | AVENZA",
+   "meta_description": "Core Web Vitals optimization: LCP, INP and CLS fixes based on real-user data, image and script work, theme and plugin clean-up, and monitoring.",
+   "image": "plate-039",
+   "menu_order": 39,
+   "content_file": "services/core-web-vitals-optimization.html",
+   "number": "39",
+   "category": "seo"
   },
   {
    "slug": "technical-seo",
@@ -207,7 +1242,128 @@
    "image": "plate-04",
    "menu_order": 4,
    "content_file": "services/technical-seo.html",
-   "number": "04"
+   "number": "04",
+   "category": "seo"
+  },
+  {
+   "slug": "google-business-profile-management",
+   "title": "Google Business Profile Management",
+   "excerpt": "Google Business Profile management: setup, categories, services, photos, posts, Q and A, review replies and suspension help for local businesses.",
+   "meta_title": "Google Business Profile Management | AVENZA",
+   "meta_description": "Google Business Profile management: setup, categories, services, photos, posts, Q and A, review replies and suspension help for local businesses.",
+   "image": "plate-040",
+   "menu_order": 40,
+   "content_file": "services/google-business-profile-management.html",
+   "number": "40",
+   "category": "seo"
+  },
+  {
+   "slug": "multi-location-seo",
+   "title": "Multi-Location SEO",
+   "excerpt": "Multi-location SEO for chains and franchises: location pages, Business Profiles at scale, local reviews, citations and reporting by branch.",
+   "meta_title": "Multi-Location SEO Services | AVENZA",
+   "meta_description": "Multi-location SEO for chains and franchises: location pages, Business Profiles at scale, local reviews, citations and reporting by branch.",
+   "image": "plate-041",
+   "menu_order": 41,
+   "content_file": "services/multi-location-seo.html",
+   "number": "41",
+   "category": "seo"
+  },
+  {
+   "slug": "seo-copywriting",
+   "title": "SEO Copywriting",
+   "excerpt": "SEO copywriting for service, product and landing pages: intent-matched, answer-first, persuasive copy that ranks without keyword stuffing.",
+   "meta_title": "SEO Copywriting Services | AVENZA",
+   "meta_description": "SEO copywriting for service, product and landing pages: intent-matched, answer-first, persuasive copy that ranks without keyword stuffing.",
+   "image": "plate-042",
+   "menu_order": 42,
+   "content_file": "services/seo-copywriting.html",
+   "number": "42",
+   "category": "content"
+  },
+  {
+   "slug": "blog-writing",
+   "title": "Blog Writing",
+   "excerpt": "Blog writing services: researched, sourced articles built from buyer questions and expert input, structured for search and AI answers.",
+   "meta_title": "Blog Writing | AVENZA",
+   "meta_description": "Blog writing services: researched, sourced articles built from buyer questions and expert input, structured for search and AI answers.",
+   "image": "plate-043",
+   "menu_order": 43,
+   "content_file": "services/blog-writing.html",
+   "number": "43",
+   "category": "content"
+  },
+  {
+   "slug": "website-copywriting",
+   "title": "Website Copywriting",
+   "excerpt": "Website copywriting for new sites and redesigns: messaging, homepage, about, service and contact pages, written to convert and to rank.",
+   "meta_title": "Website Copywriting Services | AVENZA",
+   "meta_description": "Website copywriting for new sites and redesigns: messaging, homepage, about, service and contact pages, written to convert and to rank.",
+   "image": "plate-044",
+   "menu_order": 44,
+   "content_file": "services/website-copywriting.html",
+   "number": "44",
+   "category": "content"
+  },
+  {
+   "slug": "thought-leadership-content",
+   "title": "Thought Leadership Content",
+   "excerpt": "Thought leadership content: expert interviews turned into articles, LinkedIn posts and opinion pieces that build authority for people and brand.",
+   "meta_title": "Thought Leadership Content Services | AVENZA",
+   "meta_description": "Thought leadership content: expert interviews turned into articles, LinkedIn posts and opinion pieces that build authority for people and brand.",
+   "image": "plate-045",
+   "menu_order": 45,
+   "content_file": "services/thought-leadership-content.html",
+   "number": "45",
+   "category": "content"
+  },
+  {
+   "slug": "content-strategy",
+   "title": "Content Strategy",
+   "excerpt": "Content strategy: audience and question research, topic clusters, content audit, editorial calendar, governance and measurement.",
+   "meta_title": "Content Strategy Services | AVENZA",
+   "meta_description": "Content strategy: audience and question research, topic clusters, content audit, editorial calendar, governance and measurement.",
+   "image": "plate-046",
+   "menu_order": 46,
+   "content_file": "services/content-strategy.html",
+   "number": "46",
+   "category": "content"
+  },
+  {
+   "slug": "case-study-writing",
+   "title": "Case Study Writing",
+   "excerpt": "Case study writing: client interviews, problem-solution-result stories, verified numbers, quotes and formats for web, sales decks and PDFs.",
+   "meta_title": "Case Study Writing | AVENZA",
+   "meta_description": "Case study writing: client interviews, problem-solution-result stories, verified numbers, quotes and formats for web, sales decks and PDFs.",
+   "image": "plate-047",
+   "menu_order": 47,
+   "content_file": "services/case-study-writing.html",
+   "number": "47",
+   "category": "content"
+  },
+  {
+   "slug": "whitepaper-ebook-writing",
+   "title": "Whitepaper and Ebook Writing",
+   "excerpt": "Whitepaper and ebook writing: research, outlines, expert input, writing, design and landing pages for gated or open long-form content.",
+   "meta_title": "Whitepaper and Ebook Writing | AVENZA",
+   "meta_description": "Whitepaper and ebook writing: research, outlines, expert input, writing, design and landing pages for gated or open long-form content.",
+   "image": "plate-048",
+   "menu_order": 48,
+   "content_file": "services/whitepaper-ebook-writing.html",
+   "number": "48",
+   "category": "content"
+  },
+  {
+   "slug": "content-refresh",
+   "title": "Content Refresh and Optimization",
+   "excerpt": "Content refresh: finding decaying pages, updating facts and sources, improving structure and answers, merging overlaps and re-promoting them.",
+   "meta_title": "Content Refresh and Optimization Services | AVENZA",
+   "meta_description": "Content refresh: finding decaying pages, updating facts and sources, improving structure and answers, merging overlaps and re-promoting them.",
+   "image": "plate-049",
+   "menu_order": 49,
+   "content_file": "services/content-refresh.html",
+   "number": "49",
+   "category": "content"
   },
   {
    "slug": "local-seo",
@@ -218,7 +1374,128 @@
    "image": "plate-05",
    "menu_order": 5,
    "content_file": "services/local-seo.html",
-   "number": "05"
+   "number": "05",
+   "category": "seo"
+  },
+  {
+   "slug": "infographic-design",
+   "title": "Infographic and Visual Content",
+   "excerpt": "Infographic and visual content design: diagrams, charts and data visuals built from your expertise, with accessible text and embed-ready formats.",
+   "meta_title": "Infographic and Visual Content Services | AVENZA",
+   "meta_description": "Infographic and visual content design: diagrams, charts and data visuals built from your expertise, with accessible text and embed-ready formats.",
+   "image": "plate-050",
+   "menu_order": 50,
+   "content_file": "services/infographic-design.html",
+   "number": "50",
+   "category": "content"
+  },
+  {
+   "slug": "data-led-pr",
+   "title": "Data-Led PR and Original Research",
+   "excerpt": "Data-led PR and original research: surveys, data analysis, reports and press outreach that earn links, coverage and AI citations.",
+   "meta_title": "Data-Led PR and Original Research | AVENZA",
+   "meta_description": "Data-led PR and original research: surveys, data analysis, reports and press outreach that earn links, coverage and AI citations.",
+   "image": "plate-051",
+   "menu_order": 51,
+   "content_file": "services/data-led-pr.html",
+   "number": "51",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "editorial-outreach",
+   "title": "Editorial Outreach and Guest Articles",
+   "excerpt": "Editorial outreach: expert guest articles on relevant, respected publications, with honest pitching and no paid or bulk link placements.",
+   "meta_title": "Editorial Outreach and Guest Articles Services | AVENZA",
+   "meta_description": "Editorial outreach: expert guest articles on relevant, respected publications, with honest pitching and no paid or bulk link placements.",
+   "image": "plate-052",
+   "menu_order": 52,
+   "content_file": "services/editorial-outreach.html",
+   "number": "52",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "unlinked-mention-recovery",
+   "title": "Unlinked Mention Recovery",
+   "excerpt": "Unlinked mention recovery: finding articles that mention your brand, products or people without a link, and requesting a credit politely.",
+   "meta_title": "Unlinked Mention Recovery | AVENZA",
+   "meta_description": "Unlinked mention recovery: finding articles that mention your brand, products or people without a link, and requesting a credit politely.",
+   "image": "plate-053",
+   "menu_order": 53,
+   "content_file": "services/unlinked-mention-recovery.html",
+   "number": "53",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "local-citation-building",
+   "title": "Local Citation Building",
+   "excerpt": "Local citation building and clean-up: Justdial, Sulekha, IndiaMART, Bing Places, Apple Business Connect and industry directories.",
+   "meta_title": "Local Citation Building | AVENZA",
+   "meta_description": "Local citation building and clean-up: Justdial, Sulekha, IndiaMART, Bing Places, Apple Business Connect and industry directories.",
+   "image": "plate-054",
+   "menu_order": 54,
+   "content_file": "services/local-citation-building.html",
+   "number": "54",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "online-reputation-management",
+   "title": "Online Reputation Management",
+   "excerpt": "Online reputation management: brand search audit, review response, profile and content building, and correcting false information at source.",
+   "meta_title": "Online Reputation Management | AVENZA",
+   "meta_description": "Online reputation management: brand search audit, review response, profile and content building, and correcting false information at source.",
+   "image": "plate-055",
+   "menu_order": 55,
+   "content_file": "services/online-reputation-management.html",
+   "number": "55",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "review-management",
+   "title": "Review Management",
+   "excerpt": "Review management: policy-safe review requests by WhatsApp and SMS, reply templates, monitoring across Google and industry sites, and reporting.",
+   "meta_title": "Review Management | AVENZA",
+   "meta_description": "Review management: policy-safe review requests by WhatsApp and SMS, reply templates, monitoring across Google and industry sites, and reporting.",
+   "image": "plate-056",
+   "menu_order": 56,
+   "content_file": "services/review-management.html",
+   "number": "56",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "microsoft-ads-management",
+   "title": "Microsoft Ads Management",
+   "excerpt": "Microsoft Ads management: Google Ads imports done properly, LinkedIn profile targeting, Bing search and audience campaigns tuned for leads.",
+   "meta_title": "Microsoft Ads Management | AVENZA",
+   "meta_description": "Microsoft Ads management: Google Ads imports done properly, LinkedIn profile targeting, Bing search and audience campaigns tuned for leads.",
+   "image": "plate-057",
+   "menu_order": 57,
+   "content_file": "services/microsoft-ads-management.html",
+   "number": "57",
+   "category": "paid-media"
+  },
+  {
+   "slug": "performance-max-management",
+   "title": "Performance Max Management",
+   "excerpt": "Performance Max management: conversion data, asset groups, audience signals, brand exclusions, search themes and placement reporting.",
+   "meta_title": "Performance Max Management | AVENZA",
+   "meta_description": "Performance Max management: conversion data, asset groups, audience signals, brand exclusions, search themes and placement reporting.",
+   "image": "plate-058",
+   "menu_order": 58,
+   "content_file": "services/performance-max-management.html",
+   "number": "58",
+   "category": "paid-media"
+  },
+  {
+   "slug": "google-shopping-ads",
+   "title": "Google Shopping Ads",
+   "excerpt": "Google Shopping ads: Merchant Center feed optimisation, product segmentation by margin, bidding by value and search term control.",
+   "meta_title": "Google Shopping Ads | AVENZA",
+   "meta_description": "Google Shopping ads: Merchant Center feed optimisation, product segmentation by margin, bidding by value and search term control.",
+   "image": "plate-059",
+   "menu_order": 59,
+   "content_file": "services/google-shopping-ads.html",
+   "number": "59",
+   "category": "paid-media"
   },
   {
    "slug": "ecommerce-seo",
@@ -229,7 +1506,128 @@
    "image": "plate-06",
    "menu_order": 6,
    "content_file": "services/ecommerce-seo.html",
-   "number": "06"
+   "number": "06",
+   "category": "seo"
+  },
+  {
+   "slug": "youtube-ads",
+   "title": "YouTube Advertising",
+   "excerpt": "YouTube advertising: in-stream, Shorts and Demand Gen campaigns, audience planning, creative guidance and brand lift and conversion measurement.",
+   "meta_title": "YouTube Advertising Services | AVENZA",
+   "meta_description": "YouTube advertising: in-stream, Shorts and Demand Gen campaigns, audience planning, creative guidance and brand lift and conversion measurement.",
+   "image": "plate-060",
+   "menu_order": 60,
+   "content_file": "services/youtube-ads.html",
+   "number": "60",
+   "category": "paid-media"
+  },
+  {
+   "slug": "display-remarketing",
+   "title": "Display and Remarketing Ads",
+   "excerpt": "Display and remarketing ads: audience segments by behaviour, frequency caps, placement control and creative matched to each buying stage.",
+   "meta_title": "Display and Remarketing Ads | AVENZA",
+   "meta_description": "Display and remarketing ads: audience segments by behaviour, frequency caps, placement control and creative matched to each buying stage.",
+   "image": "plate-061",
+   "menu_order": 61,
+   "content_file": "services/display-remarketing.html",
+   "number": "61",
+   "category": "paid-media"
+  },
+  {
+   "slug": "local-services-ads",
+   "title": "Local Services Ads",
+   "excerpt": "Local Services Ads management: eligibility and verification, profile setup, budgets, lead handling, dispute support and reviews.",
+   "meta_title": "Local Services Ads | AVENZA",
+   "meta_description": "Local Services Ads management: eligibility and verification, profile setup, budgets, lead handling, dispute support and reviews.",
+   "image": "plate-062",
+   "menu_order": 62,
+   "content_file": "services/local-services-ads.html",
+   "number": "62",
+   "category": "paid-media"
+  },
+  {
+   "slug": "amazon-ads-management",
+   "title": "Amazon Ads Management",
+   "excerpt": "Amazon Ads management: Sponsored Products, Sponsored Brands and Display campaigns, keyword harvesting, bid control and ACoS by product.",
+   "meta_title": "Amazon Ads Management | AVENZA",
+   "meta_description": "Amazon Ads management: Sponsored Products, Sponsored Brands and Display campaigns, keyword harvesting, bid control and ACoS by product.",
+   "image": "plate-063",
+   "menu_order": 63,
+   "content_file": "services/amazon-ads-management.html",
+   "number": "63",
+   "category": "paid-media"
+  },
+  {
+   "slug": "programmatic-advertising",
+   "title": "Programmatic Advertising",
+   "excerpt": "Programmatic advertising: DSP campaign planning, audience data, brand safety, viewability and fraud controls, and incrementality measurement.",
+   "meta_title": "Programmatic Advertising Services | AVENZA",
+   "meta_description": "Programmatic advertising: DSP campaign planning, audience data, brand safety, viewability and fraud controls, and incrementality measurement.",
+   "image": "plate-064",
+   "menu_order": 64,
+   "content_file": "services/programmatic-advertising.html",
+   "number": "64",
+   "category": "paid-media"
+  },
+  {
+   "slug": "ppc-audit",
+   "title": "PPC Audit",
+   "excerpt": "PPC audit for Google Ads, Microsoft Ads and Meta: tracking, structure, search terms, bidding and landing pages, with a ranked fix list.",
+   "meta_title": "PPC Audit | AVENZA",
+   "meta_description": "PPC audit for Google Ads, Microsoft Ads and Meta: tracking, structure, search terms, bidding and landing pages, with a ranked fix list.",
+   "image": "plate-065",
+   "menu_order": 65,
+   "content_file": "services/ppc-audit.html",
+   "number": "65",
+   "category": "paid-media"
+  },
+  {
+   "slug": "app-install-campaigns",
+   "title": "App Install Campaigns",
+   "excerpt": "App install campaigns on Google App campaigns, Meta and Apple Search Ads, optimised for in-app actions with MMP and Firebase measurement.",
+   "meta_title": "App Install Campaigns Services | AVENZA",
+   "meta_description": "App install campaigns on Google App campaigns, Meta and Apple Search Ads, optimised for in-app actions with MMP and Firebase measurement.",
+   "image": "plate-066",
+   "menu_order": 66,
+   "content_file": "services/app-install-campaigns.html",
+   "number": "66",
+   "category": "paid-media"
+  },
+  {
+   "slug": "facebook-ads",
+   "title": "Facebook and Instagram Ads",
+   "excerpt": "Facebook and Instagram ads management: Conversions API, creative testing, Advantage+ and manual campaigns, audiences and lead quality.",
+   "meta_title": "Facebook and Instagram Ads | AVENZA",
+   "meta_description": "Facebook and Instagram ads management: Conversions API, creative testing, Advantage+ and manual campaigns, audiences and lead quality.",
+   "image": "plate-067",
+   "menu_order": 67,
+   "content_file": "services/facebook-ads.html",
+   "number": "67",
+   "category": "social"
+  },
+  {
+   "slug": "instagram-marketing",
+   "title": "Instagram Marketing",
+   "excerpt": "Instagram marketing: content strategy, Reels, carousels, stories, profile optimisation, community management and paid boosts for top posts.",
+   "meta_title": "Instagram Marketing | AVENZA",
+   "meta_description": "Instagram marketing: content strategy, Reels, carousels, stories, profile optimisation, community management and paid boosts for top posts.",
+   "image": "plate-068",
+   "menu_order": 68,
+   "content_file": "services/instagram-marketing.html",
+   "number": "68",
+   "category": "social"
+  },
+  {
+   "slug": "linkedin-ads",
+   "title": "LinkedIn Ads",
+   "excerpt": "LinkedIn Ads management: account-based targeting, lead gen forms, document and video ads, Insight Tag and CRM-based lead quality reporting.",
+   "meta_title": "LinkedIn Ads | AVENZA",
+   "meta_description": "LinkedIn Ads management: account-based targeting, lead gen forms, document and video ads, Insight Tag and CRM-based lead quality reporting.",
+   "image": "plate-069",
+   "menu_order": 69,
+   "content_file": "services/linkedin-ads.html",
+   "number": "69",
+   "category": "social"
   },
   {
    "slug": "content-marketing",
@@ -240,7 +1638,128 @@
    "image": "plate-07",
    "menu_order": 7,
    "content_file": "services/content-marketing.html",
-   "number": "07"
+   "number": "07",
+   "category": "content"
+  },
+  {
+   "slug": "linkedin-b2b-marketing",
+   "title": "LinkedIn B2B Marketing",
+   "excerpt": "Organic LinkedIn marketing for B2B: company page, leadership ghostwriting, document posts, newsletters and engagement routines.",
+   "meta_title": "LinkedIn B2B Marketing | AVENZA",
+   "meta_description": "Organic LinkedIn marketing for B2B: company page, leadership ghostwriting, document posts, newsletters and engagement routines.",
+   "image": "plate-070",
+   "menu_order": 70,
+   "content_file": "services/linkedin-b2b-marketing.html",
+   "number": "70",
+   "category": "social"
+  },
+  {
+   "slug": "youtube-channel-management",
+   "title": "YouTube Channel Management",
+   "excerpt": "YouTube channel management: content planning, uploads, SEO, thumbnails, playlists, Shorts, community replies and analytics-led improvement.",
+   "meta_title": "YouTube Channel Management | AVENZA",
+   "meta_description": "YouTube channel management: content planning, uploads, SEO, thumbnails, playlists, Shorts, community replies and analytics-led improvement.",
+   "image": "plate-071",
+   "menu_order": 71,
+   "content_file": "services/youtube-channel-management.html",
+   "number": "71",
+   "category": "social"
+  },
+  {
+   "slug": "influencer-marketing",
+   "title": "Influencer Marketing",
+   "excerpt": "Influencer marketing: creator discovery and vetting, briefs, contracts, disclosure compliance, content rights and sales-based measurement.",
+   "meta_title": "Influencer Marketing | AVENZA",
+   "meta_description": "Influencer marketing: creator discovery and vetting, briefs, contracts, disclosure compliance, content rights and sales-based measurement.",
+   "image": "plate-072",
+   "menu_order": 72,
+   "content_file": "services/influencer-marketing.html",
+   "number": "72",
+   "category": "social"
+  },
+  {
+   "slug": "social-media-management",
+   "title": "Social Media Management",
+   "excerpt": "Social media management: monthly calendars, design, captions, publishing, comment and message replies, and reporting across platforms.",
+   "meta_title": "Social Media Management | AVENZA",
+   "meta_description": "Social media management: monthly calendars, design, captions, publishing, comment and message replies, and reporting across platforms.",
+   "image": "plate-073",
+   "menu_order": 73,
+   "content_file": "services/social-media-management.html",
+   "number": "73",
+   "category": "social"
+  },
+  {
+   "slug": "short-form-video",
+   "title": "Short-Form Video Production",
+   "excerpt": "Short-form video for Instagram Reels and YouTube Shorts: hooks, scripts, shoot plans, editing, captions and performance reviews.",
+   "meta_title": "Short-Form Video Production Services | AVENZA",
+   "meta_description": "Short-form video for Instagram Reels and YouTube Shorts: hooks, scripts, shoot plans, editing, captions and performance reviews.",
+   "image": "plate-074",
+   "menu_order": 74,
+   "content_file": "services/short-form-video.html",
+   "number": "74",
+   "category": "social"
+  },
+  {
+   "slug": "whatsapp-marketing",
+   "title": "WhatsApp Marketing",
+   "excerpt": "WhatsApp marketing: WhatsApp Business setup, catalogues, quick replies, click-to-WhatsApp ads, API messaging with consent and lead tracking.",
+   "meta_title": "WhatsApp Marketing | AVENZA",
+   "meta_description": "WhatsApp marketing: WhatsApp Business setup, catalogues, quick replies, click-to-WhatsApp ads, API messaging with consent and lead tracking.",
+   "image": "plate-075",
+   "menu_order": 75,
+   "content_file": "services/whatsapp-marketing.html",
+   "number": "75",
+   "category": "social"
+  },
+  {
+   "slug": "pinterest-marketing",
+   "title": "Pinterest Marketing",
+   "excerpt": "Pinterest marketing: rich pins, boards and keywords, fresh pin design, product catalogues and Pinterest ads for visual, planning-led brands.",
+   "meta_title": "Pinterest Marketing | AVENZA",
+   "meta_description": "Pinterest marketing: rich pins, boards and keywords, fresh pin design, product catalogues and Pinterest ads for visual, planning-led brands.",
+   "image": "plate-076",
+   "menu_order": 76,
+   "content_file": "services/pinterest-marketing.html",
+   "number": "76",
+   "category": "social"
+  },
+  {
+   "slug": "wordpress-development",
+   "title": "WordPress Development",
+   "excerpt": "WordPress development: custom block themes, native Gutenberg editing, custom post types, integrations and clean, fast, secure code.",
+   "meta_title": "WordPress Development | AVENZA",
+   "meta_description": "WordPress development: custom block themes, native Gutenberg editing, custom post types, integrations and clean, fast, secure code.",
+   "image": "plate-077",
+   "menu_order": 77,
+   "content_file": "services/wordpress-development.html",
+   "number": "77",
+   "category": "web"
+  },
+  {
+   "slug": "shopify-development",
+   "title": "Shopify Development",
+   "excerpt": "Shopify development: custom themes and sections, migrations to Shopify, app integrations, speed work and SEO-safe launches.",
+   "meta_title": "Shopify Development | AVENZA",
+   "meta_description": "Shopify development: custom themes and sections, migrations to Shopify, app integrations, speed work and SEO-safe launches.",
+   "image": "plate-078",
+   "menu_order": 78,
+   "content_file": "services/shopify-development.html",
+   "number": "78",
+   "category": "web"
+  },
+  {
+   "slug": "woocommerce-development",
+   "title": "WooCommerce Development",
+   "excerpt": "WooCommerce development: custom store design, checkout and payment setup, GST invoices, shipping integrations, speed and security.",
+   "meta_title": "WooCommerce Development | AVENZA",
+   "meta_description": "WooCommerce development: custom store design, checkout and payment setup, GST invoices, shipping integrations, speed and security.",
+   "image": "plate-079",
+   "menu_order": 79,
+   "content_file": "services/woocommerce-development.html",
+   "number": "79",
+   "category": "web"
   },
   {
    "slug": "link-building-digital-pr",
@@ -251,7 +1770,128 @@
    "image": "plate-08",
    "menu_order": 8,
    "content_file": "services/link-building-digital-pr.html",
-   "number": "08"
+   "number": "08",
+   "category": "digital-pr"
+  },
+  {
+   "slug": "landing-page-design",
+   "title": "Landing Page Design",
+   "excerpt": "Landing page design for ads and campaigns: message match, conversion copy, fast build, forms and tracking, with A/B testing support.",
+   "meta_title": "Landing Page Design | AVENZA",
+   "meta_description": "Landing page design for ads and campaigns: message match, conversion copy, fast build, forms and tracking, with A/B testing support.",
+   "image": "plate-080",
+   "menu_order": 80,
+   "content_file": "services/landing-page-design.html",
+   "number": "80",
+   "category": "web"
+  },
+  {
+   "slug": "ui-ux-design",
+   "title": "UI and UX Design",
+   "excerpt": "UI and UX design: user research, journeys, wireframes, visual design, design systems, prototypes and usability testing for websites and apps.",
+   "meta_title": "UI and UX Design | AVENZA",
+   "meta_description": "UI and UX design: user research, journeys, wireframes, visual design, design systems, prototypes and usability testing for websites and apps.",
+   "image": "plate-081",
+   "menu_order": 81,
+   "content_file": "services/ui-ux-design.html",
+   "number": "81",
+   "category": "web"
+  },
+  {
+   "slug": "website-redesign",
+   "title": "Website Redesign",
+   "excerpt": "Website redesign: research-led design, content migration, SEO protection with redirect mapping, performance budgets and post-launch tracking.",
+   "meta_title": "Website Redesign Services | AVENZA",
+   "meta_description": "Website redesign: research-led design, content migration, SEO protection with redirect mapping, performance budgets and post-launch tracking.",
+   "image": "plate-082",
+   "menu_order": 82,
+   "content_file": "services/website-redesign.html",
+   "number": "82",
+   "category": "web"
+  },
+  {
+   "slug": "website-maintenance",
+   "title": "Website Maintenance and Care",
+   "excerpt": "Website maintenance plans: core and plugin updates, daily backups, security monitoring, uptime alerts, small edits and monthly health reports.",
+   "meta_title": "Website Maintenance and Care Services | AVENZA",
+   "meta_description": "Website maintenance plans: core and plugin updates, daily backups, security monitoring, uptime alerts, small edits and monthly health reports.",
+   "image": "plate-083",
+   "menu_order": 83,
+   "content_file": "services/website-maintenance.html",
+   "number": "83",
+   "category": "web"
+  },
+  {
+   "slug": "website-speed-optimization",
+   "title": "Website Speed Optimization",
+   "excerpt": "Website speed optimization: hosting and caching, image compression and formats, script and font loading, CDN setup and Core Web Vitals.",
+   "meta_title": "Website Speed Optimization Services | AVENZA",
+   "meta_description": "Website speed optimization: hosting and caching, image compression and formats, script and font loading, CDN setup and Core Web Vitals.",
+   "image": "plate-084",
+   "menu_order": 84,
+   "content_file": "services/website-speed-optimization.html",
+   "number": "84",
+   "category": "web"
+  },
+  {
+   "slug": "web-accessibility-services",
+   "title": "Web Accessibility Services",
+   "excerpt": "Web accessibility services: WCAG 2.2 audits, contrast, keyboard and screen reader testing, fixes, accessible content training and statements.",
+   "meta_title": "Web Accessibility Services | AVENZA",
+   "meta_description": "Web accessibility services: WCAG 2.2 audits, contrast, keyboard and screen reader testing, fixes, accessible content training and statements.",
+   "image": "plate-085",
+   "menu_order": 85,
+   "content_file": "services/web-accessibility-services.html",
+   "number": "85",
+   "category": "web"
+  },
+  {
+   "slug": "headless-development",
+   "title": "Headless and Next.js Development",
+   "excerpt": "Headless and Next.js development: headless CMS setup, server-side rendering, SEO-safe routing, structured data, performance and editor workflows.",
+   "meta_title": "Headless and Next.js Development | AVENZA",
+   "meta_description": "Headless and Next.js development: headless CMS setup, server-side rendering, SEO-safe routing, structured data, performance and editor workflows.",
+   "image": "plate-086",
+   "menu_order": 86,
+   "content_file": "services/headless-development.html",
+   "number": "86",
+   "category": "web"
+  },
+  {
+   "slug": "website-security",
+   "title": "Website Security and Hosting",
+   "excerpt": "Website security and hosting: managed hosting, SSL, firewall and malware protection, backups, login hardening and incident response.",
+   "meta_title": "Website Security and Hosting Services | AVENZA",
+   "meta_description": "Website security and hosting: managed hosting, SSL, firewall and malware protection, backups, login hardening and incident response.",
+   "image": "plate-087",
+   "menu_order": 87,
+   "content_file": "services/website-security.html",
+   "number": "87",
+   "category": "web"
+  },
+  {
+   "slug": "ab-testing",
+   "title": "A/B Testing",
+   "excerpt": "A/B testing services: hypothesis design, sample size planning, experiment setup, quality checks and honest statistical analysis.",
+   "meta_title": "A/B Testing | AVENZA",
+   "meta_description": "A/B testing services: hypothesis design, sample size planning, experiment setup, quality checks and honest statistical analysis.",
+   "image": "plate-088",
+   "menu_order": 88,
+   "content_file": "services/ab-testing.html",
+   "number": "88",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "ux-research",
+   "title": "UX Research and Heatmaps",
+   "excerpt": "UX research for conversion: heatmaps, session recordings, form analytics, on-site surveys, user interviews and usability tests.",
+   "meta_title": "UX Research and Heatmaps Services | AVENZA",
+   "meta_description": "UX research for conversion: heatmaps, session recordings, form analytics, on-site surveys, user interviews and usability tests.",
+   "image": "plate-089",
+   "menu_order": 89,
+   "content_file": "services/ux-research.html",
+   "number": "89",
+   "category": "cro-analytics"
   },
   {
    "slug": "google-ads-management",
@@ -262,7 +1902,128 @@
    "image": "plate-09",
    "menu_order": 9,
    "content_file": "services/google-ads-management.html",
-   "number": "09"
+   "number": "09",
+   "category": "paid-media"
+  },
+  {
+   "slug": "ga4-setup",
+   "title": "Google Analytics 4 Setup and Audit",
+   "excerpt": "Google Analytics 4 setup and audit: key events, consent mode, cross-domain tracking, ecommerce events, filters and clear reporting.",
+   "meta_title": "Google Analytics 4 Setup and Audit | AVENZA",
+   "meta_description": "Google Analytics 4 setup and audit: key events, consent mode, cross-domain tracking, ecommerce events, filters and clear reporting.",
+   "image": "plate-090",
+   "menu_order": 90,
+   "content_file": "services/ga4-setup.html",
+   "number": "90",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "google-tag-manager",
+   "title": "Google Tag Manager Setup",
+   "excerpt": "Google Tag Manager setup: clean container structure, GA4 and ad tags, data layer events, consent handling, testing and documentation.",
+   "meta_title": "Google Tag Manager Setup | AVENZA",
+   "meta_description": "Google Tag Manager setup: clean container structure, GA4 and ad tags, data layer events, consent handling, testing and documentation.",
+   "image": "plate-091",
+   "menu_order": 91,
+   "content_file": "services/google-tag-manager.html",
+   "number": "91",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "looker-studio-dashboards",
+   "title": "Looker Studio Dashboards",
+   "excerpt": "Looker Studio dashboards: GA4, Search Console, Google Ads, Meta and CRM data combined into clear, automated marketing reports.",
+   "meta_title": "Looker Studio Dashboards | AVENZA",
+   "meta_description": "Looker Studio dashboards: GA4, Search Console, Google Ads, Meta and CRM data combined into clear, automated marketing reports.",
+   "image": "plate-092",
+   "menu_order": 92,
+   "content_file": "services/looker-studio-dashboards.html",
+   "number": "92",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "conversion-tracking",
+   "title": "Conversion Tracking",
+   "excerpt": "Conversion tracking for Google Ads, Meta, LinkedIn and GA4: form, call, WhatsApp and purchase events, enhanced conversions and offline imports.",
+   "meta_title": "Conversion Tracking | AVENZA",
+   "meta_description": "Conversion tracking for Google Ads, Meta, LinkedIn and GA4: form, call, WhatsApp and purchase events, enhanced conversions and offline imports.",
+   "image": "plate-093",
+   "menu_order": 93,
+   "content_file": "services/conversion-tracking.html",
+   "number": "93",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "call-tracking",
+   "title": "Call Tracking",
+   "excerpt": "Call tracking: dynamic number insertion, source attribution, call recording with consent, lead scoring and integration with ads and CRM.",
+   "meta_title": "Call Tracking | AVENZA",
+   "meta_description": "Call tracking: dynamic number insertion, source attribution, call recording with consent, lead scoring and integration with ads and CRM.",
+   "image": "plate-094",
+   "menu_order": 94,
+   "content_file": "services/call-tracking.html",
+   "number": "94",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "marketing-attribution",
+   "title": "Marketing Attribution",
+   "excerpt": "Marketing attribution: GA4 attribution models, CRM-based journeys, UTM governance, incrementality tests and budget recommendations.",
+   "meta_title": "Marketing Attribution Services | AVENZA",
+   "meta_description": "Marketing attribution: GA4 attribution models, CRM-based journeys, UTM governance, incrementality tests and budget recommendations.",
+   "image": "plate-095",
+   "menu_order": 95,
+   "content_file": "services/marketing-attribution.html",
+   "number": "95",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "checkout-optimization",
+   "title": "Checkout Optimization",
+   "excerpt": "Checkout optimization: guest checkout, early shipping costs, UPI and payment options, form simplification, trust signals and abandonment flows.",
+   "meta_title": "Checkout Optimization Services | AVENZA",
+   "meta_description": "Checkout optimization: guest checkout, early shipping costs, UPI and payment options, form simplification, trust signals and abandonment flows.",
+   "image": "plate-096",
+   "menu_order": 96,
+   "content_file": "services/checkout-optimization.html",
+   "number": "96",
+   "category": "cro-analytics"
+  },
+  {
+   "slug": "email-marketing",
+   "title": "Email Marketing",
+   "excerpt": "Email marketing: list growth with consent, campaign planning, copy and design, segmentation, deliverability, testing and revenue reporting.",
+   "meta_title": "Email Marketing | AVENZA",
+   "meta_description": "Email marketing: list growth with consent, campaign planning, copy and design, segmentation, deliverability, testing and revenue reporting.",
+   "image": "plate-097",
+   "menu_order": 97,
+   "content_file": "services/email-marketing.html",
+   "number": "97",
+   "category": "email-automation"
+  },
+  {
+   "slug": "marketing-automation",
+   "title": "Marketing Automation",
+   "excerpt": "Marketing automation: journey mapping, lead scoring, triggered email, SMS and WhatsApp flows, CRM sync and revenue-based reporting.",
+   "meta_title": "Marketing Automation Services | AVENZA",
+   "meta_description": "Marketing automation: journey mapping, lead scoring, triggered email, SMS and WhatsApp flows, CRM sync and revenue-based reporting.",
+   "image": "plate-098",
+   "menu_order": 98,
+   "content_file": "services/marketing-automation.html",
+   "number": "98",
+   "category": "email-automation"
+  },
+  {
+   "slug": "hubspot-services",
+   "title": "HubSpot Services",
+   "excerpt": "HubSpot services: portal setup and audits, properties and pipelines, workflows, lead scoring, integrations, reporting and team training.",
+   "meta_title": "HubSpot Services | AVENZA",
+   "meta_description": "HubSpot services: portal setup and audits, properties and pipelines, workflows, lead scoring, integrations, reporting and team training.",
+   "image": "plate-099",
+   "menu_order": 99,
+   "content_file": "services/hubspot-services.html",
+   "number": "99",
+   "category": "email-automation"
   },
   {
    "slug": "social-media-marketing",
@@ -273,7 +2034,116 @@
    "image": "plate-10",
    "menu_order": 10,
    "content_file": "services/social-media-marketing.html",
-   "number": "10"
+   "number": "10",
+   "category": "social"
+  },
+  {
+   "slug": "lead-nurturing",
+   "title": "Lead Nurturing",
+   "excerpt": "Lead nurturing: segmented sequences, educational content, sales hand-off rules and re-engagement for long B2B and high-value sales cycles.",
+   "meta_title": "Lead Nurturing Services | AVENZA",
+   "meta_description": "Lead nurturing: segmented sequences, educational content, sales hand-off rules and re-engagement for long B2B and high-value sales cycles.",
+   "image": "plate-100",
+   "menu_order": 100,
+   "content_file": "services/lead-nurturing.html",
+   "number": "100",
+   "category": "email-automation"
+  },
+  {
+   "slug": "sms-marketing",
+   "title": "SMS Marketing",
+   "excerpt": "SMS marketing in India: DLT registration, sender IDs and templates, consent, segmentation, transactional and promotional campaigns and tracking.",
+   "meta_title": "SMS Marketing | AVENZA",
+   "meta_description": "SMS marketing in India: DLT registration, sender IDs and templates, consent, segmentation, transactional and promotional campaigns and tracking.",
+   "image": "plate-101",
+   "menu_order": 101,
+   "content_file": "services/sms-marketing.html",
+   "number": "101",
+   "category": "email-automation"
+  },
+  {
+   "slug": "crm-integration",
+   "title": "CRM Integration",
+   "excerpt": "CRM integration: website forms, ads, WhatsApp and calls connected to HubSpot, Zoho or Salesforce, with clean data and closed-loop reporting.",
+   "meta_title": "CRM Integration | AVENZA",
+   "meta_description": "CRM integration: website forms, ads, WhatsApp and calls connected to HubSpot, Zoho or Salesforce, with clean data and closed-loop reporting.",
+   "image": "plate-102",
+   "menu_order": 102,
+   "content_file": "services/crm-integration.html",
+   "number": "102",
+   "category": "email-automation"
+  },
+  {
+   "slug": "newsletter-management",
+   "title": "Newsletter Management",
+   "excerpt": "Newsletter management: editorial planning, writing, design, sending, list growth with consent, deliverability and subscriber reporting.",
+   "meta_title": "Newsletter Management | AVENZA",
+   "meta_description": "Newsletter management: editorial planning, writing, design, sending, list growth with consent, deliverability and subscriber reporting.",
+   "image": "plate-103",
+   "menu_order": 103,
+   "content_file": "services/newsletter-management.html",
+   "number": "103",
+   "category": "email-automation"
+  },
+  {
+   "slug": "amazon-store-management",
+   "title": "Amazon Store Management",
+   "excerpt": "Amazon store management: catalogue and listings, Brand Store, account health, pricing visibility, ads coordination and reporting.",
+   "meta_title": "Amazon Store Management | AVENZA",
+   "meta_description": "Amazon store management: catalogue and listings, Brand Store, account health, pricing visibility, ads coordination and reporting.",
+   "image": "plate-104",
+   "menu_order": 104,
+   "content_file": "services/amazon-store-management.html",
+   "number": "104",
+   "category": "ecommerce-growth"
+  },
+  {
+   "slug": "flipkart-marketplace-management",
+   "title": "Flipkart Marketplace Management",
+   "excerpt": "Flipkart marketplace management: listings and catalogue quality, Flipkart Ads, seller performance metrics, pricing, sale events and reporting.",
+   "meta_title": "Flipkart Marketplace Management | AVENZA",
+   "meta_description": "Flipkart marketplace management: listings and catalogue quality, Flipkart Ads, seller performance metrics, pricing, sale events and reporting.",
+   "image": "plate-105",
+   "menu_order": 105,
+   "content_file": "services/flipkart-marketplace-management.html",
+   "number": "105",
+   "category": "ecommerce-growth"
+  },
+  {
+   "slug": "marketplace-listing-optimization",
+   "title": "Marketplace Listing Optimization",
+   "excerpt": "Marketplace listing optimization: keyword research, titles, attributes, images and descriptions tuned for Amazon, Flipkart, Myntra and Meesho.",
+   "meta_title": "Marketplace Listing Optimization Services | AVENZA",
+   "meta_description": "Marketplace listing optimization: keyword research, titles, attributes, images and descriptions tuned for Amazon, Flipkart, Myntra and Meesho.",
+   "image": "plate-106",
+   "menu_order": 106,
+   "content_file": "services/marketplace-listing-optimization.html",
+   "number": "106",
+   "category": "ecommerce-growth"
+  },
+  {
+   "slug": "product-feed-management",
+   "title": "Product Feed Management",
+   "excerpt": "Product feed management: Merchant Center and Meta catalogue feeds, attribute enrichment, title optimisation, error fixes and custom labels.",
+   "meta_title": "Product Feed Management | AVENZA",
+   "meta_description": "Product feed management: Merchant Center and Meta catalogue feeds, attribute enrichment, title optimisation, error fixes and custom labels.",
+   "image": "plate-107",
+   "menu_order": 107,
+   "content_file": "services/product-feed-management.html",
+   "number": "107",
+   "category": "ecommerce-growth"
+  },
+  {
+   "slug": "d2c-growth-marketing",
+   "title": "D2C Growth Marketing",
+   "excerpt": "D2C growth marketing: acquisition across Meta and Google, retention with email and WhatsApp, unit economics, creative testing and CRO.",
+   "meta_title": "D2C Growth Marketing | AVENZA",
+   "meta_description": "D2C growth marketing: acquisition across Meta and Google, retention with email and WhatsApp, unit economics, creative testing and CRO.",
+   "image": "plate-108",
+   "menu_order": 108,
+   "content_file": "services/d2c-growth-marketing.html",
+   "number": "108",
+   "category": "ecommerce-growth"
   },
   {
    "slug": "website-design-development",
@@ -284,7 +2154,8 @@
    "image": "plate-11",
    "menu_order": 11,
    "content_file": "services/website-design-development.html",
-   "number": "11"
+   "number": "11",
+   "category": "web"
   },
   {
    "slug": "conversion-rate-optimization",
@@ -295,7 +2166,8 @@
    "image": "plate-12",
    "menu_order": 12,
    "content_file": "services/conversion-rate-optimization.html",
-   "number": "12"
+   "number": "12",
+   "category": "cro-analytics"
   }
  ],
  "pages": [
@@ -372,9 +2244,9 @@
   {
    "slug": "services",
    "title": "Services",
-   "excerpt": "Twelve services across AI visibility, search, content, authority, paid media, social, websites and conversion, planned as one strategy.",
-   "meta_title": "Digital Marketing Services: GEO, AEO, SEO, Ads | AVENZA",
-   "meta_description": "All AVENZA services: GEO, AEO, SEO, technical and local SEO, e-commerce SEO, content, digital PR, Google Ads, social media, web design and CRO.",
+   "excerpt": "108 services across ten disciplines: AI search, SEO, content, digital PR, paid media, social, websites, CRO, email and marketplaces.",
+   "meta_title": "108 Digital Marketing Services | AVENZA",
+   "meta_description": "All 108 AVENZA services across AI search, SEO, content, digital PR, paid media, social, websites, CRO, email and marketplaces.",
    "image": "hero-services",
    "menu_order": 0,
    "content_file": "pages/services.html"
@@ -482,64 +2354,54 @@
     "title": "Services",
     "children": [
      {
-      "type": "service",
-      "slug": "generative-engine-optimization",
-      "title": "Generative Engine Optimization"
+      "type": "term",
+      "slug": "ai-search",
+      "title": "AI Search and GEO"
      },
      {
-      "type": "service",
-      "slug": "answer-engine-optimization",
-      "title": "Answer Engine Optimization"
+      "type": "term",
+      "slug": "seo",
+      "title": "SEO"
      },
      {
-      "type": "service",
-      "slug": "seo-services",
-      "title": "SEO Services"
-     },
-     {
-      "type": "service",
-      "slug": "technical-seo",
-      "title": "Technical SEO"
-     },
-     {
-      "type": "service",
-      "slug": "local-seo",
-      "title": "Local SEO"
-     },
-     {
-      "type": "service",
-      "slug": "ecommerce-seo",
-      "title": "E-commerce SEO"
-     },
-     {
-      "type": "service",
-      "slug": "content-marketing",
+      "type": "term",
+      "slug": "content",
       "title": "Content Marketing"
      },
      {
-      "type": "service",
-      "slug": "link-building-digital-pr",
-      "title": "Link Building and Digital PR"
+      "type": "term",
+      "slug": "digital-pr",
+      "title": "Digital PR and Reputation"
      },
      {
-      "type": "service",
-      "slug": "google-ads-management",
-      "title": "Google Ads Management"
+      "type": "term",
+      "slug": "paid-media",
+      "title": "Paid Media and PPC"
      },
      {
-      "type": "service",
-      "slug": "social-media-marketing",
+      "type": "term",
+      "slug": "social",
       "title": "Social Media Marketing"
      },
      {
-      "type": "service",
-      "slug": "website-design-development",
-      "title": "Website Design and Development"
+      "type": "term",
+      "slug": "web",
+      "title": "Websites and Development"
      },
      {
-      "type": "service",
-      "slug": "conversion-rate-optimization",
-      "title": "Conversion Rate Optimization"
+      "type": "term",
+      "slug": "cro-analytics",
+      "title": "CRO and Analytics"
+     },
+     {
+      "type": "term",
+      "slug": "email-automation",
+      "title": "Email and Automation"
+     },
+     {
+      "type": "term",
+      "slug": "ecommerce-growth",
+      "title": "E-commerce and Marketplaces"
      }
     ]
    },

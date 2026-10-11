@@ -138,7 +138,7 @@ function avenza_schema_output() {
 	if ( ! $plugin && $url ) {
 		$crumbs = avenza_breadcrumb_items();
 		$page   = array(
-			'@type'      => is_page( 'about' ) ? 'AboutPage' : ( is_page( 'contact' ) ? 'ContactPage' : ( is_home() ? 'CollectionPage' : 'WebPage' ) ),
+			'@type'      => is_page( 'about' ) ? 'AboutPage' : ( is_page( 'contact' ) ? 'ContactPage' : ( ( is_home() || is_tax( 'avenza_service_cat' ) ) ? 'CollectionPage' : 'WebPage' ) ),
 			'@id'        => $url . '#webpage',
 			'url'        => $url,
 			'name'       => wp_get_document_title(),
@@ -200,9 +200,9 @@ function avenza_schema_output() {
 		);
 	}
 
-	if ( is_page( 'services' ) && ! $plugin ) {
+	if ( ( is_page( 'services' ) || is_tax( 'avenza_service_cat' ) ) && ! $plugin ) {
 		$list = array();
-		foreach ( avenza_get_services() as $i => $service ) {
+		foreach ( avenza_get_services( -1, array(), is_tax( 'avenza_service_cat' ) ? get_queried_object()->slug : '' ) as $i => $service ) {
 			$list[] = array(
 				'@type'    => 'ListItem',
 				'position' => $i + 1,

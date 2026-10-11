@@ -3,6 +3,7 @@ title: Website Design and Development
 slug: website-design-development
 number: 11
 menu_order: 11
+category: web
 image: plate-11
 excerpt: Fast, accessible WordPress and custom websites designed to win trust, built clean for search and AI crawlers, and easy for your team to edit.
 meta_title: Website Design and Development for Growth | AVENZA

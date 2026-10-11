@@ -3,6 +3,7 @@ title: Local SEO
 slug: local-seo
 number: 05
 menu_order: 5
+category: seo
 image: plate-05
 excerpt: Show up in Google Maps, the local pack, near-me searches and AI answers for your city, with a Google Business Profile that earns calls.
 meta_title: Local SEO and Google Business Profile Services | AVENZA

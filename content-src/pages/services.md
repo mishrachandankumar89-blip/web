@@ -2,29 +2,37 @@
 title: Services
 slug: services
 image: hero-services
-excerpt: Twelve services across AI visibility, search, content, authority, paid media, social, websites and conversion, planned as one strategy.
-meta_title: Digital Marketing Services: GEO, AEO, SEO, Ads | AVENZA
-meta_description: All AVENZA services: GEO, AEO, SEO, technical and local SEO, e-commerce SEO, content, digital PR, Google Ads, social media, web design and CRO.
+excerpt: 108 services across ten disciplines: AI search, SEO, content, digital PR, paid media, social, websites, CRO, email and marketplaces.
+meta_title: 108 Digital Marketing Services | AVENZA
+meta_description: All 108 AVENZA services across AI search, SEO, content, digital PR, paid media, social, websites, CRO, email and marketplaces.
 hero_eyebrow: Services
-hero_title: Twelve ways to be *found* and chosen
+hero_title: 108 ways to be *found* and chosen
 hero_lead: From the technical foundation of your website to the answers AI assistants give about your brand, every service is built to work on its own and even better together.
 hero_image: hero-services
 hero_primary: Book a Strategy Call | page:contact
 hero_secondary: Our approach | page:approach
-hero_facts: AI visibility | Search | Paid, social and web
+hero_facts: Ten disciplines | 108 services | One strategy
 answer_q: What services does AVENZA offer?
-answer: AVENZA offers twelve services: Generative Engine Optimization, Answer Engine Optimization, SEO, technical SEO, local SEO, e-commerce SEO, content marketing, link building and digital PR, Google Ads management, social media marketing, website design and development, and conversion rate optimization. You can start with one or two and add more as results grow.
+answer: AVENZA offers 108 services in ten disciplines: AI search and GEO, SEO, content marketing, digital PR and reputation, paid media, social media, websites, CRO and analytics, email and automation, and e-commerce marketplaces. Most businesses start with one or two services and add more as results grow.
 cta_heading: Not sure where to *start*?
 cta_text: Tell us your goal and your budget. We will recommend the one or two services likely to make the biggest difference first, and explain why.
 ---
 
-## All services {wide alt}
+## Our disciplines {wide alt}
 
-^ The full range
+^ Ten areas of expertise
 
-> Each service has its own page with the process, deliverables, timelines and sources we rely on.
+> Start with the discipline that matches your goal. Each hub lists every service inside it.
 
-[[services columns=3]]
+[[service_categories]]
+
+## Every service, A to Z by discipline {wide}
+
+^ The full directory
+
+> All 108 services, each with its own page covering what is included, how we deliver it and common questions.
+
+[[service_index]]
 
 ## Which service should you start with?
 

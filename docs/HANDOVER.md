@@ -1,4 +1,4 @@
-# AVENZA WordPress Theme: Handover (v1.4.0)
+# AVENZA WordPress Theme: Handover (v1.5.0)
 
 Ye document batata hai ki theme mein kya hai, use kaise install ya update karna hai, aur launch se pehle kya kaam bacha hai.
 
@@ -7,6 +7,17 @@ Ye document batata hai ki theme mein kya hai, use kaise install ya update karna 
 **Preview:** `docs/preview-home-desktop.jpg`, `docs/preview-home-mobile.jpg`, `docs/preview-service-desktop.jpg`
 
 ---
+
+## 0. Version 1.5.0 mein naya (108 services)
+
+- **108 service pages**, 10 disciplines mein (WebFX jaisa structure): AI Search and GEO (11), SEO (24), Content (10), Digital PR and Reputation (7), Paid Media (11), Social (11), Websites (12), CRO and Analytics (10), Email and Automation (7), E-commerce and Marketplaces (5).
+- Har discipline ka **hub page** `/expertise/<naam>/` par, aur Services page par poori A-Z directory.
+- Menu mein Services ke neeche 10 disciplines. Footer mein bhi.
+- Har naye service page par: hero, short answer (40-60 words), service ka intro, 6 deliverables, 5-step process, 3 FAQ (FAQ schema ke saath), same discipline ki related services, aur sources.
+- Har service ki apni numbered engraved plate (N° 13 se N° 108).
+- Setup ab 20-20 pages ke batches mein chalta hai, isliye bade content par bhi time-out nahi hota.
+- Zip ab ~9 MB hai. Agar hosting upload limit kam ho, to zip ko FTP ya hosting file manager se `wp-content/themes/` mein extract kar dein.
+- Note: naye 96 pages ke kuch hisse (why it matters, process, sources) discipline-level par shared hain. Agle phase mein inhe har service ke liye alag deep content se badla ja sakta hai.
 
 ## 1. Kya bana hai
 
@@ -44,7 +55,7 @@ Total public pages: 9 pages + 12 services + 6 articles = **27**, plus 404 aur se
 ## 4. Pehle wala version (1.1.0 se 1.3.0) laga hai to
 
 1. Upload Theme se `avenza.zip` upload karein. Poocha jaye to **"Replace current with uploaded"** chunein.
-2. Notice aayega: **"Apply the AVENZA 1.4.0 update"**. Button dabayein aur setup chalayein.
+2. Notice aayega: **"Apply the AVENZA 1.5.0 update"**. Button dabayein aur setup chalayein.
 3. Jo pages aapne khud edit kiye the, wo waise hi rahenge, aur setup screen unke naam batayegi.
 4. Purane version ke kuch pages ya images ke naam alag the, to wo Pages ya Media mein bache reh sakte hain. Unhe dekh kar Trash kar dein.
 

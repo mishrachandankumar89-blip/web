@@ -3,6 +3,7 @@ title: Generative Engine Optimization (GEO)
 slug: generative-engine-optimization
 number: 01
 menu_order: 1
+category: ai-search
 image: plate-01
 excerpt: Get your brand named and cited when people ask ChatGPT, Gemini, Perplexity, Copilot or Google AI Overviews for advice in your category.
 meta_title: Generative Engine Optimization (GEO) Services | AVENZA

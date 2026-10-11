@@ -185,7 +185,7 @@ svg {{ display: block; }}
 """
 
 
-def dark_plate(w, h, seed, symbol, number=None, caption=None, roman=None):
+def dark_plate(w, h, seed, symbol, number=None, caption=None, roman=None, scale=1.0, ring=1.0):
     cx, cy = w / 2, h / 2 + (8 if caption else 0)
     rnd = random.Random(seed)
     lobes = rnd.choice([18, 22, 24, 28, 32])
@@ -198,23 +198,24 @@ def dark_plate(w, h, seed, symbol, number=None, caption=None, roman=None):
         f'<clipPath id="inner"><rect x="40" y="40" width="{w - 80}" height="{h - 80}"/></clipPath></defs>',
         f'<rect width="{w}" height="{h}" fill="url(#bg)"/>',
         f'<g clip-path="url(#inner)">{wave_field(w, h, seed, MINT, .10, spacing=13)}</g>',
-        f'<circle cx="{cx}" cy="{cy}" r="{min(w, h) * 0.46}" fill="url(#glow)"/>',
-        woven_band(cx, cy, min(w, h) * 0.40, 9, lobes, 7, MINT_300, .38, 0.7),
-        woven_band(cx, cy, min(w, h) * 0.33, 6, lobes2, 5, WHITE, .26, 0.6),
-        rosette(cx, cy, min(w, h) * 0.30, seed, MINT_300, .55, 0.65, layers=3),
-        f'<circle cx="{cx}" cy="{cy}" r="{min(w, h) * 0.165}" fill="{EMERALD_900}" stroke="{MINT}" stroke-opacity=".85" stroke-width="1.6"/>',
-        f'<circle cx="{cx}" cy="{cy}" r="{min(w, h) * 0.150}" fill="none" stroke="{MINT}" stroke-opacity=".45" stroke-width="1"/>',
-        woven_band(cx, cy, min(w, h) * 0.185, 3, 36, 3, MINT, .55, 0.6),
-        icon(symbol, cx, cy, min(w, h) * 0.17, WHITE, 3.2),
+        f'<circle cx="{cx}" cy="{cy}" r="{min(w, h) * 0.46 * ring}" fill="url(#glow)"/>',
+        woven_band(cx, cy, min(w, h) * 0.40 * ring, 9, lobes, 7, MINT_300, .38, 0.7),
+        woven_band(cx, cy, min(w, h) * 0.33 * ring, 6, lobes2, 5, WHITE, .26, 0.6),
+        rosette(cx, cy, min(w, h) * 0.30 * ring, seed, MINT_300, .55, 0.65, layers=3),
+        f'<circle cx="{cx}" cy="{cy}" r="{min(w, h) * 0.165 * ring}" fill="{EMERALD_900}" stroke="{MINT}" stroke-opacity=".85" stroke-width="1.6"/>',
+        f'<circle cx="{cx}" cy="{cy}" r="{min(w, h) * 0.150 * ring}" fill="none" stroke="{MINT}" stroke-opacity=".45" stroke-width="1"/>',
+        woven_band(cx, cy, min(w, h) * 0.185 * ring, 3, 36, 3, MINT, .55, 0.6),
+        icon(symbol, cx, cy, min(w, h) * 0.17 * ring, WHITE, 3.2),
         frame(w, h, MINT),
     ]
     if number:
-        parts.append(f'<text x="{cx}" y="104" text-anchor="middle" class="num" font-size="44" fill="{MINT}">N° {number}</text>')
-        parts.append(f'<path d="M{cx - 120} 122 H{cx - 40} M{cx + 40} 122 H{cx + 120}" stroke="{MINT}" stroke-opacity=".6"/>')
+        parts.append(f'<text x="{cx}" y="{104 * scale:.0f}" text-anchor="middle" class="num" font-size="{44 * scale:.0f}" fill="{MINT}">N° {number}</text>')
+        parts.append(f'<path d="M{cx - 120 * scale} {122 * scale:.0f} H{cx - 50 * scale} M{cx + 50 * scale} {122 * scale:.0f} H{cx + 120 * scale}" stroke="{MINT}" stroke-opacity=".6"/>')
     elif roman:
         parts.append(f'<text x="{cx}" y="104" text-anchor="middle" class="num" font-size="44" fill="{MINT}">{roman}</text>')
     if caption:
-        parts.append(f'<text x="{cx}" y="{h - 82}" text-anchor="middle" class="cap" font-size="22" fill="{WHITE}" fill-opacity=".92">{caption}</text>')
+        size = min(22 * scale, (w - 160) / (len(caption) * 0.98))
+        parts.append(f'<text x="{cx}" y="{h - 82 * scale:.0f}" text-anchor="middle" class="cap" font-size="{size:.1f}" fill="{WHITE}" fill-opacity=".92">{caption}</text>')
     return parts
 
 
@@ -439,6 +440,18 @@ def main():
 
     add("diagram-visibility-stack", 1200, 1180, diagram_stack())
     add("diagram-question-to-citation", 1200, 1320, diagram_flow())
+
+    catalog = ROOT / "build" / "catalog-art.json"
+    if catalog.exists():
+        romans = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+        cat_i = 0
+        for img in json.loads(catalog.read_text()):
+            if img["key"].startswith("plate-"):
+                num = int(img["key"].split("-")[1])
+                add(f"svc-{img['key']}", 960, 720, dark_plate(960, 720, num * 131 + 7, img["_icon"], number=str(num), caption=caption_case(img["_caption"]), scale=0.85, ring=0.84), quality=80)
+            else:
+                add(img["key"], 1200, 900, dark_plate(1200, 900, 4000 + cat_i * 97, img["_icon"], roman=romans[cat_i], caption=caption_case(img["_caption"])))
+                cat_i += 1
 
     add("brand-avenza-logo", 600, 600, brand_logo(), fmt="png")
     add("brand-avenza-share", 1200, 630, brand_share(), fmt="jpg", quality=86)

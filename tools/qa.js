@@ -56,6 +56,10 @@ function pagesFromManifest() {
 		list.push(`/${p.slug}/`);
 		EXPECT[`/${p.slug}/`] = 'single-post';
 	}
+	for (const c of m.service_categories || []) {
+		list.push(`/expertise/${c.slug}/`);
+		EXPECT[`/expertise/${c.slug}/`] = 'tax-avenza_service_cat';
+	}
 	list.push('/this-page-does-not-exist/');
 	EXPECT['/this-page-does-not-exist/'] = 'error404';
 	list.push('/?s=seo');
@@ -271,7 +275,9 @@ async function drawerCheck(page) {
 	let pages = pagesFromManifest();
 	if (only.length) pages = pages.filter((p) => only.includes(p));
 
-	for (const vp of VIEWPORTS) {
+	const vpArg = (args.find((a) => a.startsWith('--vp=')) || '').slice(5).split(',').filter(Boolean);
+	const viewports = vpArg.length ? VIEWPORTS.filter((v) => vpArg.includes(v.name)) : VIEWPORTS;
+	for (const vp of viewports) {
 		const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, isMobile: vp.mobile, hasTouch: vp.mobile, deviceScaleFactor: 1 });
 		await ctx.addCookies([{ name: 'playground_auto_login_already_happened', value: '1', url: BASE }]);
 		const page = await ctx.newPage();
@@ -334,7 +340,7 @@ async function drawerCheck(page) {
 
 	await browser.close();
 	fs.writeFileSync(path.join(OUT, 'report.json'), JSON.stringify(report, null, 1));
-	const renders = Object.keys(report.pages).length * VIEWPORTS.length;
-	console.log(`\n${Object.keys(report.pages).length} pages x ${VIEWPORTS.length} viewports = ${renders} renders, ${report.failures} failing`);
+	const renders = Object.keys(report.pages).length * viewports.length;
+	console.log(`\n${Object.keys(report.pages).length} pages x ${viewports.length} viewports = ${renders} renders, ${report.failures} failing`);
 	process.exit(report.failures ? 1 : 0);
 })();

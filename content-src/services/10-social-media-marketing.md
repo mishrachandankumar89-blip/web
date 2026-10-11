@@ -3,6 +3,7 @@ title: Social Media Marketing
 slug: social-media-marketing
 number: 10
 menu_order: 10
+category: social
 image: plate-10
 excerpt: Organic content and paid campaigns on Instagram, Facebook, LinkedIn and YouTube, planned around your buyers and measured by leads, not likes.
 meta_title: Social Media Marketing and Meta Ads | AVENZA

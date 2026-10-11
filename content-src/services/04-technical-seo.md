@@ -3,6 +3,7 @@ title: Technical SEO
 slug: technical-seo
 number: 04
 menu_order: 4
+category: seo
 image: plate-04
 excerpt: Crawling, indexing, Core Web Vitals, structured data and site architecture, fixed so search engines and AI crawlers can read every page that matters.
 meta_title: Technical SEO Audit and Fixes | AVENZA

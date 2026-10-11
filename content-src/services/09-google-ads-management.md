@@ -3,6 +3,7 @@ title: Google Ads Management
 slug: google-ads-management
 number: 09
 menu_order: 9
+category: paid-media
 image: plate-09
 excerpt: Search, Performance Max, Shopping and YouTube campaigns run against real leads and revenue, with clean conversion tracking and no wasted spend on the wrong searches.
 meta_title: Google Ads Management and PPC Services | AVENZA

@@ -30,9 +30,13 @@ def main():
             else:
                 im.save(BRAND / f"{name}.jpg", quality=job["quality"], optimize=True, progressive=True)
             continue
+        if job["name"].startswith("svc-"):
+            (ART / "svc").mkdir(exist_ok=True)
+            im.save(ART / "svc" / f"{job['name'][4:]}.webp", "WEBP", quality=job["quality"], method=6)
+            continue
         im.save(ART / f"{job['name']}.webp", "WEBP", quality=job["quality"], method=6)
-    total = sum(p.stat().st_size for p in ART.glob("*.webp"))
-    print(f"art: {len(list(ART.glob('*.webp')))} files, {total / 1024:.0f} KB")
+    files = list(ART.rglob("*.webp"))
+    print(f"art: {len(files)} files, {sum(p.stat().st_size for p in files) / 1024:.0f} KB")
 
 
 if __name__ == "__main__":

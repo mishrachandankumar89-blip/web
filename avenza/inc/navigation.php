@@ -102,7 +102,7 @@ function avenza_menu_fallback( $args = array() ) {
 	echo '<ul class="' . esc_attr( $class ) . '">';
 	foreach ( $items as $item ) {
 		list( $key, $label, $url ) = $item;
-		$services = 'services' === $key ? avenza_get_services() : array();
+		$services = 'services' === $key ? avenza_service_categories() : array();
 		echo '<li class="menu-item' . ( $services ? ' has-sub' : '' ) . '"><a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a>';
 		if ( $services ) {
 			printf(
@@ -112,7 +112,7 @@ function avenza_menu_fallback( $args = array() ) {
 			);
 			echo '<ul class="sub-menu">';
 			foreach ( $services as $service ) {
-				echo '<li class="menu-item"><a href="' . esc_url( get_permalink( $service ) ) . '">' . esc_html( get_the_title( $service ) ) . '</a></li>';
+				echo '<li class="menu-item"><a href="' . esc_url( get_term_link( $service ) ) . '">' . esc_html( $service->name ) . '</a></li>';
 			}
 			echo '</ul>';
 		}
@@ -180,6 +180,13 @@ function avenza_breadcrumb_items() {
 			'name' => __( 'Services', 'avenza' ),
 			'url'  => avenza_page_url( 'services' ),
 		);
+		$cat = avenza_service_category();
+		if ( $cat ) {
+			$items[] = array(
+				'name' => $cat->name,
+				'url'  => get_term_link( $cat ),
+			);
+		}
 		$items[] = array(
 			'name' => get_the_title(),
 			'url'  => get_permalink(),
@@ -213,6 +220,15 @@ function avenza_breadcrumb_items() {
 		$items[]    = array(
 			'name' => $posts_page ? get_the_title( $posts_page ) : __( 'Insights', 'avenza' ),
 			'url'  => $posts_page ? get_permalink( $posts_page ) : home_url( '/' ),
+		);
+	} elseif ( is_tax( 'avenza_service_cat' ) ) {
+		$items[] = array(
+			'name' => __( 'Services', 'avenza' ),
+			'url'  => avenza_page_url( 'services' ),
+		);
+		$items[] = array(
+			'name' => single_term_title( '', false ),
+			'url'  => get_term_link( get_queried_object() ),
 		);
 	} elseif ( is_category() || is_tag() || is_tax() ) {
 		$link    = get_term_link( get_queried_object() );

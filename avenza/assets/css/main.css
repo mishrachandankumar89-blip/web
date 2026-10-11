@@ -2818,3 +2818,157 @@ code {
 	text-transform: uppercase;
 	cursor: pointer;
 }
+
+/* ------------------------------------------------- service hubs and index */
+
+.avz-hub__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+	gap: clamp(32px, 5vw, 80px);
+	align-items: center;
+	padding: 0;
+}
+
+.avz-hero--hub .avz-hero__actions {
+	margin-top: 8px;
+}
+
+.avz-hub__art img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 899px) {
+	.avz-hub__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.avz-hub__art {
+		max-width: 520px;
+		width: 100%;
+		margin-inline: auto;
+	}
+}
+
+.avz-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.avz-chips a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 48px;
+	padding: 10px 20px;
+	border: 1px solid #B9D3C3;
+	background: var(--avz-white);
+	color: var(--avz-ink);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.avz-chips a:hover {
+	border-color: var(--avz-green-500);
+	color: var(--avz-emerald-600);
+}
+
+.avz-index {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 clamp(28px, 4vw, 64px);
+	border-top: 1px solid var(--avz-line);
+}
+
+.avz-index__group {
+	padding: 32px 0;
+	border-bottom: 1px solid var(--avz-line);
+}
+
+.avz-index__head .avz-num {
+	margin-bottom: 8px;
+}
+
+.avz-index__title {
+	margin: 0 0 8px;
+	font-size: clamp(1.6rem, 1.35rem + 0.8vw, 2rem);
+}
+
+.avz-index__title a {
+	color: var(--avz-ink);
+	text-decoration: none;
+}
+
+.avz-index__title a:hover {
+	color: var(--avz-emerald-600);
+}
+
+.avz-index__desc {
+	margin: 0 0 16px;
+	color: var(--avz-muted);
+	font-size: 1rem;
+}
+
+.avz-index__list {
+	columns: 2;
+	column-gap: 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.avz-index__list li {
+	break-inside: avoid;
+}
+
+.avz-index__list a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 44px;
+	padding: 4px 0;
+	color: var(--avz-body);
+	font-size: 0.9375rem;
+	font-weight: 600;
+	line-height: 1.35;
+	text-decoration: none;
+}
+
+.avz-index__list a::before {
+	content: "";
+	flex: none;
+	width: 6px;
+	height: 6px;
+	background: var(--avz-green-500);
+	transform: rotate(45deg);
+}
+
+.avz-index__list a:hover {
+	color: var(--avz-emerald-600);
+	text-decoration: underline;
+}
+
+.avz-section--alt .avz-index,
+.avz-section--alt .avz-index__group {
+	border-color: #CFE3D6;
+}
+
+@media (max-width: 899px) {
+	.avz-index {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+@media (max-width: 479px) {
+	.avz-index__list {
+		columns: 1;
+	}
+}
+
+/* Category cards on phones keep the compact list layout of service cards. */
+.avz-card--category .avz-card__num {
+	font-size: 1rem;
+}

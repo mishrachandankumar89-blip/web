@@ -3,6 +3,7 @@ title: Conversion Rate Optimization
 slug: conversion-rate-optimization
 number: 12
 menu_order: 12
+category: cro-analytics
 image: plate-12
 excerpt: Turn more of your existing visitors into leads and sales through research, analytics, clearer pages, faster forms and careful A/B testing.
 meta_title: Conversion Rate Optimization (CRO) Services | AVENZA

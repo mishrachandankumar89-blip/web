@@ -56,6 +56,26 @@ function avenza_register_types() {
 		)
 	);
 
+	register_taxonomy(
+		'avenza_service_cat',
+		'avenza_service',
+		array(
+			'labels'            => array(
+				'name'          => __( 'Service Categories', 'avenza' ),
+				'singular_name' => __( 'Service Category', 'avenza' ),
+				'menu_name'     => __( 'Categories', 'avenza' ),
+			),
+			'public'            => true,
+			'hierarchical'      => true,
+			'show_admin_column' => true,
+			'show_in_rest'      => true,
+			'rewrite'           => array(
+				'slug'       => 'expertise',
+				'with_front' => false,
+			),
+		)
+	);
+
 	register_post_meta(
 		'avenza_service',
 		'_avenza_number',
@@ -93,19 +113,27 @@ function avenza_service_number( $post = null ) {
  * @param array $exclude IDs to skip.
  * @return WP_Post[]
  */
-function avenza_get_services( $limit = -1, $exclude = array() ) {
-	return get_posts(
-		array(
-			'post_type'      => 'avenza_service',
-			'posts_per_page' => $limit,
-			'orderby'        => array(
-				'menu_order' => 'ASC',
-				'title'      => 'ASC',
-			),
-			'post__not_in'   => $exclude,
-			'no_found_rows'  => true,
-		)
+function avenza_get_services( $limit = -1, $exclude = array(), $category = '' ) {
+	$args = array(
+		'post_type'      => 'avenza_service',
+		'posts_per_page' => $limit,
+		'orderby'        => array(
+			'menu_order' => 'ASC',
+			'title'      => 'ASC',
+		),
+		'post__not_in'   => $exclude,
+		'no_found_rows'  => true,
 	);
+	if ( $category ) {
+		$args['tax_query'] = array( // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
+			array(
+				'taxonomy' => 'avenza_service_cat',
+				'field'    => 'slug',
+				'terms'    => $category,
+			),
+		);
+	}
+	return get_posts( $args );
 }
 
 /**
@@ -139,3 +167,51 @@ function avenza_lead_column_values( $column, $post_id ) {
 	}
 }
 add_action( 'manage_avenza_lead_posts_custom_column', 'avenza_lead_column_values', 10, 2 );
+
+/**
+ * Service categories in display order.
+ *
+ * @return WP_Term[]
+ */
+function avenza_service_categories() {
+	$terms = get_terms(
+		array(
+			'taxonomy'   => 'avenza_service_cat',
+			'hide_empty' => false,
+		)
+	);
+	if ( is_wp_error( $terms ) ) {
+		return array();
+	}
+	usort(
+		$terms,
+		function ( $a, $b ) {
+			return (int) get_term_meta( $a->term_id, '_avenza_order', true ) <=> (int) get_term_meta( $b->term_id, '_avenza_order', true );
+		}
+	);
+	return $terms;
+}
+
+/**
+ * The category a service belongs to.
+ *
+ * @param int|WP_Post|null $post Post.
+ * @return WP_Term|null
+ */
+function avenza_service_category( $post = null ) {
+	$post  = get_post( $post );
+	$terms = $post ? get_the_terms( $post, 'avenza_service_cat' ) : false;
+	return ( $terms && ! is_wp_error( $terms ) ) ? $terms[0] : null;
+}
+
+/**
+ * Image attachment ID chosen for a service category.
+ *
+ * @param WP_Term $term Term.
+ * @return int
+ */
+function avenza_category_image_id( $term ) {
+	$key = get_term_meta( $term->term_id, '_avenza_image', true );
+	$map = (array) get_option( 'avenza_media_map', array() );
+	return ( $key && ! empty( $map[ $key ] ) ) ? (int) $map[ $key ] : 0;
+}

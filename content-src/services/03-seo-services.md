@@ -3,6 +3,7 @@ title: SEO Services
 slug: seo-services
 number: 03
 menu_order: 3
+category: seo
 image: plate-03
 excerpt: Search engine optimization built on research, technical health and pages people want to read, so you rank for the searches that bring revenue.
 meta_title: SEO Services That Grow Qualified Leads | AVENZA

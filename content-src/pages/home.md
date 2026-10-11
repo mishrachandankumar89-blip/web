@@ -11,7 +11,7 @@ hero_lead: Your buyers now ask Google, ChatGPT, Gemini and Perplexity before the
 hero_image: hero-home
 hero_primary: Book a Strategy Call | page:contact
 hero_secondary: Explore our services | page:services
-hero_facts: Twelve services, one strategy | Every claim sourced | India and worldwide
+hero_facts: 108 services, ten disciplines | Every claim sourced | India and worldwide
 answer_q: What does AVENZA do?
 answer: AVENZA is a digital marketing agency that helps businesses get found, trusted and chosen online. We combine Generative Engine Optimization, Answer Engine Optimization and SEO with content, digital PR, Google Ads, social media, website design and conversion work, so your brand appears in search results and in the answers AI assistants give.
 cta_heading: Ready to become the *answer*?
@@ -28,13 +28,17 @@ These systems do not replace search. They read it. They pull from pages that are
 
 That is why we built AVENZA around one idea: **be the answer, not just a result.** Rankings still matter. Being the source an answer is built on matters more.
 
-## Twelve services, one visibility system {wide alt center}
+## 108 services, one visibility system {wide alt center}
 
 ^ What we do
 
-> Each service stands on its own. Together they cover every place your next customer looks.
+> Ten disciplines, from AI search and SEO to paid media, websites and marketplaces. Each covers every place your next customer looks.
 
-[[services columns=3]]
+[[service_categories]]
+
+::: buttons
+[Browse all 108 services](page:services)
+:::
 
 ## The AVENZA visibility stack
 

@@ -3,6 +3,7 @@ title: Content Marketing
 slug: content-marketing
 number: 07
 menu_order: 7
+category: content
 image: plate-07
 excerpt: Research-led articles, guides and service pages written with your experts, built to rank, get cited by AI assistants and move readers toward an enquiry.
 meta_title: Content Marketing and SEO Content Writing | AVENZA

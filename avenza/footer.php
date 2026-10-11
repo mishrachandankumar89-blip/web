@@ -5,7 +5,10 @@
  * @package avenza
  */
 
-$services = avenza_get_services();
+$services = avenza_service_categories();
+if ( ! $services ) {
+	$services = avenza_get_services( 12 );
+}
 $socials  = avenza_socials();
 ?>
 </main>
@@ -31,8 +34,13 @@ $socials  = avenza_socials();
 					<h2 class="avz-footer__title"><?php esc_html_e( 'Services', 'avenza' ); ?></h2>
 					<ul class="avz-footer__list avz-footer__list--two">
 						<?php foreach ( $services as $service ) : ?>
-							<li><a href="<?php echo esc_url( get_permalink( $service ) ); ?>"><?php echo esc_html( get_the_title( $service ) ); ?></a></li>
+							<?php if ( $service instanceof WP_Term ) : ?>
+								<li><a href="<?php echo esc_url( get_term_link( $service ) ); ?>"><?php echo esc_html( $service->name ); ?></a></li>
+							<?php else : ?>
+								<li><a href="<?php echo esc_url( get_permalink( $service ) ); ?>"><?php echo esc_html( get_the_title( $service ) ); ?></a></li>
+							<?php endif; ?>
 						<?php endforeach; ?>
+						<li><a href="<?php echo esc_url( avenza_page_url( 'services' ) ); ?>"><?php esc_html_e( 'All services', 'avenza' ); ?></a></li>
 					</ul>
 				</div>
 			<?php endif; ?>

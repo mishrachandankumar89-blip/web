@@ -3,6 +3,7 @@ title: E-commerce SEO
 slug: ecommerce-seo
 number: 06
 menu_order: 6
+category: seo
 image: plate-06
 excerpt: SEO for online stores: category and product pages that rank, clean crawl control for large catalogues, product structured data and Merchant Center.
 meta_title: E-commerce SEO for Shopify and WooCommerce | AVENZA

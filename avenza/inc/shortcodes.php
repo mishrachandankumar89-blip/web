@@ -64,6 +64,7 @@ function avenza_services_shortcode( $atts ) {
 			'columns'         => 3,
 			'exclude_current' => 0,
 			'heading'         => 'h3',
+			'category'        => '',
 		),
 		$atts,
 		'avenza_services'
@@ -72,7 +73,12 @@ function avenza_services_shortcode( $atts ) {
 	if ( $atts['exclude_current'] && is_singular( 'avenza_service' ) ) {
 		$exclude[] = get_the_ID();
 	}
-	$services = avenza_get_services( (int) $atts['limit'], $exclude );
+	$category = sanitize_title( $atts['category'] );
+	if ( 'current' === $category ) {
+		$term     = avenza_service_category();
+		$category = $term ? $term->slug : '';
+	}
+	$services = avenza_get_services( (int) $atts['limit'], $exclude, $category );
 	if ( ! $services ) {
 		return '';
 	}
@@ -210,3 +216,79 @@ function avenza_map_shortcode() {
 	return '<div class="avz-map"><iframe src="' . esc_url( $src ) . '" title="' . esc_attr__( 'AVENZA on Google Maps', 'avenza' ) . '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>';
 }
 add_shortcode( 'avenza_map', 'avenza_map_shortcode' );
+
+/**
+ * Category card with its plate, service count and short description.
+ *
+ * @param WP_Term $term    Term.
+ * @param int     $index   Position, for the N° label.
+ * @return string
+ */
+function avenza_category_card( $term, $index ) {
+	$img   = avenza_category_image_id( $term );
+	$media = $img ? '<div class="avz-card__media">' . wp_get_attachment_image( $img, 'avenza-card', false, array( 'loading' => 'lazy', 'sizes' => '(min-width: 1100px) 380px, (min-width: 700px) 45vw, 92vw' ) ) . '</div>' : '';
+	$short = get_term_meta( $term->term_id, '_avenza_short', true );
+	return sprintf(
+		'<article class="avz-card avz-card--service avz-card--category">%1$s<div class="avz-card__body"><p class="avz-card__num">N&deg; %2$s <span aria-hidden="true">&middot;</span> %3$s</p><h3 class="avz-card__title"><a class="avz-card__link" href="%4$s">%5$s</a></h3><p class="avz-card__text">%6$s</p><span class="avz-card__more" aria-hidden="true">%7$s %8$s</span></div></article>',
+		$media,
+		esc_html( str_pad( (string) $index, 2, '0', STR_PAD_LEFT ) ),
+		/* translators: %d: number of services */
+		esc_html( sprintf( _n( '%d service', '%d services', (int) $term->count, 'avenza' ), (int) $term->count ) ),
+		esc_url( get_term_link( $term ) ),
+		esc_html( $term->name ),
+		esc_html( $short ? $short : wp_trim_words( $term->description, 22 ) ),
+		esc_html__( 'Explore the discipline', 'avenza' ),
+		avenza_icon( 'arrow', 16 )
+	);
+}
+
+/**
+ * Grid of service categories.
+ *
+ * @return string
+ */
+function avenza_service_categories_shortcode() {
+	$terms = avenza_service_categories();
+	if ( ! $terms ) {
+		return '';
+	}
+	$html = '<div class="avz-cards avz-cards--3">';
+	foreach ( $terms as $i => $term ) {
+		$html .= avenza_category_card( $term, $i + 1 );
+	}
+	return $html . '</div>';
+}
+add_shortcode( 'avenza_service_categories', 'avenza_service_categories_shortcode' );
+
+/**
+ * Full service index grouped by category, like an agency's services directory.
+ *
+ * @return string
+ */
+function avenza_service_index_shortcode() {
+	$terms = avenza_service_categories();
+	if ( ! $terms ) {
+		return avenza_services_shortcode( array() );
+	}
+	$html = '<div class="avz-index">';
+	foreach ( $terms as $i => $term ) {
+		$services = avenza_get_services( -1, array(), $term->slug );
+		if ( ! $services ) {
+			continue;
+		}
+		$html .= '<section class="avz-index__group" aria-labelledby="avz-idx-' . esc_attr( $term->slug ) . '">';
+		$html .= '<div class="avz-index__head"><p class="avz-num">N&deg; ' . esc_html( str_pad( (string) ( $i + 1 ), 2, '0', STR_PAD_LEFT ) ) . '</p>';
+		$html .= '<h3 class="avz-index__title" id="avz-idx-' . esc_attr( $term->slug ) . '"><a href="' . esc_url( get_term_link( $term ) ) . '">' . esc_html( $term->name ) . '</a></h3>';
+		$short = get_term_meta( $term->term_id, '_avenza_short', true );
+		if ( $short ) {
+			$html .= '<p class="avz-index__desc">' . esc_html( $short ) . '</p>';
+		}
+		$html .= '</div><ul class="avz-index__list">';
+		foreach ( $services as $service ) {
+			$html .= '<li><a href="' . esc_url( get_permalink( $service ) ) . '">' . esc_html( get_the_title( $service ) ) . '</a></li>';
+		}
+		$html .= '</ul></section>';
+	}
+	return $html . '</div>';
+}
+add_shortcode( 'avenza_service_index', 'avenza_service_index_shortcode' );

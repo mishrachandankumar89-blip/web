@@ -1,5 +1,5 @@
 {
- "version": "1.4.0",
+ "version": "1.5.0",
  "site": {
   "title": "AVENZA",
   "tagline": "Be the answer, not just a result."
@@ -14,67 +14,1004 @@
   "secondary_url": "tel:+919680951099"
  },
  "images": [
-  { "key": "plate-01", "file": "art/plate-01-geo.webp", "title": "N° 01 Generative Engine Optimization", "alt": "Engraved emerald plate numbered 01 with a spark symbol in a guilloche medallion, for Generative Engine Optimization" },
-  { "key": "plate-02", "file": "art/plate-02-aeo.webp", "title": "N° 02 Answer Engine Optimization", "alt": "Engraved emerald plate numbered 02 with a speech bubble and check mark, for Answer Engine Optimization" },
-  { "key": "plate-03", "file": "art/plate-03-seo.webp", "title": "N° 03 Search Engine Optimization", "alt": "Engraved emerald plate numbered 03 with a magnifying glass and rising line, for Search Engine Optimization" },
-  { "key": "plate-04", "file": "art/plate-04-technical-seo.webp", "title": "N° 04 Technical SEO", "alt": "Engraved emerald plate numbered 04 with a gear and code brackets, for Technical SEO" },
-  { "key": "plate-05", "file": "art/plate-05-local-seo.webp", "title": "N° 05 Local SEO", "alt": "Engraved emerald plate numbered 05 with a map pin, for Local SEO" },
-  { "key": "plate-06", "file": "art/plate-06-ecommerce-seo.webp", "title": "N° 06 E-commerce SEO", "alt": "Engraved emerald plate numbered 06 with a shopping bag, for E-commerce SEO" },
-  { "key": "plate-07", "file": "art/plate-07-content.webp", "title": "N° 07 Content Marketing", "alt": "Engraved emerald plate numbered 07 with a quill pen, for Content Marketing" },
-  { "key": "plate-08", "file": "art/plate-08-digital-pr.webp", "title": "N° 08 Link Building and Digital PR", "alt": "Engraved emerald plate numbered 08 with two linked chain loops, for Link Building and Digital PR" },
-  { "key": "plate-09", "file": "art/plate-09-google-ads.webp", "title": "N° 09 Google Ads Management", "alt": "Engraved emerald plate numbered 09 with a target and arrow, for Google Ads management" },
-  { "key": "plate-10", "file": "art/plate-10-social.webp", "title": "N° 10 Social Media Marketing", "alt": "Engraved emerald plate numbered 10 with three connected share nodes, for Social Media Marketing" },
-  { "key": "plate-11", "file": "art/plate-11-web-design.webp", "title": "N° 11 Website Design and Development", "alt": "Engraved emerald plate numbered 11 with a browser window layout, for Website Design and Development" },
-  { "key": "plate-12", "file": "art/plate-12-cro.webp", "title": "N° 12 Conversion Rate Optimization", "alt": "Engraved emerald plate numbered 12 with a funnel, for Conversion Rate Optimization" },
-  { "key": "hero-home", "file": "art/hero-home.webp", "title": "AVENZA engraved monogram plate", "alt": "Emerald engraved plate with fine white guilloche rings around the AVENZA A monogram" },
-  { "key": "hero-about", "file": "art/hero-about.webp", "title": "About AVENZA plate", "alt": "Emerald engraved plate with a compass rose at the centre of a guilloche rosette" },
-  { "key": "hero-approach", "file": "art/hero-approach.webp", "title": "AVENZA approach plate", "alt": "Emerald engraved plate with rising steps and an arrow inside a guilloche medallion" },
-  { "key": "hero-services", "file": "art/hero-services.webp", "title": "AVENZA services plate", "alt": "Emerald engraved plate with a grid of nine diamonds representing the service range" },
-  { "key": "hero-contact", "file": "art/hero-contact.webp", "title": "Contact AVENZA plate", "alt": "Emerald engraved plate with an envelope symbol inside a guilloche medallion" },
-  { "key": "hero-faq", "file": "art/hero-faq.webp", "title": "AVENZA FAQ plate", "alt": "Emerald engraved plate with a question mark inside a guilloche medallion" },
-  { "key": "cover-geo", "file": "art/cover-what-is-generative-engine-optimization.webp", "title": "What is Generative Engine Optimization", "alt": "White and green engraved cover with a spark symbol in an emerald medallion, for the guide to Generative Engine Optimization" },
-  { "key": "cover-seo-aeo-geo", "file": "art/cover-seo-vs-aeo-vs-geo.webp", "title": "SEO vs AEO vs GEO", "alt": "White and green engraved cover with three overlapping circles, comparing SEO, AEO and GEO" },
-  { "key": "cover-ai-overviews", "file": "art/cover-how-google-ai-overviews-choose-sources.webp", "title": "How Google AI Overviews choose sources", "alt": "White and green engraved cover with a magnifying glass holding a spark, for the article on AI Overviews sources" },
-  { "key": "cover-ai-crawlers", "file": "art/cover-llms-txt-robots-txt-ai-crawlers.webp", "title": "llms.txt, robots.txt and AI crawlers", "alt": "White and green engraved cover with a document showing code lines, for the guide to llms.txt and AI crawlers" },
-  { "key": "cover-local-seo", "file": "art/cover-local-seo-for-indian-businesses.webp", "title": "Local SEO for Indian businesses", "alt": "White and green engraved cover with a map pin, for the local SEO guide for Indian businesses" },
-  { "key": "cover-cwv", "file": "art/cover-core-web-vitals-explained.webp", "title": "Core Web Vitals explained", "alt": "White and green engraved cover with a speed gauge, for the Core Web Vitals guide" },
-  { "key": "diagram-stack", "file": "art/diagram-visibility-stack.webp", "title": "The AVENZA visibility stack", "alt": "Diagram of five stacked layers: technical foundation, content and entities, authority and mentions, answer formatting, and AI visibility at the top" },
-  { "key": "diagram-flow", "file": "art/diagram-question-to-citation.webp", "title": "From question to citation", "alt": "Diagram of five steps an AI assistant follows: question, retrieval, selection, synthesis and citation" }
+  {
+   "key": "plate-01",
+   "file": "art/plate-01-geo.webp",
+   "title": "N° 01 Generative Engine Optimization",
+   "alt": "Engraved emerald plate numbered 01 with a spark symbol in a guilloche medallion, for Generative Engine Optimization"
+  },
+  {
+   "key": "plate-02",
+   "file": "art/plate-02-aeo.webp",
+   "title": "N° 02 Answer Engine Optimization",
+   "alt": "Engraved emerald plate numbered 02 with a speech bubble and check mark, for Answer Engine Optimization"
+  },
+  {
+   "key": "plate-03",
+   "file": "art/plate-03-seo.webp",
+   "title": "N° 03 Search Engine Optimization",
+   "alt": "Engraved emerald plate numbered 03 with a magnifying glass and rising line, for Search Engine Optimization"
+  },
+  {
+   "key": "plate-04",
+   "file": "art/plate-04-technical-seo.webp",
+   "title": "N° 04 Technical SEO",
+   "alt": "Engraved emerald plate numbered 04 with a gear and code brackets, for Technical SEO"
+  },
+  {
+   "key": "plate-05",
+   "file": "art/plate-05-local-seo.webp",
+   "title": "N° 05 Local SEO",
+   "alt": "Engraved emerald plate numbered 05 with a map pin, for Local SEO"
+  },
+  {
+   "key": "plate-06",
+   "file": "art/plate-06-ecommerce-seo.webp",
+   "title": "N° 06 E-commerce SEO",
+   "alt": "Engraved emerald plate numbered 06 with a shopping bag, for E-commerce SEO"
+  },
+  {
+   "key": "plate-07",
+   "file": "art/plate-07-content.webp",
+   "title": "N° 07 Content Marketing",
+   "alt": "Engraved emerald plate numbered 07 with a quill pen, for Content Marketing"
+  },
+  {
+   "key": "plate-08",
+   "file": "art/plate-08-digital-pr.webp",
+   "title": "N° 08 Link Building and Digital PR",
+   "alt": "Engraved emerald plate numbered 08 with two linked chain loops, for Link Building and Digital PR"
+  },
+  {
+   "key": "plate-09",
+   "file": "art/plate-09-google-ads.webp",
+   "title": "N° 09 Google Ads Management",
+   "alt": "Engraved emerald plate numbered 09 with a target and arrow, for Google Ads management"
+  },
+  {
+   "key": "plate-10",
+   "file": "art/plate-10-social.webp",
+   "title": "N° 10 Social Media Marketing",
+   "alt": "Engraved emerald plate numbered 10 with three connected share nodes, for Social Media Marketing"
+  },
+  {
+   "key": "plate-11",
+   "file": "art/plate-11-web-design.webp",
+   "title": "N° 11 Website Design and Development",
+   "alt": "Engraved emerald plate numbered 11 with a browser window layout, for Website Design and Development"
+  },
+  {
+   "key": "plate-12",
+   "file": "art/plate-12-cro.webp",
+   "title": "N° 12 Conversion Rate Optimization",
+   "alt": "Engraved emerald plate numbered 12 with a funnel, for Conversion Rate Optimization"
+  },
+  {
+   "key": "hero-home",
+   "file": "art/hero-home.webp",
+   "title": "AVENZA engraved monogram plate",
+   "alt": "Emerald engraved plate with fine white guilloche rings around the AVENZA A monogram"
+  },
+  {
+   "key": "hero-about",
+   "file": "art/hero-about.webp",
+   "title": "About AVENZA plate",
+   "alt": "Emerald engraved plate with a compass rose at the centre of a guilloche rosette"
+  },
+  {
+   "key": "hero-approach",
+   "file": "art/hero-approach.webp",
+   "title": "AVENZA approach plate",
+   "alt": "Emerald engraved plate with rising steps and an arrow inside a guilloche medallion"
+  },
+  {
+   "key": "hero-services",
+   "file": "art/hero-services.webp",
+   "title": "AVENZA services plate",
+   "alt": "Emerald engraved plate with a grid of nine diamonds representing the service range"
+  },
+  {
+   "key": "hero-contact",
+   "file": "art/hero-contact.webp",
+   "title": "Contact AVENZA plate",
+   "alt": "Emerald engraved plate with an envelope symbol inside a guilloche medallion"
+  },
+  {
+   "key": "hero-faq",
+   "file": "art/hero-faq.webp",
+   "title": "AVENZA FAQ plate",
+   "alt": "Emerald engraved plate with a question mark inside a guilloche medallion"
+  },
+  {
+   "key": "cover-geo",
+   "file": "art/cover-what-is-generative-engine-optimization.webp",
+   "title": "What is Generative Engine Optimization",
+   "alt": "White and green engraved cover with a spark symbol in an emerald medallion, for the guide to Generative Engine Optimization"
+  },
+  {
+   "key": "cover-seo-aeo-geo",
+   "file": "art/cover-seo-vs-aeo-vs-geo.webp",
+   "title": "SEO vs AEO vs GEO",
+   "alt": "White and green engraved cover with three overlapping circles, comparing SEO, AEO and GEO"
+  },
+  {
+   "key": "cover-ai-overviews",
+   "file": "art/cover-how-google-ai-overviews-choose-sources.webp",
+   "title": "How Google AI Overviews choose sources",
+   "alt": "White and green engraved cover with a magnifying glass holding a spark, for the article on AI Overviews sources"
+  },
+  {
+   "key": "cover-ai-crawlers",
+   "file": "art/cover-llms-txt-robots-txt-ai-crawlers.webp",
+   "title": "llms.txt, robots.txt and AI crawlers",
+   "alt": "White and green engraved cover with a document showing code lines, for the guide to llms.txt and AI crawlers"
+  },
+  {
+   "key": "cover-local-seo",
+   "file": "art/cover-local-seo-for-indian-businesses.webp",
+   "title": "Local SEO for Indian businesses",
+   "alt": "White and green engraved cover with a map pin, for the local SEO guide for Indian businesses"
+  },
+  {
+   "key": "cover-cwv",
+   "file": "art/cover-core-web-vitals-explained.webp",
+   "title": "Core Web Vitals explained",
+   "alt": "White and green engraved cover with a speed gauge, for the Core Web Vitals guide"
+  },
+  {
+   "key": "diagram-stack",
+   "file": "art/diagram-visibility-stack.webp",
+   "title": "The AVENZA visibility stack",
+   "alt": "Diagram of five stacked layers: technical foundation, content and entities, authority and mentions, answer formatting, and AI visibility at the top"
+  },
+  {
+   "key": "diagram-flow",
+   "file": "art/diagram-question-to-citation.webp",
+   "title": "From question to citation",
+   "alt": "Diagram of five steps an AI assistant follows: question, retrieval, selection, synthesis and citation"
+  },
+  {
+   "key": "plate-013",
+   "file": "art/svc/plate-013.webp",
+   "title": "N° 13 Google AI Overviews Optimization",
+   "alt": "Engraved emerald plate numbered 13 with a spark, for Google AI Overviews Optimization"
+  },
+  {
+   "key": "plate-014",
+   "file": "art/svc/plate-014.webp",
+   "title": "N° 14 ChatGPT SEO",
+   "alt": "Engraved emerald plate numbered 14 with a spark, for ChatGPT SEO"
+  },
+  {
+   "key": "plate-015",
+   "file": "art/svc/plate-015.webp",
+   "title": "N° 15 Perplexity SEO",
+   "alt": "Engraved emerald plate numbered 15 with a spark, for Perplexity SEO"
+  },
+  {
+   "key": "plate-016",
+   "file": "art/svc/plate-016.webp",
+   "title": "N° 16 Gemini and AI Mode Optimization",
+   "alt": "Engraved emerald plate numbered 16 with a spark, for Gemini and AI Mode Optimization"
+  },
+  {
+   "key": "plate-017",
+   "file": "art/svc/plate-017.webp",
+   "title": "N° 17 Microsoft Copilot and Bing AI Optimization",
+   "alt": "Engraved emerald plate numbered 17 with a spark, for Microsoft Copilot and Bing AI Optimization"
+  },
+  {
+   "key": "plate-018",
+   "file": "art/svc/plate-018.webp",
+   "title": "N° 18 AI Visibility Audit",
+   "alt": "Engraved emerald plate numbered 18 with a spark, for AI Visibility Audit"
+  },
+  {
+   "key": "plate-019",
+   "file": "art/svc/plate-019.webp",
+   "title": "N° 19 AI Brand Monitoring",
+   "alt": "Engraved emerald plate numbered 19 with a spark, for AI Brand Monitoring"
+  },
+  {
+   "key": "plate-020",
+   "file": "art/svc/plate-020.webp",
+   "title": "N° 20 Entity SEO and Knowledge Graph",
+   "alt": "Engraved emerald plate numbered 20 with a spark, for Entity SEO and Knowledge Graph"
+  },
+  {
+   "key": "plate-021",
+   "file": "art/svc/plate-021.webp",
+   "title": "N° 21 AI Crawler and llms.txt Setup",
+   "alt": "Engraved emerald plate numbered 21 with a spark, for AI Crawler and llms.txt Setup"
+  },
+  {
+   "key": "plate-022",
+   "file": "art/svc/plate-022.webp",
+   "title": "N° 22 Enterprise SEO",
+   "alt": "Engraved emerald plate numbered 22 with a magnifying glass, for Enterprise SEO"
+  },
+  {
+   "key": "plate-023",
+   "file": "art/svc/plate-023.webp",
+   "title": "N° 23 SEO Audit",
+   "alt": "Engraved emerald plate numbered 23 with a magnifying glass, for SEO Audit"
+  },
+  {
+   "key": "plate-024",
+   "file": "art/svc/plate-024.webp",
+   "title": "N° 24 Keyword Research",
+   "alt": "Engraved emerald plate numbered 24 with a magnifying glass, for Keyword Research"
+  },
+  {
+   "key": "plate-025",
+   "file": "art/svc/plate-025.webp",
+   "title": "N° 25 On-Page SEO",
+   "alt": "Engraved emerald plate numbered 25 with a magnifying glass, for On-Page SEO"
+  },
+  {
+   "key": "plate-026",
+   "file": "art/svc/plate-026.webp",
+   "title": "N° 26 Multilingual and International SEO",
+   "alt": "Engraved emerald plate numbered 26 with a magnifying glass, for Multilingual and International SEO"
+  },
+  {
+   "key": "plate-027",
+   "file": "art/svc/plate-027.webp",
+   "title": "N° 27 Mobile SEO",
+   "alt": "Engraved emerald plate numbered 27 with a magnifying glass, for Mobile SEO"
+  },
+  {
+   "key": "plate-028",
+   "file": "art/svc/plate-028.webp",
+   "title": "N° 28 Voice Search Optimization",
+   "alt": "Engraved emerald plate numbered 28 with a magnifying glass, for Voice Search Optimization"
+  },
+  {
+   "key": "plate-029",
+   "file": "art/svc/plate-029.webp",
+   "title": "N° 29 Shopify SEO",
+   "alt": "Engraved emerald plate numbered 29 with a magnifying glass, for Shopify SEO"
+  },
+  {
+   "key": "plate-030",
+   "file": "art/svc/plate-030.webp",
+   "title": "N° 30 WordPress SEO",
+   "alt": "Engraved emerald plate numbered 30 with a magnifying glass, for WordPress SEO"
+  },
+  {
+   "key": "plate-031",
+   "file": "art/svc/plate-031.webp",
+   "title": "N° 31 B2B SEO",
+   "alt": "Engraved emerald plate numbered 31 with a magnifying glass, for B2B SEO"
+  },
+  {
+   "key": "plate-032",
+   "file": "art/svc/plate-032.webp",
+   "title": "N° 32 SaaS SEO",
+   "alt": "Engraved emerald plate numbered 32 with a magnifying glass, for SaaS SEO"
+  },
+  {
+   "key": "plate-033",
+   "file": "art/svc/plate-033.webp",
+   "title": "N° 33 YouTube SEO",
+   "alt": "Engraved emerald plate numbered 33 with a magnifying glass, for YouTube SEO"
+  },
+  {
+   "key": "plate-034",
+   "file": "art/svc/plate-034.webp",
+   "title": "N° 34 Amazon SEO",
+   "alt": "Engraved emerald plate numbered 34 with a magnifying glass, for Amazon SEO"
+  },
+  {
+   "key": "plate-035",
+   "file": "art/svc/plate-035.webp",
+   "title": "N° 35 Image SEO",
+   "alt": "Engraved emerald plate numbered 35 with a magnifying glass, for Image SEO"
+  },
+  {
+   "key": "plate-036",
+   "file": "art/svc/plate-036.webp",
+   "title": "N° 36 Website Migration SEO",
+   "alt": "Engraved emerald plate numbered 36 with a magnifying glass, for Website Migration SEO"
+  },
+  {
+   "key": "plate-037",
+   "file": "art/svc/plate-037.webp",
+   "title": "N° 37 Google Penalty Recovery",
+   "alt": "Engraved emerald plate numbered 37 with a magnifying glass, for Google Penalty Recovery"
+  },
+  {
+   "key": "plate-038",
+   "file": "art/svc/plate-038.webp",
+   "title": "N° 38 Schema Markup Services",
+   "alt": "Engraved emerald plate numbered 38 with a magnifying glass, for Schema Markup Services"
+  },
+  {
+   "key": "plate-039",
+   "file": "art/svc/plate-039.webp",
+   "title": "N° 39 Core Web Vitals Optimization",
+   "alt": "Engraved emerald plate numbered 39 with a magnifying glass, for Core Web Vitals Optimization"
+  },
+  {
+   "key": "plate-040",
+   "file": "art/svc/plate-040.webp",
+   "title": "N° 40 Google Business Profile Management",
+   "alt": "Engraved emerald plate numbered 40 with a magnifying glass, for Google Business Profile Management"
+  },
+  {
+   "key": "plate-041",
+   "file": "art/svc/plate-041.webp",
+   "title": "N° 41 Multi-Location SEO",
+   "alt": "Engraved emerald plate numbered 41 with a magnifying glass, for Multi-Location SEO"
+  },
+  {
+   "key": "plate-042",
+   "file": "art/svc/plate-042.webp",
+   "title": "N° 42 SEO Copywriting",
+   "alt": "Engraved emerald plate numbered 42 with a quill pen, for SEO Copywriting"
+  },
+  {
+   "key": "plate-043",
+   "file": "art/svc/plate-043.webp",
+   "title": "N° 43 Blog Writing",
+   "alt": "Engraved emerald plate numbered 43 with a quill pen, for Blog Writing"
+  },
+  {
+   "key": "plate-044",
+   "file": "art/svc/plate-044.webp",
+   "title": "N° 44 Website Copywriting",
+   "alt": "Engraved emerald plate numbered 44 with a quill pen, for Website Copywriting"
+  },
+  {
+   "key": "plate-045",
+   "file": "art/svc/plate-045.webp",
+   "title": "N° 45 Thought Leadership Content",
+   "alt": "Engraved emerald plate numbered 45 with a quill pen, for Thought Leadership Content"
+  },
+  {
+   "key": "plate-046",
+   "file": "art/svc/plate-046.webp",
+   "title": "N° 46 Content Strategy",
+   "alt": "Engraved emerald plate numbered 46 with a quill pen, for Content Strategy"
+  },
+  {
+   "key": "plate-047",
+   "file": "art/svc/plate-047.webp",
+   "title": "N° 47 Case Study Writing",
+   "alt": "Engraved emerald plate numbered 47 with a quill pen, for Case Study Writing"
+  },
+  {
+   "key": "plate-048",
+   "file": "art/svc/plate-048.webp",
+   "title": "N° 48 Whitepaper and Ebook Writing",
+   "alt": "Engraved emerald plate numbered 48 with a quill pen, for Whitepaper and Ebook Writing"
+  },
+  {
+   "key": "plate-049",
+   "file": "art/svc/plate-049.webp",
+   "title": "N° 49 Content Refresh and Optimization",
+   "alt": "Engraved emerald plate numbered 49 with a quill pen, for Content Refresh and Optimization"
+  },
+  {
+   "key": "plate-050",
+   "file": "art/svc/plate-050.webp",
+   "title": "N° 50 Infographic and Visual Content",
+   "alt": "Engraved emerald plate numbered 50 with a quill pen, for Infographic and Visual Content"
+  },
+  {
+   "key": "plate-051",
+   "file": "art/svc/plate-051.webp",
+   "title": "N° 51 Data-Led PR and Original Research",
+   "alt": "Engraved emerald plate numbered 51 with linked chain loops, for Data-Led PR and Original Research"
+  },
+  {
+   "key": "plate-052",
+   "file": "art/svc/plate-052.webp",
+   "title": "N° 52 Editorial Outreach and Guest Articles",
+   "alt": "Engraved emerald plate numbered 52 with linked chain loops, for Editorial Outreach and Guest Articles"
+  },
+  {
+   "key": "plate-053",
+   "file": "art/svc/plate-053.webp",
+   "title": "N° 53 Unlinked Mention Recovery",
+   "alt": "Engraved emerald plate numbered 53 with linked chain loops, for Unlinked Mention Recovery"
+  },
+  {
+   "key": "plate-054",
+   "file": "art/svc/plate-054.webp",
+   "title": "N° 54 Local Citation Building",
+   "alt": "Engraved emerald plate numbered 54 with linked chain loops, for Local Citation Building"
+  },
+  {
+   "key": "plate-055",
+   "file": "art/svc/plate-055.webp",
+   "title": "N° 55 Online Reputation Management",
+   "alt": "Engraved emerald plate numbered 55 with linked chain loops, for Online Reputation Management"
+  },
+  {
+   "key": "plate-056",
+   "file": "art/svc/plate-056.webp",
+   "title": "N° 56 Review Management",
+   "alt": "Engraved emerald plate numbered 56 with linked chain loops, for Review Management"
+  },
+  {
+   "key": "plate-057",
+   "file": "art/svc/plate-057.webp",
+   "title": "N° 57 Microsoft Ads Management",
+   "alt": "Engraved emerald plate numbered 57 with a target and arrow, for Microsoft Ads Management"
+  },
+  {
+   "key": "plate-058",
+   "file": "art/svc/plate-058.webp",
+   "title": "N° 58 Performance Max Management",
+   "alt": "Engraved emerald plate numbered 58 with a target and arrow, for Performance Max Management"
+  },
+  {
+   "key": "plate-059",
+   "file": "art/svc/plate-059.webp",
+   "title": "N° 59 Google Shopping Ads",
+   "alt": "Engraved emerald plate numbered 59 with a target and arrow, for Google Shopping Ads"
+  },
+  {
+   "key": "plate-060",
+   "file": "art/svc/plate-060.webp",
+   "title": "N° 60 YouTube Advertising",
+   "alt": "Engraved emerald plate numbered 60 with a target and arrow, for YouTube Advertising"
+  },
+  {
+   "key": "plate-061",
+   "file": "art/svc/plate-061.webp",
+   "title": "N° 61 Display and Remarketing Ads",
+   "alt": "Engraved emerald plate numbered 61 with a target and arrow, for Display and Remarketing Ads"
+  },
+  {
+   "key": "plate-062",
+   "file": "art/svc/plate-062.webp",
+   "title": "N° 62 Local Services Ads",
+   "alt": "Engraved emerald plate numbered 62 with a target and arrow, for Local Services Ads"
+  },
+  {
+   "key": "plate-063",
+   "file": "art/svc/plate-063.webp",
+   "title": "N° 63 Amazon Ads Management",
+   "alt": "Engraved emerald plate numbered 63 with a target and arrow, for Amazon Ads Management"
+  },
+  {
+   "key": "plate-064",
+   "file": "art/svc/plate-064.webp",
+   "title": "N° 64 Programmatic Advertising",
+   "alt": "Engraved emerald plate numbered 64 with a target and arrow, for Programmatic Advertising"
+  },
+  {
+   "key": "plate-065",
+   "file": "art/svc/plate-065.webp",
+   "title": "N° 65 PPC Audit",
+   "alt": "Engraved emerald plate numbered 65 with a target and arrow, for PPC Audit"
+  },
+  {
+   "key": "plate-066",
+   "file": "art/svc/plate-066.webp",
+   "title": "N° 66 App Install Campaigns",
+   "alt": "Engraved emerald plate numbered 66 with a target and arrow, for App Install Campaigns"
+  },
+  {
+   "key": "plate-067",
+   "file": "art/svc/plate-067.webp",
+   "title": "N° 67 Facebook and Instagram Ads",
+   "alt": "Engraved emerald plate numbered 67 with connected share nodes, for Facebook and Instagram Ads"
+  },
+  {
+   "key": "plate-068",
+   "file": "art/svc/plate-068.webp",
+   "title": "N° 68 Instagram Marketing",
+   "alt": "Engraved emerald plate numbered 68 with connected share nodes, for Instagram Marketing"
+  },
+  {
+   "key": "plate-069",
+   "file": "art/svc/plate-069.webp",
+   "title": "N° 69 LinkedIn Ads",
+   "alt": "Engraved emerald plate numbered 69 with connected share nodes, for LinkedIn Ads"
+  },
+  {
+   "key": "plate-070",
+   "file": "art/svc/plate-070.webp",
+   "title": "N° 70 LinkedIn B2B Marketing",
+   "alt": "Engraved emerald plate numbered 70 with connected share nodes, for LinkedIn B2B Marketing"
+  },
+  {
+   "key": "plate-071",
+   "file": "art/svc/plate-071.webp",
+   "title": "N° 71 YouTube Channel Management",
+   "alt": "Engraved emerald plate numbered 71 with connected share nodes, for YouTube Channel Management"
+  },
+  {
+   "key": "plate-072",
+   "file": "art/svc/plate-072.webp",
+   "title": "N° 72 Influencer Marketing",
+   "alt": "Engraved emerald plate numbered 72 with connected share nodes, for Influencer Marketing"
+  },
+  {
+   "key": "plate-073",
+   "file": "art/svc/plate-073.webp",
+   "title": "N° 73 Social Media Management",
+   "alt": "Engraved emerald plate numbered 73 with connected share nodes, for Social Media Management"
+  },
+  {
+   "key": "plate-074",
+   "file": "art/svc/plate-074.webp",
+   "title": "N° 74 Short-Form Video Production",
+   "alt": "Engraved emerald plate numbered 74 with connected share nodes, for Short-Form Video Production"
+  },
+  {
+   "key": "plate-075",
+   "file": "art/svc/plate-075.webp",
+   "title": "N° 75 WhatsApp Marketing",
+   "alt": "Engraved emerald plate numbered 75 with connected share nodes, for WhatsApp Marketing"
+  },
+  {
+   "key": "plate-076",
+   "file": "art/svc/plate-076.webp",
+   "title": "N° 76 Pinterest Marketing",
+   "alt": "Engraved emerald plate numbered 76 with connected share nodes, for Pinterest Marketing"
+  },
+  {
+   "key": "plate-077",
+   "file": "art/svc/plate-077.webp",
+   "title": "N° 77 WordPress Development",
+   "alt": "Engraved emerald plate numbered 77 with a browser window, for WordPress Development"
+  },
+  {
+   "key": "plate-078",
+   "file": "art/svc/plate-078.webp",
+   "title": "N° 78 Shopify Development",
+   "alt": "Engraved emerald plate numbered 78 with a browser window, for Shopify Development"
+  },
+  {
+   "key": "plate-079",
+   "file": "art/svc/plate-079.webp",
+   "title": "N° 79 WooCommerce Development",
+   "alt": "Engraved emerald plate numbered 79 with a browser window, for WooCommerce Development"
+  },
+  {
+   "key": "plate-080",
+   "file": "art/svc/plate-080.webp",
+   "title": "N° 80 Landing Page Design",
+   "alt": "Engraved emerald plate numbered 80 with a browser window, for Landing Page Design"
+  },
+  {
+   "key": "plate-081",
+   "file": "art/svc/plate-081.webp",
+   "title": "N° 81 UI and UX Design",
+   "alt": "Engraved emerald plate numbered 81 with a browser window, for UI and UX Design"
+  },
+  {
+   "key": "plate-082",
+   "file": "art/svc/plate-082.webp",
+   "title": "N° 82 Website Redesign",
+   "alt": "Engraved emerald plate numbered 82 with a browser window, for Website Redesign"
+  },
+  {
+   "key": "plate-083",
+   "file": "art/svc/plate-083.webp",
+   "title": "N° 83 Website Maintenance and Care",
+   "alt": "Engraved emerald plate numbered 83 with a browser window, for Website Maintenance and Care"
+  },
+  {
+   "key": "plate-084",
+   "file": "art/svc/plate-084.webp",
+   "title": "N° 84 Website Speed Optimization",
+   "alt": "Engraved emerald plate numbered 84 with a browser window, for Website Speed Optimization"
+  },
+  {
+   "key": "plate-085",
+   "file": "art/svc/plate-085.webp",
+   "title": "N° 85 Web Accessibility Services",
+   "alt": "Engraved emerald plate numbered 85 with a browser window, for Web Accessibility Services"
+  },
+  {
+   "key": "plate-086",
+   "file": "art/svc/plate-086.webp",
+   "title": "N° 86 Headless and Next.js Development",
+   "alt": "Engraved emerald plate numbered 86 with a browser window, for Headless and Next.js Development"
+  },
+  {
+   "key": "plate-087",
+   "file": "art/svc/plate-087.webp",
+   "title": "N° 87 Website Security and Hosting",
+   "alt": "Engraved emerald plate numbered 87 with a browser window, for Website Security and Hosting"
+  },
+  {
+   "key": "plate-088",
+   "file": "art/svc/plate-088.webp",
+   "title": "N° 88 A/B Testing",
+   "alt": "Engraved emerald plate numbered 88 with a funnel, for A/B Testing"
+  },
+  {
+   "key": "plate-089",
+   "file": "art/svc/plate-089.webp",
+   "title": "N° 89 UX Research and Heatmaps",
+   "alt": "Engraved emerald plate numbered 89 with a funnel, for UX Research and Heatmaps"
+  },
+  {
+   "key": "plate-090",
+   "file": "art/svc/plate-090.webp",
+   "title": "N° 90 Google Analytics 4 Setup and Audit",
+   "alt": "Engraved emerald plate numbered 90 with a funnel, for Google Analytics 4 Setup and Audit"
+  },
+  {
+   "key": "plate-091",
+   "file": "art/svc/plate-091.webp",
+   "title": "N° 91 Google Tag Manager Setup",
+   "alt": "Engraved emerald plate numbered 91 with a funnel, for Google Tag Manager Setup"
+  },
+  {
+   "key": "plate-092",
+   "file": "art/svc/plate-092.webp",
+   "title": "N° 92 Looker Studio Dashboards",
+   "alt": "Engraved emerald plate numbered 92 with a funnel, for Looker Studio Dashboards"
+  },
+  {
+   "key": "plate-093",
+   "file": "art/svc/plate-093.webp",
+   "title": "N° 93 Conversion Tracking",
+   "alt": "Engraved emerald plate numbered 93 with a funnel, for Conversion Tracking"
+  },
+  {
+   "key": "plate-094",
+   "file": "art/svc/plate-094.webp",
+   "title": "N° 94 Call Tracking",
+   "alt": "Engraved emerald plate numbered 94 with a funnel, for Call Tracking"
+  },
+  {
+   "key": "plate-095",
+   "file": "art/svc/plate-095.webp",
+   "title": "N° 95 Marketing Attribution",
+   "alt": "Engraved emerald plate numbered 95 with a funnel, for Marketing Attribution"
+  },
+  {
+   "key": "plate-096",
+   "file": "art/svc/plate-096.webp",
+   "title": "N° 96 Checkout Optimization",
+   "alt": "Engraved emerald plate numbered 96 with a funnel, for Checkout Optimization"
+  },
+  {
+   "key": "plate-097",
+   "file": "art/svc/plate-097.webp",
+   "title": "N° 97 Email Marketing",
+   "alt": "Engraved emerald plate numbered 97 with an envelope, for Email Marketing"
+  },
+  {
+   "key": "plate-098",
+   "file": "art/svc/plate-098.webp",
+   "title": "N° 98 Marketing Automation",
+   "alt": "Engraved emerald plate numbered 98 with an envelope, for Marketing Automation"
+  },
+  {
+   "key": "plate-099",
+   "file": "art/svc/plate-099.webp",
+   "title": "N° 99 HubSpot Services",
+   "alt": "Engraved emerald plate numbered 99 with an envelope, for HubSpot Services"
+  },
+  {
+   "key": "plate-100",
+   "file": "art/svc/plate-100.webp",
+   "title": "N° 100 Lead Nurturing",
+   "alt": "Engraved emerald plate numbered 100 with an envelope, for Lead Nurturing"
+  },
+  {
+   "key": "plate-101",
+   "file": "art/svc/plate-101.webp",
+   "title": "N° 101 SMS Marketing",
+   "alt": "Engraved emerald plate numbered 101 with an envelope, for SMS Marketing"
+  },
+  {
+   "key": "plate-102",
+   "file": "art/svc/plate-102.webp",
+   "title": "N° 102 CRM Integration",
+   "alt": "Engraved emerald plate numbered 102 with an envelope, for CRM Integration"
+  },
+  {
+   "key": "plate-103",
+   "file": "art/svc/plate-103.webp",
+   "title": "N° 103 Newsletter Management",
+   "alt": "Engraved emerald plate numbered 103 with an envelope, for Newsletter Management"
+  },
+  {
+   "key": "plate-104",
+   "file": "art/svc/plate-104.webp",
+   "title": "N° 104 Amazon Store Management",
+   "alt": "Engraved emerald plate numbered 104 with a shopping bag, for Amazon Store Management"
+  },
+  {
+   "key": "plate-105",
+   "file": "art/svc/plate-105.webp",
+   "title": "N° 105 Flipkart Marketplace Management",
+   "alt": "Engraved emerald plate numbered 105 with a shopping bag, for Flipkart Marketplace Management"
+  },
+  {
+   "key": "plate-106",
+   "file": "art/svc/plate-106.webp",
+   "title": "N° 106 Marketplace Listing Optimization",
+   "alt": "Engraved emerald plate numbered 106 with a shopping bag, for Marketplace Listing Optimization"
+  },
+  {
+   "key": "plate-107",
+   "file": "art/svc/plate-107.webp",
+   "title": "N° 107 Product Feed Management",
+   "alt": "Engraved emerald plate numbered 107 with a shopping bag, for Product Feed Management"
+  },
+  {
+   "key": "plate-108",
+   "file": "art/svc/plate-108.webp",
+   "title": "N° 108 D2C Growth Marketing",
+   "alt": "Engraved emerald plate numbered 108 with a shopping bag, for D2C Growth Marketing"
+  },
+  {
+   "key": "cat-ai-search",
+   "file": "art/cat-ai-search.webp",
+   "title": "AI Search and GEO plate",
+   "alt": "Engraved emerald plate with a spark for the AI Search and GEO services"
+  },
+  {
+   "key": "cat-seo",
+   "file": "art/cat-seo.webp",
+   "title": "SEO plate",
+   "alt": "Engraved emerald plate with a magnifying glass for the SEO services"
+  },
+  {
+   "key": "cat-content",
+   "file": "art/cat-content.webp",
+   "title": "Content Marketing plate",
+   "alt": "Engraved emerald plate with a quill pen for the Content Marketing services"
+  },
+  {
+   "key": "cat-digital-pr",
+   "file": "art/cat-digital-pr.webp",
+   "title": "Digital PR and Reputation plate",
+   "alt": "Engraved emerald plate with linked chain loops for the Digital PR and Reputation services"
+  },
+  {
+   "key": "cat-paid-media",
+   "file": "art/cat-paid-media.webp",
+   "title": "Paid Media and PPC plate",
+   "alt": "Engraved emerald plate with a target and arrow for the Paid Media and PPC services"
+  },
+  {
+   "key": "cat-social",
+   "file": "art/cat-social.webp",
+   "title": "Social Media Marketing plate",
+   "alt": "Engraved emerald plate with connected share nodes for the Social Media Marketing services"
+  },
+  {
+   "key": "cat-web",
+   "file": "art/cat-web.webp",
+   "title": "Websites and Development plate",
+   "alt": "Engraved emerald plate with a browser window for the Websites and Development services"
+  },
+  {
+   "key": "cat-cro-analytics",
+   "file": "art/cat-cro-analytics.webp",
+   "title": "CRO and Analytics plate",
+   "alt": "Engraved emerald plate with a funnel for the CRO and Analytics services"
+  },
+  {
+   "key": "cat-email-automation",
+   "file": "art/cat-email-automation.webp",
+   "title": "Email and Automation plate",
+   "alt": "Engraved emerald plate with an envelope for the Email and Automation services"
+  },
+  {
+   "key": "cat-ecommerce-growth",
+   "file": "art/cat-ecommerce-growth.webp",
+   "title": "E-commerce and Marketplaces plate",
+   "alt": "Engraved emerald plate with a shopping bag for the E-commerce and Marketplaces services"
+  }
  ],
  "menus": {
   "primary": [
-   { "type": "page", "slug": "home", "title": "Home" },
-   { "type": "page", "slug": "about", "title": "About" },
-   { "type": "page", "slug": "services", "title": "Services", "children": [
-    { "type": "service", "slug": "generative-engine-optimization", "title": "Generative Engine Optimization" },
-    { "type": "service", "slug": "answer-engine-optimization", "title": "Answer Engine Optimization" },
-    { "type": "service", "slug": "seo-services", "title": "SEO Services" },
-    { "type": "service", "slug": "technical-seo", "title": "Technical SEO" },
-    { "type": "service", "slug": "local-seo", "title": "Local SEO" },
-    { "type": "service", "slug": "ecommerce-seo", "title": "E-commerce SEO" },
-    { "type": "service", "slug": "content-marketing", "title": "Content Marketing" },
-    { "type": "service", "slug": "link-building-digital-pr", "title": "Link Building and Digital PR" },
-    { "type": "service", "slug": "google-ads-management", "title": "Google Ads Management" },
-    { "type": "service", "slug": "social-media-marketing", "title": "Social Media Marketing" },
-    { "type": "service", "slug": "website-design-development", "title": "Website Design and Development" },
-    { "type": "service", "slug": "conversion-rate-optimization", "title": "Conversion Rate Optimization" }
-   ] },
-   { "type": "page", "slug": "approach", "title": "Approach" },
-   { "type": "page", "slug": "insights", "title": "Insights" },
-   { "type": "page", "slug": "faq", "title": "FAQ" },
-   { "type": "page", "slug": "contact", "title": "Contact" }
+   {
+    "type": "page",
+    "slug": "home",
+    "title": "Home"
+   },
+   {
+    "type": "page",
+    "slug": "about",
+    "title": "About"
+   },
+   {
+    "type": "page",
+    "slug": "services",
+    "title": "Services",
+    "children": [
+     {
+      "type": "term",
+      "slug": "ai-search",
+      "title": "AI Search and GEO"
+     },
+     {
+      "type": "term",
+      "slug": "seo",
+      "title": "SEO"
+     },
+     {
+      "type": "term",
+      "slug": "content",
+      "title": "Content Marketing"
+     },
+     {
+      "type": "term",
+      "slug": "digital-pr",
+      "title": "Digital PR and Reputation"
+     },
+     {
+      "type": "term",
+      "slug": "paid-media",
+      "title": "Paid Media and PPC"
+     },
+     {
+      "type": "term",
+      "slug": "social",
+      "title": "Social Media Marketing"
+     },
+     {
+      "type": "term",
+      "slug": "web",
+      "title": "Websites and Development"
+     },
+     {
+      "type": "term",
+      "slug": "cro-analytics",
+      "title": "CRO and Analytics"
+     },
+     {
+      "type": "term",
+      "slug": "email-automation",
+      "title": "Email and Automation"
+     },
+     {
+      "type": "term",
+      "slug": "ecommerce-growth",
+      "title": "E-commerce and Marketplaces"
+     }
+    ]
+   },
+   {
+    "type": "page",
+    "slug": "approach",
+    "title": "Approach"
+   },
+   {
+    "type": "page",
+    "slug": "insights",
+    "title": "Insights"
+   },
+   {
+    "type": "page",
+    "slug": "faq",
+    "title": "FAQ"
+   },
+   {
+    "type": "page",
+    "slug": "contact",
+    "title": "Contact"
+   }
   ],
   "footer": [
-   { "type": "page", "slug": "about", "title": "About AVENZA" },
-   { "type": "page", "slug": "approach", "title": "Our Approach" },
-   { "type": "page", "slug": "services", "title": "All Services" },
-   { "type": "page", "slug": "insights", "title": "Insights" },
-   { "type": "page", "slug": "faq", "title": "FAQ" },
-   { "type": "page", "slug": "contact", "title": "Contact" }
+   {
+    "type": "page",
+    "slug": "about",
+    "title": "About AVENZA"
+   },
+   {
+    "type": "page",
+    "slug": "approach",
+    "title": "Our Approach"
+   },
+   {
+    "type": "page",
+    "slug": "services",
+    "title": "All Services"
+   },
+   {
+    "type": "page",
+    "slug": "insights",
+    "title": "Insights"
+   },
+   {
+    "type": "page",
+    "slug": "faq",
+    "title": "FAQ"
+   },
+   {
+    "type": "page",
+    "slug": "contact",
+    "title": "Contact"
+   }
   ],
   "legal": [
-   { "type": "page", "slug": "privacy-policy", "title": "Privacy Policy" },
-   { "type": "page", "slug": "terms", "title": "Terms of Service" }
+   {
+    "type": "page",
+    "slug": "privacy-policy",
+    "title": "Privacy Policy"
+   },
+   {
+    "type": "page",
+    "slug": "terms",
+    "title": "Terms of Service"
+   }
   ]
- }
+ },
+ "service_categories": [
+  {
+   "slug": "ai-search",
+   "name": "AI Search and GEO",
+   "short": "Get your brand found, trusted and cited in ChatGPT, Gemini, Perplexity, Copilot and Google AI Overviews.",
+   "description": "AVENZA's AI search services make your business easy for AI assistants to find, trust and quote. We combine technical access for AI crawlers, consistent facts about your brand, answer-first pages backed by evidence, and mentions on trusted sites, then measure how often assistants cite you against competitors.",
+   "image": "cat-ai-search"
+  },
+  {
+   "slug": "seo",
+   "name": "SEO",
+   "short": "Rank for the searches that bring revenue, with technical, content, local and platform-specific SEO.",
+   "description": "AVENZA's SEO services help your pages rank for the searches that lead to enquiries and sales. The work covers research into what buyers search for, technical fixes so pages can be crawled and indexed, content that answers each search fully, internal links and authority, all reported against leads rather than traffic alone.",
+   "image": "cat-seo"
+  },
+  {
+   "slug": "content",
+   "name": "Content Marketing",
+   "short": "Research-led writing built with your experts, so people trust it, search engines rank it and AI tools quote it.",
+   "description": "AVENZA's content services plan, write and refresh the pages, articles and assets your buyers read before they decide. Every piece starts from a real question, draws on interviews with your specialists, cites its sources and is structured so readers, search engines and AI assistants can use it easily.",
+   "image": "cat-content"
+  },
+  {
+   "slug": "digital-pr",
+   "name": "Digital PR and Reputation",
+   "short": "Earn the links, mentions and reviews that prove your expertise to buyers, search engines and AI assistants.",
+   "description": "AVENZA's digital PR and reputation services build the outside proof that search engines and AI assistants rely on. We earn coverage and links through data stories and expert commentary, fix listings and citations, and help you collect and answer reviews, always within the rules of Google and each platform.",
+   "image": "cat-digital-pr"
+  },
+  {
+   "slug": "paid-media",
+   "name": "Paid Media and PPC",
+   "short": "Search, Shopping, video and marketplace ads run against tracked leads and revenue, not clicks.",
+   "description": "AVENZA's paid media services plan, build and manage advertising on Google, Microsoft, YouTube, Amazon and programmatic networks. Every account starts with accurate conversion tracking, then campaigns are structured by intent, written to match each search and tuned every week against cost per lead or return on ad spend.",
+   "image": "cat-paid-media"
+  },
+  {
+   "slug": "social",
+   "name": "Social Media Marketing",
+   "short": "Organic content, short video, creators and paid social on the platforms your buyers actually use.",
+   "description": "AVENZA's social media services build demand where buyers first discover brands. We plan content around your audience, produce short video and posts with your team, manage communities and run paid campaigns on Meta, LinkedIn, YouTube and Pinterest, with tracking that ties results to enquiries and sales.",
+   "image": "cat-social"
+  },
+  {
+   "slug": "web",
+   "name": "Websites and Development",
+   "short": "Fast, accessible websites and stores, built clean for search and AI crawlers and easy for your team to edit.",
+   "description": "AVENZA's website services design, build, speed up and look after websites and online stores on WordPress, WooCommerce, Shopify and modern frameworks. Every build is mobile-first, accessible to WCAG 2.2, technically clean for search and AI crawlers, and handed over with training so your team can edit it.",
+   "image": "cat-web"
+  },
+  {
+   "slug": "cro-analytics",
+   "name": "CRO and Analytics",
+   "short": "Measure what matters, find where visitors leave, and turn more of them into leads and customers.",
+   "description": "AVENZA's conversion and analytics services make sure every enquiry and sale is measured correctly, then find and fix what stops visitors from acting. The work covers GA4 and tag setup, dashboards, call and conversion tracking, attribution, user research, landing page and checkout improvements, and honest A/B testing.",
+   "image": "cat-cro-analytics"
+  },
+  {
+   "slug": "email-automation",
+   "name": "Email and Automation",
+   "short": "Email, SMS and CRM automation that nurtures leads and brings customers back, sent with consent.",
+   "description": "AVENZA's email and automation services set up and run the messages that turn enquiries into customers and customers into repeat buyers. We plan journeys, write and design emails, connect your CRM and forms, handle deliverability and consent, and report on revenue and pipeline rather than open rates alone.",
+   "image": "cat-email-automation"
+  },
+  {
+   "slug": "ecommerce-growth",
+   "name": "E-commerce and Marketplaces",
+   "short": "Grow sales on your own store and on Amazon and Flipkart, with clean feeds, strong listings and sharp offers.",
+   "description": "AVENZA's e-commerce growth services help brands sell more on their own store and on marketplaces such as Amazon and Flipkart. We manage listings, product feeds, store setup, pricing visibility and customer journeys, and connect marketplace data with your own analytics so you can see what truly drives profit.",
+   "image": "cat-ecommerce-growth"
+  }
+ ]
 }

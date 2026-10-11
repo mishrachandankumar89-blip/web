@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AVENZA_VERSION', '1.4.0' );
+define( 'AVENZA_VERSION', '1.5.0' );
 define( 'AVENZA_DIR', get_template_directory() );
 define( 'AVENZA_URI', get_template_directory_uri() );
 

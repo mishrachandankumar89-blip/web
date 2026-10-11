@@ -194,7 +194,7 @@ function avenza_import_ajax() {
 			wp_send_json_success( avenza_import_media( $offset, 3 ) );
 			break;
 		case 'content':
-			wp_send_json_success( avenza_import_content() );
+			wp_send_json_success( avenza_import_content( $offset, 20 ) );
 			break;
 		case 'finish':
 			wp_send_json_success( avenza_import_finish() );
@@ -215,8 +215,12 @@ function avenza_import_all() {
 		$result = avenza_import_media( $offset, 50 );
 		$offset = isset( $result['offset'] ) ? $result['offset'] : 0;
 	} while ( 'media' === $result['next'] );
-	$content = avenza_import_content();
-	$finish  = avenza_import_finish();
+	$offset = 0;
+	do {
+		$content = avenza_import_content( $offset, 200 );
+		$offset  = isset( $content['offset'] ) ? $content['offset'] : 0;
+	} while ( 'content' === $content['next'] );
+	$finish = avenza_import_finish();
 	return array( $content['message'], $finish['message'] );
 }
 
@@ -399,9 +403,13 @@ function avenza_resolve_tokens( $html, $media, $ids ) {
 		$html
 	);
 	$html = preg_replace_callback(
-		'/\{\{link:(page|service|post):([a-z0-9\/-]+)\}\}/',
+		'/\{\{link:(page|service|post|term):([a-z0-9\/-]+)\}\}/',
 		function ( $m ) use ( $ids ) {
 			$key = $m[1] . ':' . $m[2];
+			if ( 'term' === $m[1] && isset( $ids[ $key ] ) ) {
+				$link = get_term_link( (int) $ids[ $key ], 'avenza_service_cat' );
+				return is_wp_error( $link ) ? esc_url( home_url( '/expertise/' . $m[2] . '/' ) ) : esc_url( $link );
+			}
 			if ( isset( $ids[ $key ] ) ) {
 				return esc_url( get_permalink( $ids[ $key ] ) );
 			}
@@ -413,16 +421,30 @@ function avenza_resolve_tokens( $html, $media, $ids ) {
 }
 
 /**
- * Create or update services, pages and articles.
+ * Every content item in import order, as [ group, item ] pairs.
  *
- * @return array
+ * @return array[]
  */
-function avenza_import_content() {
+function avenza_import_items() {
 	$manifest = avenza_manifest();
-	$media    = (array) get_option( 'avenza_media_map', array() );
+	$all      = array();
+	foreach ( array( 'service' => 'services', 'page' => 'pages', 'post' => 'posts' ) as $group => $key ) {
+		foreach ( isset( $manifest[ $key ] ) ? $manifest[ $key ] : array() as $item ) {
+			$all[] = array( $group, $item );
+		}
+	}
+	return $all;
+}
+
+/**
+ * First content step: permalinks, service categories and an empty shell for
+ * every item, so links between items resolve whatever order they are written in.
+ *
+ * @return array "type:slug" => ID.
+ */
+function avenza_import_prepare() {
+	$manifest = avenza_manifest();
 	$ids      = array();
-	$kept     = array();
-	$written  = 0;
 
 	// On a first setup, swap WordPress's default date-based permalinks for
 	// short /%postname%/ URLs before any link inside the content is resolved.
@@ -432,102 +454,157 @@ function avenza_import_content() {
 		$wp_rewrite->set_permalink_structure( '/%postname%/' );
 	}
 
+	foreach ( isset( $manifest['service_categories'] ) ? $manifest['service_categories'] : array() as $order => $cat ) {
+		$term = term_exists( $cat['slug'], 'avenza_service_cat' );
+		if ( ! $term ) {
+			$term = wp_insert_term(
+				$cat['name'],
+				'avenza_service_cat',
+				array(
+					'slug'        => $cat['slug'],
+					'description' => $cat['description'],
+				)
+			);
+		} else {
+			wp_update_term(
+				(int) $term['term_id'],
+				'avenza_service_cat',
+				array(
+					'name'        => $cat['name'],
+					'description' => $cat['description'],
+				)
+			);
+		}
+		if ( is_wp_error( $term ) ) {
+			continue;
+		}
+		$term_id = (int) $term['term_id'];
+		update_term_meta( $term_id, '_avenza_order', $order + 1 );
+		update_term_meta( $term_id, '_avenza_image', $cat['image'] );
+		update_term_meta( $term_id, '_avenza_short', $cat['short'] );
+		$ids[ 'term:' . $cat['slug'] ] = $term_id;
+	}
+
+	foreach ( avenza_import_items() as $pair ) {
+		list( $group, $item ) = $pair;
+		$type                 = 'service' === $group ? 'avenza_service' : $group;
+		$ids[ $group . ':' . $item['slug'] ] = avenza_upsert_shell( $type, $item['slug'], $item['title'] );
+	}
+
+	update_option( 'avenza_import_ids', $ids, false );
+	update_option( 'avenza_import_kept', array(), false );
+	update_option( 'avenza_import_written', 0, false );
+	return $ids;
+}
+
+/**
+ * Create or update services, pages and articles, a batch at a time.
+ *
+ * @param int $offset Start index in the item list.
+ * @param int $batch  Items per request.
+ * @return array
+ */
+function avenza_import_content( $offset = 0, $batch = 20 ) {
+	$media = (array) get_option( 'avenza_media_map', array() );
+	$ids   = 0 === $offset ? avenza_import_prepare() : (array) get_option( 'avenza_import_ids', array() );
+	$kept  = (array) get_option( 'avenza_import_kept', array() );
+	$count = (int) get_option( 'avenza_import_written', 0 );
+	$all   = avenza_import_items();
+	$slice = array_slice( $all, $offset, $batch );
+
 	// The bundled content is trusted theme markup; keep it exactly as shipped.
 	$filtered = ! current_user_can( 'unfiltered_html' );
 	if ( $filtered ) {
 		kses_remove_filters();
 	}
 
-	// Pass one: make sure every item exists so links can resolve.
-	foreach ( isset( $manifest['services'] ) ? $manifest['services'] : array() as $item ) {
-		$ids[ 'service:' . $item['slug'] ] = avenza_upsert_shell( 'avenza_service', $item['slug'], $item['title'] );
-	}
-	foreach ( isset( $manifest['pages'] ) ? $manifest['pages'] : array() as $item ) {
-		$ids[ 'page:' . $item['slug'] ] = avenza_upsert_shell( 'page', $item['slug'], $item['title'] );
-	}
-	foreach ( isset( $manifest['posts'] ) ? $manifest['posts'] : array() as $item ) {
-		$ids[ 'post:' . $item['slug'] ] = avenza_upsert_shell( 'post', $item['slug'], $item['title'] );
-	}
-
-	// Pass two: write content, meta and featured images.
-	$groups = array(
-		'service' => isset( $manifest['services'] ) ? $manifest['services'] : array(),
-		'page'    => isset( $manifest['pages'] ) ? $manifest['pages'] : array(),
-		'post'    => isset( $manifest['posts'] ) ? $manifest['posts'] : array(),
-	);
-	foreach ( $groups as $group => $items ) {
-		foreach ( $items as $item ) {
-			$id = isset( $ids[ $group . ':' . $item['slug'] ] ) ? $ids[ $group . ':' . $item['slug'] ] : 0;
-			if ( ! $id ) {
-				continue;
-			}
-			$current = get_post( $id );
-			$hash    = get_post_meta( $id, '_avenza_hash', true );
-			$is_new  = (bool) get_post_meta( $id, '_avenza_new', true );
-			$edited  = $hash && md5( $current->post_content ) !== $hash;
-			if ( $edited && ! $is_new ) {
-				$kept[] = $item['title'];
-				continue;
-			}
-
-			$file = AVENZA_DIR . '/content/' . $item['content_file'];
-			$html = file_exists( $file ) ? (string) file_get_contents( $file ) : ''; // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
-			$html = avenza_resolve_tokens( $html, $media, $ids );
-
-			$data = array(
-				'ID'             => $id,
-				'post_title'     => $item['title'],
-				'post_content'   => $html,
-				'post_excerpt'   => isset( $item['excerpt'] ) ? $item['excerpt'] : '',
-				'post_status'    => 'publish',
-				'menu_order'     => isset( $item['menu_order'] ) ? (int) $item['menu_order'] : 0,
-				'comment_status' => 'closed',
-				'ping_status'    => 'closed',
-			);
-			if ( 'post' === $group && ! empty( $item['date'] ) && $is_new ) {
-				$data['post_date']     = $item['date'] . ' 10:00:00';
-				$data['post_date_gmt'] = get_gmt_from_date( $data['post_date'] );
-			}
-			$saved = wp_update_post( wp_slash( $data ), true );
-			if ( is_wp_error( $saved ) ) {
-				continue;
-			}
-			$stored = get_post_field( 'post_content', $id, 'raw' );
-			update_post_meta( $id, '_avenza_hash', md5( $stored ) );
-			delete_post_meta( $id, '_avenza_new' );
-
-			update_post_meta( $id, '_avenza_meta_title', $item['meta_title'] );
-			update_post_meta( $id, '_avenza_meta_desc', $item['meta_description'] );
-			if ( 'service' === $group && ! empty( $item['number'] ) ) {
-				update_post_meta( $id, '_avenza_number', $item['number'] );
-			}
-			if ( ! empty( $item['image'] ) && ! empty( $media[ $item['image'] ] ) ) {
-				set_post_thumbnail( $id, (int) $media[ $item['image'] ] );
-			}
-			if ( 'post' === $group && ! empty( $item['category'] ) ) {
-				$term = term_exists( $item['category'], 'category' );
-				if ( ! $term ) {
-					$term = wp_insert_term( $item['category'], 'category' );
-				}
-				if ( ! is_wp_error( $term ) ) {
-					wp_set_post_categories( $id, array( (int) $term['term_id'] ) );
-				}
-			}
-			++$written;
+	foreach ( $slice as $pair ) {
+		list( $group, $item ) = $pair;
+		$id = isset( $ids[ $group . ':' . $item['slug'] ] ) ? $ids[ $group . ':' . $item['slug'] ] : 0;
+		if ( ! $id ) {
+			continue;
 		}
+		$current = get_post( $id );
+		$hash    = get_post_meta( $id, '_avenza_hash', true );
+		$is_new  = (bool) get_post_meta( $id, '_avenza_new', true );
+		$edited  = $hash && md5( $current->post_content ) !== $hash;
+		if ( $edited && ! $is_new ) {
+			$kept[] = $item['title'];
+			continue;
+		}
+
+		$file = AVENZA_DIR . '/content/' . $item['content_file'];
+		$html = file_exists( $file ) ? (string) file_get_contents( $file ) : ''; // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+		$html = avenza_resolve_tokens( $html, $media, $ids );
+
+		$data = array(
+			'ID'             => $id,
+			'post_title'     => $item['title'],
+			'post_content'   => $html,
+			'post_excerpt'   => isset( $item['excerpt'] ) ? $item['excerpt'] : '',
+			'post_status'    => 'publish',
+			'menu_order'     => isset( $item['menu_order'] ) ? (int) $item['menu_order'] : 0,
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+		);
+		if ( 'post' === $group && ! empty( $item['date'] ) && $is_new ) {
+			$data['post_date']     = $item['date'] . ' 10:00:00';
+			$data['post_date_gmt'] = get_gmt_from_date( $data['post_date'] );
+		}
+		$saved = wp_update_post( wp_slash( $data ), true );
+		if ( is_wp_error( $saved ) ) {
+			continue;
+		}
+		$stored = get_post_field( 'post_content', $id, 'raw' );
+		update_post_meta( $id, '_avenza_hash', md5( $stored ) );
+		delete_post_meta( $id, '_avenza_new' );
+
+		update_post_meta( $id, '_avenza_meta_title', $item['meta_title'] );
+		update_post_meta( $id, '_avenza_meta_desc', $item['meta_description'] );
+		if ( 'service' === $group && ! empty( $item['number'] ) ) {
+			update_post_meta( $id, '_avenza_number', $item['number'] );
+		}
+		if ( 'service' === $group && ! empty( $item['category'] ) && ! empty( $ids[ 'term:' . $item['category'] ] ) ) {
+			wp_set_object_terms( $id, array( (int) $ids[ 'term:' . $item['category'] ] ), 'avenza_service_cat' );
+		}
+		if ( ! empty( $item['image'] ) && ! empty( $media[ $item['image'] ] ) ) {
+			set_post_thumbnail( $id, (int) $media[ $item['image'] ] );
+		}
+		if ( 'post' === $group && ! empty( $item['category'] ) ) {
+			$term = term_exists( $item['category'], 'category' );
+			if ( ! $term ) {
+				$term = wp_insert_term( $item['category'], 'category' );
+			}
+			if ( ! is_wp_error( $term ) ) {
+				wp_set_post_categories( $id, array( (int) $term['term_id'] ) );
+			}
+		}
+		++$count;
 	}
 
 	if ( $filtered ) {
 		kses_init_filters();
 	}
 
-	update_option( 'avenza_import_ids', $ids, false );
 	update_option( 'avenza_import_kept', $kept, false );
+	update_option( 'avenza_import_written', $count, false );
+
+	$next_offset = $offset + count( $slice );
+	$total       = count( $all );
+	if ( $next_offset < $total ) {
+		return array(
+			/* translators: 1: done, 2: total */
+			'message'  => sprintf( __( 'Pages, services and articles: %1$d of %2$d written.', 'avenza' ), $next_offset, $total ),
+			'progress' => 70 + (int) round( 20 * $next_offset / max( 1, $total ) ),
+			'next'     => 'content',
+			'offset'   => $next_offset,
+		);
+	}
 
 	$message = sprintf(
 		/* translators: %d: count */
 		__( 'Pages, services and articles written: %d.', 'avenza' ),
-		$written
+		$count
 	);
 	if ( $kept ) {
 		/* translators: %s: list of titles */
@@ -568,7 +645,8 @@ function avenza_build_menu( $location, $name, $items, $ids ) {
 		if ( empty( $ids[ $key ] ) ) {
 			return 0;
 		}
-		$object = 'service' === $item['type'] ? 'avenza_service' : ( 'post' === $item['type'] ? 'post' : 'page' );
+		$is_term = 'term' === $item['type'];
+		$object  = $is_term ? 'avenza_service_cat' : ( 'service' === $item['type'] ? 'avenza_service' : ( 'post' === $item['type'] ? 'post' : 'page' ) );
 		return wp_update_nav_menu_item(
 			$menu_id,
 			0,
@@ -576,7 +654,7 @@ function avenza_build_menu( $location, $name, $items, $ids ) {
 				'menu-item-title'     => $item['title'],
 				'menu-item-object'    => $object,
 				'menu-item-object-id' => $ids[ $key ],
-				'menu-item-type'      => 'post_type',
+				'menu-item-type'      => $is_term ? 'taxonomy' : 'post_type',
 				'menu-item-status'    => 'publish',
 				'menu-item-parent-id' => $parent,
 			)

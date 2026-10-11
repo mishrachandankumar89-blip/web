@@ -63,7 +63,7 @@ def attr(text):
 
 def link_target(url, where, known):
     """Turn page:slug, service:slug, post:slug into importer tokens."""
-    m = re.match(r"^(page|service|post):([a-z0-9/-]+)(#[\w-]+)?$", url)
+    m = re.match(r"^(page|service|post|term):([a-z0-9/-]+)(#[\w-]+)?$", url)
     if m:
         kind, slug, frag = m.group(1), m.group(2), m.group(3) or ""
         if (kind, slug) not in known:
@@ -256,7 +256,7 @@ def parse_shortcode(line):
     name, args = m.group(1), m.group(2).strip()
     params = dict(re.findall(r'(\w+)=("[^"]*"|\S+)', args))
     attrs = " ".join(f'{k}="{v.strip(chr(34))}"' for k, v in params.items())
-    allowed = {"services", "posts", "contact_form", "contact_details", "map"}
+    allowed = {"services", "posts", "contact_form", "contact_details", "map", "service_categories", "service_index"}
     if name not in allowed:
         return None
     return shortcode(f"[avenza_{name}{(' ' + attrs) if attrs else ''}]")
@@ -676,8 +676,12 @@ def main():
             meta, _ = read_source(path)
             known.add((kind, meta["slug"]))
 
+    for cat in site.get("service_categories", []):
+        known.add(("term", cat["slug"]))
+
     manifest = {
         "version": site["version"],
+        "service_categories": site.get("service_categories", []),
         "site": site["site"],
         "front_page": site["front_page"],
         "posts_page": site["posts_page"],
@@ -719,6 +723,9 @@ def main():
                 err(where, f"unknown image '{item['image']}'")
             if kind == "service":
                 item["number"] = meta.get("number", "")
+                item["category"] = meta.get("category", "")
+                if ("term", item["category"]) not in known:
+                    err(where, f"unknown service category '{item['category']}'")
             if kind == "post":
                 item["category"] = meta.get("category", "")
                 item["date"] = meta.get("date", "")

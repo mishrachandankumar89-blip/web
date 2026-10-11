@@ -3,6 +3,7 @@ title: Link Building and Digital PR
 slug: link-building-digital-pr
 number: 08
 menu_order: 8
+category: digital-pr
 image: plate-08
 excerpt: Earn links and brand mentions from real publications and trusted industry sites, the signals that lift rankings and convince AI assistants you are credible.
 meta_title: Link Building and Digital PR Services | AVENZA
